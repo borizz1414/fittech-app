@@ -28,7 +28,7 @@ npm-debug.log*
 /node_modules
 /platforms
 /plugins
-/www
+
 debug/app-debug.apk
 debug/app-debug.apk
 debug/output.json
