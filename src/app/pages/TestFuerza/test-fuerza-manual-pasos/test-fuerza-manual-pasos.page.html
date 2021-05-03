@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/test-fuerza-menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title  mode="ios"> {{nombre}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  size="12">   
+
+        <div  class="ion-padding" *ngIf="id == 1">
+          <img src="assets/img/pressbanca.jpg"/>
+        </div>
+
+        <div  class="ion-padding" *ngIf="id == 2">
+          <img src="assets/img/legcurl.jpg"/>
+        </div>
+
+        <div  class="ion-padding" *ngIf="id == 3">
+          <img src="assets/img/squat.jpg"/>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <h2 class="ion-text-center">{{nombre}}</h2> 
+
+  <div  class="ion-padding ion-text-center">
+    Por favor introduce, el peso maximo que puedes levantar en {{nombre}} y confirme su unidad.
+  </div>  
+
+  <ion-grid class="ion-padding">
+    <ion-row class="ion-justify-content-center">
+      <ion-col  size="12" class="ion-margin-bottom">   
+        <div>
+          <ion-input type="text" placeholder="Kg/Lb"  name="valor" [(ngModel)]="power.valor" ></ion-input>
+        </div>   
+      </ion-col>
+
+      <ion-col  size="8" >   
+
+          <ion-segment (ionChange)="peso($event)" value="kilos" mode="ios">
+            <ion-segment-button value="kilos" >
+              <ion-label>Kg</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="libras">
+              <ion-label>Libras</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+ 
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>  
+
+
+
+
+  <ion-grid class="ion-padding">
+    <ion-row >
+      <ion-col  size="12">   
+        <div>
+          <ion-card color="dark" (click)="siguiente()">
+            <h2 class="ion-text-center">Confirmar</h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>   
+
+
+</ion-content>

@@ -1,0 +1,59 @@
+<app-edad (cambiarPantalla)="checkEdad($event)"></app-edad>
+<div class="animated fadeInLeft delay-1s">
+  <h2 class="titulo">¿Cuánto
+    <ion-text color="danger">mides</ion-text>?</h2>
+  <ion-item lines="none">
+    <ion-input (ionInput)="valor($event)" (ionFocus)="limpiar()" [(ngModel)]="estatura" type="tel" value="0"
+      inputmode="numeric" maxlength="3"></ion-input>
+  </ion-item>
+  <ion-label class="titulopeque">{{ mensaje }}</ion-label>
+  <ion-row>
+    <ion-col size="6" style="margin: 0 auto;">
+      <ion-segment (ionChange)="altura($event)" mode="ios" value="Cm">
+        <ion-segment-button value="Cm">
+          <ion-label class="titulopeque">Cm</ion-label>
+        </ion-segment-button>
+        <!--  <ion-segment-button value="Pulgadas">
+          <ion-label class="titulopeque">Pulgadas</ion-label>
+        </ion-segment-button> -->
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+<div class="animated fadeInLeft delay-1s">
+  <h2 class="titulo">¿Cuánto
+    <ion-text color="danger">pesas</ion-text>?</h2>
+  <ion-item lines="none">
+    <ion-input (ionInput)="valor2($event)" (ionFocus)="limpiar2()" [(ngModel)]="peso_" type="tel" value="0"
+      inputmode="numeric" maxlength="3"></ion-input>
+  </ion-item>
+  <ion-label class="titulopeque">{{ mensaje2 }}</ion-label>
+  <ion-row>
+    <ion-col size="6" style="margin: 0 auto;">
+      <ion-segment (ionChange)="peso($event)" mode="ios" value="Kg">
+        <ion-segment-button value="Kg">
+          <ion-label class="titulopeque">Kg</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Libra">
+          <ion-label class="titulopeque">Lbs</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="danger" (click)="avanzar()" [disabled]="pasar || !edad">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button color="danger" (click)="atras()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

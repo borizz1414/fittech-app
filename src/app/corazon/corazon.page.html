@@ -1,0 +1,46 @@
+<ion-header [translucent]="true" class="ion-no-border animated fadeIn delay-1s">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" slot="fixed" class="animated fadeIn delay-1s">
+
+  <div class="contenedor">
+
+      <h2 class="titulo">¿Cómo late tu corazón?</h2>
+      
+      <div class="letra">
+        Toma tu frecuencia cardíaca en reposo
+      </div>
+
+
+      <ion-grid class="my-grid animated fadeIn delay-2s">
+      <ion-row class="parent-row">
+        <p class="mensaje" style="width: 100%;font-size: 18px;">Toca para aprender cómo tomar tu frecuencia cardíaca en reposo</p>
+        <!-- <ion-col  size="6">   
+          <div class="tarjeta" (click)="abrirmodal('0')">
+            <img src="assets/img/pulso-carotideo.jpg" class="imagen"/>
+          </div>   
+
+          <ion-button shape="round" color="danger" (click)="abrirmodal('0')" style="--border-radius:10px;width: 90%;text-align: center;"> <p> Pulso Carotídeo</p></ion-button>
+        </ion-col> -->
+        <ion-col  size="6">   
+          <div class="tarjeta" (click)="abrirmodal('1')">
+            <img src="assets/img/pulso-radial.jpg" class="imagen"/>
+          </div>   
+       <!-- s -->
+          <ion-button shape="round" color="danger" (click)="abrirmodal('1')" style="--border-radius:10px;width: 90%;text-align: center;"> <p> Pulso Radial</p></ion-button>
+
+        </ion-col>
+
+      
+      </ion-row>
+      </ion-grid>      
+  </div>
+
+
+
+</ion-content>
+
+

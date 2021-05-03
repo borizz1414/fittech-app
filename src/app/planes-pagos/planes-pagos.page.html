@@ -1,0 +1,121 @@
+<ion-content fullscreen  class="fondo">
+
+  <div class="titulo">
+    <h2>Empieza por todo lo alto</h2>
+  </div>
+  
+  <div class="box">
+    <p style="margin-top: 0; margin-bottom: 1.5rem;">Puedes hacer un free trial con todos los beneficios por una semana o comprometerte con tus resultados y tomar desde ya la decisión transformar tu estilo de vida.</p>
+  </div>
+
+  <div>
+    <ion-grid>
+      <ion-row style="padding: 0;">
+        <ion-col  size="12" style="padding: 0;">  
+  
+          <ion-slides pager="true"   #slide [options]="slideOpts">
+  
+              <ion-slide *ngFor="let item of dato">
+                
+                <ion-card class="card-custom" *ngIf="item.duration !== 12">
+                  <div class="card-title">{{item.name}}</div>
+                  <div>
+                    <span class="card-body" *ngIf="item.price === 0">
+                      Gratis
+                    </span>
+                    
+                    <div class="card-desing" *ngIf="item.price === 0">
+                      Lighting deal
+                    </div>
+  
+                  <span class="card-body" *ngIf="item.price !== 0">
+                    {{item.price | number:'':'es'}} COP
+                  </span>
+                    
+                    <br> 
+                    <span class="card-subtitle">
+                      {{item.description}}</span> 
+  
+                  </div>
+  
+                  <div>
+                    <p class="planes">
+                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.
+                    </p>
+                    <p  class="planes">
+                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.
+                    </p>
+                    <p  class="planes">
+                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando. 
+                    </p>
+                  </div>
+  
+  
+                  <div class="card-footer">
+                    <ion-button expand="block" shape="round" class="custombtn" (click)="pago(item.id)">
+                       <b>Elegir</b> 
+                    </ion-button>
+                  </div>
+                </ion-card>
+    
+                <ion-card class="card-custom2" *ngIf="item.duration === 12">
+                  <div class="card-title2" >{{item.name}}</div>
+                  <div>
+                  <span class="card-body2" *ngIf="item.price === 0">
+                    Lighting Deal
+                  </span>
+  
+                  <span class="card-body2" *ngIf="item.price !== 0">
+                    {{item.price | number:'':'es'}} COP
+                  </span>
+                    
+                    <br> 
+                    <span class="card-subtitle2">
+                      {{item.description}}</span> 
+                   </div>
+
+
+                   <div>
+                    <p class="planes2">
+                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.
+                    </p>
+                    <p  class="planes2">
+                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.
+                    </p>
+                    <p  class="planes2">
+                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando. 
+                    </p>
+                  </div>
+
+
+
+                  <div class="card-footer">
+                    <ion-button expand="block" shape="round" class="custombtn2" (click)="pago(item.id)">
+                       <b>Elegir</b> 
+                    </ion-button>
+                  </div>
+                </ion-card>
+                
+              </ion-slide>
+  
+    
+          </ion-slides>
+   
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+ 
+  <br>
+  <br>
+
+  <div style="position: relative; height: 20%;">
+    <div style="position: absolute;left: 35%;top: 31%;">
+      <img src="assets/img/logo-app.png" class="logo">
+    </div>
+  </div>
+
+</ion-content>
+<!-- <ion-footer class="ion-no-border">
+  <img src="assets/img/logo-app.png" class="logo">
+</ion-footer> -->

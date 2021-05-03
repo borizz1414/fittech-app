@@ -1,0 +1,157 @@
+<div class="contenedor-fecha">
+  <ion-item lines="none" class="fecha-desde">
+      <!--22-->
+  <ion-label style="font-size: 18px;position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;" *ngIf="!valor">Desde</ion-label>
+  <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet"  cancel-text="salir" (ionChange)="desde($event)">
+  <ion-select-option *ngFor="let item of fechas; let i=index" value="{{item.id}}">{{item.created_at}} </ion-select-option>
+</ion-select>
+  </ion-item>
+
+  <ion-item lines="none" class="fecha-hasta">
+    <!--22-->
+<ion-label style="font-size: 18px;position: absolute;
+width: 100%;
+margin: 0 auto;
+text-align: center;" *ngIf="!valor2">Hasta</ion-label>
+<ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" cancel-text="salir" (ionChange)="hasta($event)">
+  <ion-select-option *ngFor="let item of fechas; let i=index" value="{{item.id}}">{{item.created_at}} </ion-select-option>
+</ion-select>
+  </ion-item>
+</div>
+
+
+<ion-grid>
+  <!-- 1 -->
+  <ion-row>
+    <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">Estrategia nutricional</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.estrategia_nutricional}}</p>
+        <p class="input-custom">{{indicadores_despues.estrategia_nutricional}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled>
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled>
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col>
+    <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">TBMA</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.tmb}}</p>
+        <p class="input-custom">{{indicadores_despues.tmb}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled value="Cm" >
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled value="Pulgadas">
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col>
+  </ion-row>
+  <!-- 2 -->
+  <ion-row>
+    <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">IMC</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.imc}}</p>
+        <p class="input-custom">{{indicadores_despues.imc}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled>
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled>
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col>
+    <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">ICA</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.ica}}</p>
+        <p class="input-custom">{{indicadores_despues.ica}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled value="Cm" >
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled value="Pulgadas">
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col>
+  </ion-row>
+  <!-- 3 -->
+  <ion-row>
+    <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">Perímetro de cintura</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.perimetro_cintura}}</p>
+        <p class="input-custom">{{indicadores_despues.perimetro_cintura}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled value="Cm" >
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled value="Pulgadas">
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col>
+
+    <!-- <ion-col size="6" class="rightborder">
+      <ion-label class="titulopeque2">TBMA</ion-label>
+      <div class="contenedor-input">
+        <p class="input-custom">{{indicadores_ante.tmba}}</p>
+        <p class="input-custom">{{indicadores_despues.tmba}}</p>
+      </div>
+      
+<ion-row>
+  <ion-col size="12" style="margin: 0 auto;">
+    <ion-segment  mode="ios">
+      <ion-segment-button disabled value="Cm" >
+        <ion-label class="titulopeque">Antes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button disabled value="Pulgadas">
+        <ion-label class="titulopeque">Despues</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+    </ion-col> -->
+  </ion-row>
+</ion-grid>

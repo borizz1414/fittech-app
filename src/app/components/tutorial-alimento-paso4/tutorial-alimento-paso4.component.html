@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <!-- <ion-buttons slot="start" (click)="go()">
+      <ion-back-button defaultHref="/bateria-alimento"></ion-back-button> 
+      <ion-icon name="checkmark-outline" style="font-size: 24px; margin-left: 20px;"   ></ion-icon>
+    </ion-buttons> -->
+    <ion-buttons slot="end" (click)="saltar()">
+      Saltar 
+    </ion-buttons>
+    <ion-title class="ion-text-center" mode="ios">Alimentación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="box-img-container">
+    <span class="identificador"> 4 / 4 </span>
+    <img src="assets/img/alimentacion2@2x.png">
+  </div>
+
+  <div class="box-text-container">
+    <p class="parrafo">
+      En la barra superior te saldrá un medidor que se irá llenando a medida que agregues comidas, éste te indicará la <b>cantidad ideal, para ese macronutriente</b> del tipo de comida que seleccionaste (desayuno, snack, almuerzo o cena)
+    </p>
+  </div>
+
+
+    <video 
+      class="videoReproductor2" poster="/" controls >
+      <source [src]= "video2" type="video/mp4" />
+    </video>
+
+
+
+  <div class="box-text-container">
+    <p class="parrafo">
+      Puedes <b>agregar alimentos</b> introduciendo los gramos totales o también usando medidas caseras mucho más fáciles de manejar si no tienes idea de cuánto agregar
+    </p>
+  </div>
+
+
+    <video width="100%"  class="videoReproductor" controls poster="assets/img/gif-logo2-video.gif">
+      <source [src]= "video3" type="video/mp4" />
+    </video>
+
+
+
+    <video width="100%"  class="videoReproductor" controls poster="assets/img/gif-logo2-video.gif">
+      <source [src]= "video4" type="video/mp4" />
+    </video>
+
+
+<div class="box-text-container">
+  <p class="parrafo">
+    Una vez estés seguro de tu selección haz clic en guardar y en el menú podrás entrar, 
+    <b>ver y editar tu selección</b> .
+  </p>
+</div>
+
+<br>
+<br>
+
+<!-- <div class="box-video-container">
+  <p>Video4</p>
+</div> -->
+
+<!-- <div class="box-text-container">
+  <p class="parrafo">
+    Aquí podrás visualizar el menú ideal que creaste para esa comida, y puedes <b>editarlo las veces que quieras</b> .
+  </p>
+</div> -->
+
+</ion-content>
+
+

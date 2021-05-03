@@ -1,0 +1,37 @@
+<ion-header [translucent]="true" class="ion-no-border animated fadeIn delay-1s">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" slot="fixed" class="animated fadeIn delay-1s">
+
+  <div class="contenedor">
+
+    <div>
+    <h1 class="titulo ion-margin-bottom">{{titulo}}</h1>
+    </div>
+    
+   <ion-card color="danger" class="ion-margin-bottom " style="    --background: red;
+   font-size: 1rem;
+   margin: 0 auto;
+   width: 286px;
+   --border-radius: 10px;">
+    <h1 class="ion-padding" style=" position: relative;
+    margin: 10px; font-size: 25px; margin: 0;">{{mensaje}}</h1>
+   </ion-card>
+
+
+  </div>
+
+
+  <ion-fab vertical="bottom"  horizontal="end" slot="fixed" class="animated fadeInUp delay-2s" >
+    <ion-fab-button color="danger" (click)="siguiente()">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+
+

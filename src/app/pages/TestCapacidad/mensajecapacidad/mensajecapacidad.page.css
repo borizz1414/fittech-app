@@ -1,0 +1,101 @@
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
+/*logo*/
+.logo {
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.cabezera {
+  max-height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*fin logo*/
+ion-slides {
+  height: 100%;
+}
+
+ion-card {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ion-card:hover {
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+.color-tarjeta {
+  color: white;
+  background-color: #000000;
+}
+
+.swiper-slide {
+  display: block;
+}
+
+.swiper-slide h2 {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 370px) {
+  .swiper-slide h2 {
+    margin-top: .5rem;
+  }
+}
+
+.mensajepersonalizado {
+  font-size: 18px;
+}
+
+@media (max-width: 370px) {
+  .mensajepersonalizado {
+    font-size: 0.8125rem;
+  }
+}
+
+.swiper-slide img {
+  max-height: 50%;
+  max-width: 80%;
+  margin: 60px 0 40px;
+  pointer-events: none;
+  margin-top: 0;
+}
+
+@media (max-width: 370px) {
+  .swiper-slide img {
+    margin-top: 0;
+  }
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+}
+
+p b {
+  color: var(--ion-text-color, #000000);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}

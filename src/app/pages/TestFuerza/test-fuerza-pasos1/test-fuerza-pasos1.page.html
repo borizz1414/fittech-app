@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/test-fuerza-info"></ion-back-button>
+    </ion-buttons>
+    <ion-title  mode="ios">Tutorial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  size="12">  
+
+        <div  class="ion-padding" *ngIf="nombre == 'Press banca'">
+          <img src="assets/img/press-banca-1.png"/>
+        </div>
+
+        <div  class="ion-padding" *ngIf="nombre == 'Squat'">
+          <img src="assets/img/squat-1.png"/>
+        </div>
+
+        <div  class="ion-padding" *ngIf="nombre == 'Leg curl'">
+          <img src="assets/img/leg-curl-1.png"/>
+        </div>
+        
+
+        <div  class="ion-padding" *ngIf="nombre == 'Leg extension'">
+          <img src="assets/img/gym1.jpg"/>
+        </div>
+        
+
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <h2 class="ion-text-center">{{nombre}} - Paso 1</h2> 
+
+  <div  class="ion-padding ion-text-center">
+    Calienta con un peso que puedas hacer 20 repeticiones <b>Realizar dos series</b>
+  </div>  
+
+
+  <ion-grid class="ion-padding">
+    <ion-row >
+      <ion-col  size="12">   
+        <div>
+          <ion-card color="dark" (click)="siguiente()">
+            <h2 class="ion-text-center">Siguiente</h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>   
+
+
+</ion-content>

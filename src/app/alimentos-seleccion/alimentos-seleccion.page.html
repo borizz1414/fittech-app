@@ -1,0 +1,146 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/bateria-alimento"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <img src="assets/img/logo-app.png" class="imagenmodificada">    
+      <!-- Tutorial -->
+    </ion-buttons>
+    <ion-title class="ion-text-center" mode="ios">{{dataRecibida}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <img [src]="foods" alt="">
+
+  <ion-item>
+    <div class="ion-padding ion-text-center titulo">
+      Total a consumir
+    </div>
+  </ion-item>
+
+  <ion-item lines="none">
+    <div class="contenedorMenu">
+      <div class="contenedorMenuItem" [ngClass]="{'customtarjeta': activar == 0 ? true : false}"
+        (click)="selecionartarjeta(1)"
+        style="border-bottom-left-radius: 12px;border-top-left-radius: 12px;background:black;">
+        <p style="color: white; margin-top: 0;"> <br> Carbohidratos</p>
+        <ion-progress-bar class="carboP" *ngIf="datosUsuario.carbo" [value]="progressBar(carbo, datosUsuario.carbo)">
+        </ion-progress-bar>
+        <p style="color: white;" *ngIf="datosUsuario.carbo">
+          {{carbo.toFixed()}}/{{datosUsuario.carbo.toFixed()}}gr</p>
+      </div>
+      <div class="contenedorMenuItem" [ngClass]="{'customtarjeta': activar == 1 ? true : false}"
+        (click)="selecionartarjeta(0)" style="  background: #EF4044;">
+        <p style="color: white;  margin-top: 0;"> <br> Proteinas</p>
+        <ion-progress-bar class="proteP" *ngIf="datosUsuario.protein"
+          [value]="progressBar(protein, datosUsuario.protein)"></ion-progress-bar>
+        <p style="color: white;" *ngIf="datosUsuario.protein">
+          {{protein.toFixed()}}/{{datosUsuario.protein.toFixed()}}gr</p>
+      </div>
+      <div class="contenedorMenuItem" [ngClass]="{'customtarjeta': activar == 2 ? true : false}"
+        (click)="selecionartarjeta(2)"
+        style="border-bottom-right-radius: 12px;border-top-right-radius: 12px;background: grey;">
+        <p style="color: white;  margin-top: 0;"> <br> Grasas</p>
+        <ion-progress-bar class="grasaP" *ngIf="datosUsuario.grease" [value]="progressBar(grasa, datosUsuario.grease)">
+        </ion-progress-bar>
+        <p style="color: white;" *ngIf="datosUsuario.grease">
+          {{grasa.toFixed()}}/{{datosUsuario.grease.toFixed()}}gr</p>
+      </div>
+    </div>
+  </ion-item>
+
+
+  <ion-grid class="ion-text-center">
+    <ion-row *ngIf="!info2">
+      <ion-col class="raya" size="6" *ngFor="let alimento of alimentos | filter:typefoods; let i=index">
+        <!-- cabeza -->
+        <ion-label class="ion-text-wrap" style="font-weight: 600; text-transform: uppercase; display: flex;
+        justify-content: center; font-size: 15px;"> {{alimento.name}}
+
+          <ion-icon name="alert-circle" (click)="info(alimento)" style="font-size: 1.25rem;"></ion-icon>
+
+
+        </ion-label>
+        <!-- input cuerpo -->
+        <div *ngIf="alimento.convertion !==1">
+          <ion-input placeholder="0" [(ngModel)]="alimento.cantidad" (ionChange)="calculateStats();" clearOnEdit
+            inputmode="numeric" maxlength="3" style="margin: 0 auto;text-align: center;"></ion-input>
+          <!-- footer boton UNIDAD-->
+          <ion-segment [(ngModel)]="alimento.measurement" (ionChange)="alimento.cantidad = null" mode="ios"
+            style="margin: 0 auto;" [(value)]="alimento.measurement">
+            <ion-segment-button value="unidad">
+              <ion-label class="titulopeque">{{alimento.type_measure}}</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="casera">
+              <ion-label class="titulopeque">{{alimento.measure}}</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+        <!-- footer boton CASERA-->
+        <!-- input cuerpo -->
+        <div *ngIf="alimento.convertion ===1">
+          <ion-input placeholder="0" [(ngModel)]="alimento.cantidad" [(ngModel)]="alimento.measurement"
+            (ionChange)="calculateStats();" clearOnEdit inputmode="numeric" maxlength="3"
+            style="margin: 0 auto;text-align: center;"></ion-input>
+          <!-- footer boton UNIDAD-->
+          <ion-segment *ngIf="alimento.convertion === 1" (ionChange)="alimento.cantidad = null" mode="ios"
+            style="margin: 0 auto;" value="unidad">
+            <ion-segment-button value="unidad">
+              <ion-label class="titulopeque">{{alimento.type_measure}}</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+    <div class="animated fadeInLeft" *ngIf="info2">
+      <ion-grid class="my-grid">
+        <ion-row class="parent-row animated fadeInLeft">
+          <div class="container2">
+            <h5 class="titulo2">Ayuda
+              <ion-icon style="color: black;" class="ayudad2" name="close-outline" (click)="cerrar()"></ion-icon>
+            </h5>
+            <p class="ion-text-left" style="color: black; font-size: 1.25rem;"><b>
+                Alimento : </b> <span style="text-transform:uppercase;"> {{selectedFood.name}} </span> </p>
+            <p class="ion-text-left" style="color: black; font-size: 1.25rem;">
+              <b> Medida casera: </b>
+              <span style="text-transform:uppercase;" *ngIf="selectedFood.measure">{{selectedFood.measure}} =
+                {{selectedFood.eq}}
+                {{selectedFood.type_measure}} </span>
+              <span style="text-transform:uppercase;" *ngIf="!selectedFood.measure">{{selectedFood.measure}} =
+                {{selectedFood.eq}}
+                {{selectedFood.type_measure}} </span> </p>
+            <!-- <p class="ion-text-left" style="color: black; font-size: 1.25rem;"><b> proteínas: </b>
+                    {{proteinas2}}
+                  </p>
+                  <p class="ion-text-left" style="color: black; font-size: 1.25rem;"><b> Grasas: </b>
+                    {{grasas2}}
+                  </p> -->
+          </div>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-grid>
+
+
+
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-card style="  
+  background: #EF4044;
+  color: white;
+  width: 286px; 
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-family: 'Open Sans';" (click)="guardarMenu()">
+    <h2 style="text-align: center; margin: 10px;">
+      <b> Guardar </b>
+    </h2>
+  </ion-card>
+</ion-footer>

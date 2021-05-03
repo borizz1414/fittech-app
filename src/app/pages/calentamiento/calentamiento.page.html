@@ -1,0 +1,36 @@
+<ion-grid  style="padding: 0px;">
+  <ion-row style="background-color:#F4F3F1">
+    <ion-col size="12" style="padding: 0px;" >
+      <img src="assets/img/estirar.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+       <p class="ion-text-center titulo"> Calentamiento </p>
+       <p class="ion-text-center titulopeque"> Es recomendable antes de comenzar  aumentar tu temperatura corporal realizando de 5 a 10 minutos en un aparato cardiovascular a una intensidad moderada. </p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <h2 class="ion-text-center">   ¡Prepara tu cuerpo! </h2>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
+
+
+<ion-fab vertical="bottom"  horizontal="start" slot="fixed">
+  <ion-fab-button color="light" (click)="atras()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+<ion-fab vertical="bottom"  horizontal="end" slot="fixed">
+  <ion-fab-button color="danger" (click)="siguiente()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

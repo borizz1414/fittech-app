@@ -1,0 +1,441 @@
+<ion-buttons slot="start">
+  <ion-fab vertical="center" style="margin-top:-4.75rem;" horizontal="start" slot="fixed"
+    class="animated fadeInUp delay-2s">
+    <ion-fab-button style="--background:#ef4044" (click)="atras()" size="small">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-buttons>
+<!-- <ion-buttons slot="end">
+  <ion-fab vertical="center" style="margin-top:-4.75rem;"  horizontal="end" slot="fixed" class="animated fadeInUp delay-2s" >
+    <ion-button style="--background:#ef4044; color: white;" (click)="alerta()" size="small">
+    Saltar
+    </ion-button>
+  </ion-fab>
+</ion-buttons> -->
+
+<ion-buttons slot="end">
+  <ion-fab vertical="center" style="margin-top:-4.75rem;" horizontal="end" slot="fixed"
+    class="animated fadeInUp delay-2s">
+    <ion-fab-button style="--background:#ef4044" (click)="confirmarSalida()" size="small">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-buttons>
+
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding ion-text-left titulo2">
+    Medir es <b>vital</b> para registrar tu progreso, más importante que el peso, tus medidas harán más visibles los
+    <b>resultados</b> de tu esfuerzo y disciplina.
+  </div>
+  <ion-grid style="padding: 0;">
+    <ion-row>
+      <ion-col size="12" style="padding: 0;">
+        <div>
+          <img src="assets/img/medidas.jpg" />
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <form [formGroup]="form">
+    <!-- <form [formGroup]="form_"> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Cintura mínima
+            <sup>
+              <ion-icon (click)="modal('Cintura minima')" name="alert-circle" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'min_waist')" placeholder="0" clearOnEdit="true" inputmode="tel"
+              maxlength="5" formControlName="min_waist"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('min_waist')" mode="ios" value="Cm" formControlName="min_waist_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+           <ion-label class="titulopeque">Pulgadas</ion-label>
+         </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="titulopeque2">Cintura máxima
+            <sup>
+              <ion-icon (click)="modal('Cintura maxima')" name="alert-circle" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'max_waist')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="max_waist"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('max_waist')" mode="ios" value="Cm" formControlName="max_waist_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+           <ion-label class="titulopeque">Pulgadas</ion-label>
+         </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Cadera
+            <sup>
+              <ion-icon (click)="modal('Cadera')" name="alert-circle" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'hip')" placeholder="0" clearOnEdit clearOnEdit inputmode="tel"
+              maxlength="5" formControlName="hip"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('hip')" mode="ios" value="Cm" formControlName="hip_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+           <ion-label class="titulopeque">Pulgadas</ion-label>
+         </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="titulopeque2">Cuello
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Cuello')" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'neck')" placeholder="0" clearOnEdit clearOnEdit inputmode="tel"
+              maxlength="5" formControlName="neck"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('neck')" mode="ios" value="Cm" formControlName="neck_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+           <ion-label class="titulopeque">Pulgadas</ion-label>
+         </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Muslo derecho
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Muslo derecho')" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup> </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'right_thigh')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="right_thigh"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('right_thigh')" mode="ios" value="Cm" formControlName="right_thigh_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+           <ion-label class="titulopeque">Pulgadas</ion-label>
+         </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Muslo izquierdo <sup>
+              <ion-icon name="alert-circle" (click)="modal('Muslo izquierdo')" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup><br></ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'left_thigh')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="left_thigh"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('left_thigh')" mode="ios" value="Cm" formControlName="left_thigh_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--   <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Brazo relajado derecho
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Brazo relajado derecho')"
+                style="font-size: 1.25rem; color: black;"></ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'right_arm')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="right_arm"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('right_arm')" mode="ios" value="Cm" formControlName="right_arm_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--   <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="titulopeque2">Brazo relajado izquierdo <sup>
+              <ion-icon name="alert-circle" style="font-size: 1.25rem; color: black;"
+                (click)="modal('Brazo relajado izquierdo')"></ion-icon>
+            </sup></ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'left_arm')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="left_arm"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('left_arm')" mode="ios" value="Cm" formControlName="left_arm_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--     <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <!-- brazo flexionado -->
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Brazo flexionado derecho
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Brazo flexionado derecho')"
+                style="font-size: 1.25rem; color: black;"></ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'right_arm_flexed')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="right_arm_flexed"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('right_arm_flexed')" mode="ios" value="Cm"
+                formControlName="right_arm_flexed_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="titulopeque2">Brazo flexionado izquierdo <sup>
+              <ion-icon name="alert-circle" style="font-size: 1.25rem; color: black;"
+                (click)="modal('Brazo flexionado izquierdo')"></ion-icon>
+            </sup></ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'left_arm_flexed')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="left_arm_flexed"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('left_arm_flexed')" mode="ios" value="Cm" formControlName="left_arm_flexed_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--   <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col size="6" class="rightborder">
+          <ion-label class="titulopeque2">Pantorrilla <br> derecha <sup>
+              <ion-icon name="alert-circle" (click)="modal('Pantorrilla derecho')"
+                style="font-size: 1.25rem; color: black;"></ion-icon>
+
+            </sup></ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'right_calf')" placeholder="0" clearOnEdit inputmode="tel"
+              maxlength="5" formControlName="right_calf">
+            </ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('right_calf')" mode="ios" value="Cm" formControlName="right_calf_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="titulopeque2">Pantorrilla <br> izquierda
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Pantorrilla izquierda')"
+                style="font-size: 1.25rem; color: black;"></ion-icon>
+            </sup></ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'left_calf')" placeholder="0" clearOnEdit clearOnEdit
+              inputmode="tel" maxlength="5" formControlName="left_calf"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('left_calf')" mode="ios" value="Cm" formControlName="left_calf_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!--  <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <!-- <app-estatura2 (estatura_)="checkStature($event)" (peso2)="checkPeso($event)"></app-estatura2> -->
+
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="rightborder">
+          <ion-label class="titulopeque2">Tórax
+            <sup>
+              <ion-icon name="alert-circle" (click)="modal('Torax')" style="font-size: 1.25rem; color: black;">
+              </ion-icon>
+            </sup>
+          </ion-label>
+          <ion-item lines="none">
+            <ion-input (keyup)="decimalFormat($event, 'torax')" placeholder="0" clearOnEdit clearOnEdit inputmode="tel"
+              maxlength="5" formControlName="torax"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col size="12" style="margin: 0 auto;">
+              <ion-segment (click)="change('torax')" mode="ios" value="Cm" formControlName="torax_">
+                <ion-segment-button value="Cm">
+                  <ion-label class="titulopeque">Cm</ion-label>
+                </ion-segment-button>
+                <!-- <ion-segment-button value="Pulgadas">
+                  <ion-label class="titulopeque">Pulgadas</ion-label>
+                </ion-segment-button> -->
+              </ion-segment>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+        <div class="ion-padding ion-text-center titulo2">
+          Estamos emocionados con el cambio que vas a tener las próximas semanas, por favor registra algunas fotos, te
+          emocionará al momento de comparar. En tu galería quizá puedes perderla de vista, puedes tenerlas aquí y
+          subirlas sin que se vea tu rostro.
+        </div>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12">
+            <img class="opacidad" src="assets/img/fotofrente1.png" (click)="captureImage(1)" *ngIf="!imgSelected">
+          <div class="img-size" *ngIf="imgSelected">
+            <img class="fluid-img" [src]="imgSelected" (click)="captureImage(1)" >
+          </div>
+          <p style="color: red;">Foto de frente</p>
+        </ion-col>
+        <ion-col size="12">
+         
+          <img class="opacidad" src="assets/img/fotoperfil1.png" (click)="captureImage(2)" *ngIf="!imgSelected2">
+          <div class="img-size" *ngIf="imgSelected2">
+           <img  class="fluid-img" [src]="imgSelected2" (click)="captureImage(2)" >
+          </div>
+          <p style="color: red;">Foto de perfil</p>
+        </ion-col>
+        <ion-col size="12">
+          <img class="opacidad" src="assets/img/fotoespalda1.png" (click)="captureImage(3)" *ngIf="!imgSelected3">
+          <div class="img-size" *ngIf="imgSelected3">
+            <img  class="fluid-img" [src]="imgSelected3" (click)="captureImage(3)" >
+          </div>
+          <p style="color: red;">Foto de espalda</p>
+        </ion-col>
+
+      </ion-row>
+
+      <div class="ion-padding ion-text-center titulo2">
+        Anímate a subir una foto de frente, perfil y espalda para compararlas cada 8 semanas.
+      </div>
+
+    </ion-grid>
+    <!--  </form> -->
+  </form>
+
+
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col size="12">
+
+        <ion-card style="
+        width: 286px; 
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-family: 'Open Sans';
+        --background:#EF4044;
+        color:white;
+        " (click)="measurement_record()">
+          <h2 style="margin: 10px; text-align: center;">
+            <b> SIGUIENTE</b></h2>
+        </ion-card>
+
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

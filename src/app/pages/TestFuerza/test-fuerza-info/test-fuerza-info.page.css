@@ -1,0 +1,13 @@
+ion-card {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 10px !important;
+  width: 88%;
+  margin: 0 auto !important;
+  word-wrap: break-word;
+}
+
+ion-card h2 {
+  font-size: 17px !important;
+  opacity: 0.9;
+}

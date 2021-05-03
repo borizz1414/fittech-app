@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border">
+  <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<!-- Logo incluido ante no estaba -->
+
+<video #myVideo  playsinline 
+(loadedmetadata)="onMetadata($event, video)"
+width="100%"
+loop
+poster="assets/img/videogif.gif">
+  <source [src]= "video" *ngIf="video" />
+</video>
+
+<!-- #F4F3F1 -->
+
+<ion-content>
+
+  <div class="contenedor">
+
+    <div class="contenedor-cuerpo">
+      <h2 class="text-reloj-titulo">SECUENCIA {{secuencia}}</h2>
+      <h3 class="text-reloj-titulo">SERIE {{contador}}/{{serie}}</h3>
+      <p class="reloj">{{zero}}{{timeLeft}}</p>
+      <p class="text-reloj">¡De tu esfuerzo depende tu resultado,no pares!</p>
+    </div>
+  </div>
+    
+</ion-content>
+
+<!--
+<div class="ion-grid1" style="background-color:rgb(6, 72, 255);" >
+  <ion-row>
+    <ion-col size="12">
+      <p class="ion-text-center titulo">Test de capacidad</p>
+      <p class="ion-text-center titulo">{{nombre.name}}</p>
+       <p class="ion-text-center titulo">Ejercicio {{numero}} de {{final}}</p>
+    </ion-col>
+  </ion-row>
+</div>
+
+ <div class="ion-grid2" style="background-color:rgb(255, 14, 6);" >
+  <p class="centrartiempo">00:{{timeLeft}}</p>
+</div> -->
+
+
+
+
+<ion-fab vertical="bottom"  *ngIf="timeLeft <=27" horizontal="start" slot="fixed">
+  <ion-fab-button color="light" (click)="atras()" *ngIf="btn">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+<ion-fab vertical="bottom" *ngIf="timeLeft <=27"  horizontal="end" slot="fixed">
+  <ion-fab-button color="light" (click)="siguiente()" *ngIf="btn">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+<ion-fab vertical="bottom"  horizontal="center" slot="fixed" *ngIf="mostrar">
+  <ion-fab-button color="danger" (click)="pauseTimer()">
+    <ion-icon name="pause-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom"  horizontal="center" slot="fixed"*ngIf="!mostrar">
+  <ion-fab-button color="danger" (click)="playTimer()">
+    <ion-icon name="play-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+
+

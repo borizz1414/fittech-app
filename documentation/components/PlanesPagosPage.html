@@ -1,0 +1,1178 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PlanesPagosPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/planes-pagos/planes-pagos.page.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-planes-pagos</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./planes-pagos.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./planes-pagos.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#actionSheetController">actionSheetController</a>
+                            </li>
+                            <li>
+                                <a href="#dato">dato</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loadingController">loadingController</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPremium">getPremium</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#pago">pago</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#planespagos">planespagos</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentLoading">presentLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/NutricionService.html">NutricionService</a>, utilities: <a href="../injectables/MensajesService.html">MensajesService</a>, actionSheetController: ActionSheetController, ruta: NavController, iab: InAppBrowser, loadingController: LoadingController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NutricionService.html" target="_self" >NutricionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilities</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MensajesService.html" target="_self" >MensajesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>actionSheetController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActionSheetController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ruta</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>iab</td>
+                                                  
+                                                        <td>
+                                                                    <code>InAppBrowser</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loadingController</td>
+                                                  
+                                                        <td>
+                                                                    <code>LoadingController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPremium"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getPremium
+                        </b>
+                        <a href="#getPremium"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPremium()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pago"></a>
+                    <span class="name">
+                        <b>
+                            pago
+                        </b>
+                        <a href="#pago"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pago(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="planespagos"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            planespagos
+                        </b>
+                        <a href="#planespagos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>planespagos(price: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>price</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentLoading"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            presentLoading
+                        </b>
+                        <a href="#presentLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionSheetController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            actionSheetController</b>
+                            <a href="#actionSheetController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ActionSheetController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dato"></a>
+                        <span class="name">
+                            <b>
+                            dato</b>
+                            <a href="#dato"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loadingController</b>
+                            <a href="#loadingController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoadingController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/planes-pagos/planes-pagos.page.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActionSheetController, LoadingController, NavController } from &#x27;@ionic/angular&#x27;;
+import { MensajesService } from &#x27;../services/mensajes.service&#x27;;
+import { NutricionService } from &#x27;../services/nutricion.service&#x27;;
+import es from &#x27;@angular/common/locales/es&#x27;;
+import { registerLocaleData } from &#x27;@angular/common&#x27;;
+import { InAppBrowser } from &#x27;@ionic-native/in-app-browser/ngx&#x27;;
+
+@Component({
+  selector: &#x27;app-planes-pagos&#x27;,
+  templateUrl: &#x27;./planes-pagos.page.html&#x27;,
+  styleUrls: [&#x27;./planes-pagos.page.scss&#x27;],
+})
+export class PlanesPagosPage implements OnInit {
+  dato:any
+
+  constructor(private service: NutricionService,
+    private utilities: MensajesService,
+    public actionSheetController: ActionSheetController,
+    private ruta:NavController,
+    private iab: InAppBrowser,
+    public loadingController: LoadingController,) { }
+
+  ngOnInit() {
+    registerLocaleData( es );
+    this.getPremium()
+  }
+
+  async getPremium(){
+    this.presentLoading()
+    const valor &#x3D; await this.service.GetPrice()
+    this.loadingController.dismiss()
+      if(valor &#x3D;&#x3D; false ){
+        this.utilities.notificacionUsuario(&quot;Ocurrio un error, revise su conexión&quot;,&quot;danger&quot;)
+      }else{
+        this.dato &#x3D; valor
+      }
+  }
+
+
+  async presentLoading() {
+    const loading &#x3D; await this.loadingController.create({
+      message: &#x27;Por favor espere...&#x27;,
+      cssClass: &#x27;my-loading&#x27;,
+    });
+    await loading.present();
+  }
+
+  pago(id){
+    switch (id) {
+    case 1:
+      this.ruta.navigateRoot([&#x27;/&#x27;])
+    break;
+    
+    case 2:
+      console.log(&quot;pagar2&quot;)
+      this.planespagos(&#x27;32.000&#x27;)
+    break;
+    
+    case 3:
+      console.log(&quot;pagar3&quot;)
+
+    break;
+    
+    case 4:
+      console.log(&quot;pagar4&quot;)
+
+    break;
+    
+    case 5:
+      console.log(&quot;pagar5&quot;)
+
+    break;
+    
+    default:
+      break;
+    }
+
+  }
+
+
+
+  async planespagos(price:string) {
+    const actionSheet &#x3D; await this.actionSheetController.create({
+      header: &#x27;Método de pagos&#x27;,
+      cssClass: &#x27;my-custom-class&#x27;,
+      buttons: [
+{
+        text: &#x27;Paypal&#x27;,
+        icon: &#x27;card-outline&#x27;,
+        handler: () &#x3D;&gt; {
+          this.ruta.navigateForward(&#x27;/paypal&#x27;);
+        }
+      }, {
+        text: &#x27;PayU&#x27;,
+        icon: &#x27;card-outline&#x27;,
+        handler: () &#x3D;&gt; {
+          const page &#x3D; &quot;https://biz.payulatam.com/L0e126b6D5DFA1A/&quot;
+          this.iab.create(page,&#x27;_blank&#x27;)
+        }
+      }, {
+        text: &#x27;Cancel&#x27;,
+        icon: &#x27;close&#x27;,
+        role: &#x27;cancel&#x27;,
+        handler: () &#x3D;&gt; {
+          console.log(&#x27;Cancel clicked&#x27;);
+        }
+      }]
+    });
+    await actionSheet.present();
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content fullscreen  class&#x3D;&quot;fondo&quot;&gt;
+
+  &lt;div class&#x3D;&quot;titulo&quot;&gt;
+    &lt;h2&gt;Empieza por todo lo alto&lt;/h2&gt;
+  &lt;/div&gt;
+  
+  &lt;div class&#x3D;&quot;box&quot;&gt;
+    &lt;p style&#x3D;&quot;margin-top: 0; margin-bottom: 1.5rem;&quot;&gt;Puedes hacer un free trial con todos los beneficios por una semana o comprometerte con tus resultados y tomar desde ya la decisión transformar tu estilo de vida.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;ion-grid&gt;
+      &lt;ion-row style&#x3D;&quot;padding: 0;&quot;&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot; style&#x3D;&quot;padding: 0;&quot;&gt;  
+  
+          &lt;ion-slides pager&#x3D;&quot;true&quot;   #slide [options]&#x3D;&quot;slideOpts&quot;&gt;
+  
+              &lt;ion-slide *ngFor&#x3D;&quot;let item of dato&quot;&gt;
+                
+                &lt;ion-card class&#x3D;&quot;card-custom&quot; *ngIf&#x3D;&quot;item.duration !&#x3D;&#x3D; 12&quot;&gt;
+                  &lt;div class&#x3D;&quot;card-title&quot;&gt;{{item.name}}&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;span class&#x3D;&quot;card-body&quot; *ngIf&#x3D;&quot;item.price &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+                      Gratis
+                    &lt;/span&gt;
+                    
+                    &lt;div class&#x3D;&quot;card-desing&quot; *ngIf&#x3D;&quot;item.price &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+                      Lighting deal
+                    &lt;/div&gt;
+  
+                  &lt;span class&#x3D;&quot;card-body&quot; *ngIf&#x3D;&quot;item.price !&#x3D;&#x3D; 0&quot;&gt;
+                    {{item.price | number:&#x27;&#x27;:&#x27;es&#x27;}} COP
+                  &lt;/span&gt;
+                    
+                    &lt;br&gt; 
+                    &lt;span class&#x3D;&quot;card-subtitle&quot;&gt;
+                      {{item.description}}&lt;/span&gt; 
+  
+                  &lt;/div&gt;
+  
+                  &lt;div&gt;
+                    &lt;p class&#x3D;&quot;planes&quot;&gt;
+                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.
+                    &lt;/p&gt;
+                    &lt;p  class&#x3D;&quot;planes&quot;&gt;
+                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.
+                    &lt;/p&gt;
+                    &lt;p  class&#x3D;&quot;planes&quot;&gt;
+                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando. 
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+  
+  
+                  &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                    &lt;ion-button expand&#x3D;&quot;block&quot; shape&#x3D;&quot;round&quot; class&#x3D;&quot;custombtn&quot; (click)&#x3D;&quot;pago(item.id)&quot;&gt;
+                       &lt;b&gt;Elegir&lt;/b&gt; 
+                    &lt;/ion-button&gt;
+                  &lt;/div&gt;
+                &lt;/ion-card&gt;
+    
+                &lt;ion-card class&#x3D;&quot;card-custom2&quot; *ngIf&#x3D;&quot;item.duration &#x3D;&#x3D;&#x3D; 12&quot;&gt;
+                  &lt;div class&#x3D;&quot;card-title2&quot; &gt;{{item.name}}&lt;/div&gt;
+                  &lt;div&gt;
+                  &lt;span class&#x3D;&quot;card-body2&quot; *ngIf&#x3D;&quot;item.price &#x3D;&#x3D;&#x3D; 0&quot;&gt;
+                    Lighting Deal
+                  &lt;/span&gt;
+  
+                  &lt;span class&#x3D;&quot;card-body2&quot; *ngIf&#x3D;&quot;item.price !&#x3D;&#x3D; 0&quot;&gt;
+                    {{item.price | number:&#x27;&#x27;:&#x27;es&#x27;}} COP
+                  &lt;/span&gt;
+                    
+                    &lt;br&gt; 
+                    &lt;span class&#x3D;&quot;card-subtitle2&quot;&gt;
+                      {{item.description}}&lt;/span&gt; 
+                   &lt;/div&gt;
+
+
+                   &lt;div&gt;
+                    &lt;p class&#x3D;&quot;planes2&quot;&gt;
+                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.
+                    &lt;/p&gt;
+                    &lt;p  class&#x3D;&quot;planes2&quot;&gt;
+                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.
+                    &lt;/p&gt;
+                    &lt;p  class&#x3D;&quot;planes2&quot;&gt;
+                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando. 
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+
+
+
+                  &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                    &lt;ion-button expand&#x3D;&quot;block&quot; shape&#x3D;&quot;round&quot; class&#x3D;&quot;custombtn2&quot; (click)&#x3D;&quot;pago(item.id)&quot;&gt;
+                       &lt;b&gt;Elegir&lt;/b&gt; 
+                    &lt;/ion-button&gt;
+                  &lt;/div&gt;
+                &lt;/ion-card&gt;
+                
+              &lt;/ion-slide&gt;
+  
+    
+          &lt;/ion-slides&gt;
+   
+        &lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+    &lt;/ion-grid&gt;
+  &lt;/div&gt;
+ 
+  &lt;br&gt;
+  &lt;br&gt;
+
+  &lt;div style&#x3D;&quot;position: relative; height: 20%;&quot;&gt;
+    &lt;div style&#x3D;&quot;position: absolute;left: 35%;top: 31%;&quot;&gt;
+      &lt;img src&#x3D;&quot;assets/img/logo-app.png&quot; class&#x3D;&quot;logo&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/ion-content&gt;
+&lt;!-- &lt;ion-footer class&#x3D;&quot;ion-no-border&quot;&gt;
+  &lt;img src&#x3D;&quot;assets/img/logo-app.png&quot; class&#x3D;&quot;logo&quot;&gt;
+&lt;/ion-footer&gt; --&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./planes-pagos.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.omitir{
+    position: absolute;
+    color: #EF4044;
+    right: 2rem;
+    margin-top: 4px;
+}
+
+h2{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.box{
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    // margin-bottom: 2rem;
+}
+
+ion-slides{
+    --bullet-background: red; 
+    --bullet-background-active: red;
+    // height: auto;
+    height: 120%;
+}
+
+.logo{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.fondo{
+    --background: url(../../assets/img/fondo-planes.png) no-repeat center center / cover;
+  }
+  
+.card-custom{
+    margin: 0;
+    width: 80%;
+    // height: 42vh;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-bottom: 2rem
+}
+
+.card-custom2{
+    margin: 0;
+    width: 80%;
+    // height: 42vh;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    background: linear-gradient(19deg, rgba(189,0,5,1) 0%, rgba(239,64,68,1) 100%);
+}
+
+.card-title{
+    color:#EF4044;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-title2{
+    color:#fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-body{
+    color:#000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card-body2{
+    color:#fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card-subtitle{
+    color:#000;
+    font-size: 18px;
+}
+
+.card-subtitle2{
+    color:#fff;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+ion-buttons{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 16px;
+    }
+
+    .custombtn{
+        --background:#EF4044;
+        font-size: 14px;
+        padding: 0 3rem;
+        --border-radius: 10px;
+    }
+
+    .custombtn2{
+        --background:#000;
+        font-size: 14px;
+        padding: 0 3rem;
+        --border-radius: 10px;
+    }
+      
+
+    :host ::ng-deep .swiper-pagination{
+        .swiper-pagination-bullet {
+            --bullet-background: white;
+            // width: 20px ;
+            // height: 20px ;
+        }
+    
+        .swiper-pagination-bullet-active {
+            background: #EF4044;
+        } 
+    }
+
+
+    .planes{
+        margin: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: grey;
+        margin-bottom: 11px;
+        line-height: 18px;
+        text-align: center;
+        display: block;
+    }
+
+    .planes2{
+        margin: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        color: aliceblue;;
+        margin-bottom: 11px;
+        line-height: 18px;
+        text-align: center;
+        display: block;
+    }
+
+    @mixin telefono-responsivo {
+        @media (min-width:768px) {
+            @content;
+        }
+      }
+
+    .card-desing{
+        background-color: red;
+        color: #fff;
+        position: absolute;
+        top: 6%;
+        right: 35%;
+        transform: rotate(-46deg);
+        width: 100%;
+        padding: 3px;
+        overflow: hidden;
+        @include telefono-responsivo(){
+           display: none;
+         }
+    }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content fullscreen  class="fondo">  <div class="titulo">    <h2>Empieza por todo lo alto</h2>  </div>    <div class="box">    <p style="margin-top: 0; margin-bottom: 1.5rem;">Puedes hacer un free trial con todos los beneficios por una semana o comprometerte con tus resultados y tomar desde ya la decisión transformar tu estilo de vida.</p>  </div>  <div>    <ion-grid>      <ion-row style="padding: 0;">        <ion-col  size="12" style="padding: 0;">              <ion-slides pager="true"   #slide [options]="slideOpts">                <ion-slide *ngFor="let item of dato">                                <ion-card class="card-custom" *ngIf="item.duration !== 12">                  <div class="card-title">{{item.name}}</div>                  <div>                    <span class="card-body" *ngIf="item.price === 0">                      Gratis                    </span>                                        <div class="card-desing" *ngIf="item.price === 0">                      Lighting deal                    </div>                    <span class="card-body" *ngIf="item.price !== 0">                    {{item.price | number:\'\':\'es\'}} COP                  </span>                                        <br>                     <span class="card-subtitle">                      {{item.description}}</span>                     </div>                    <div>                    <p class="planes">                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.                    </p>                    <p  class="planes">                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.                    </p>                    <p  class="planes">                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando.                     </p>                  </div>                      <div class="card-footer">                    <ion-button expand="block" shape="round" class="custombtn" (click)="pago(item.id)">                       <b>Elegir</b>                     </ion-button>                  </div>                </ion-card>                    <ion-card class="card-custom2" *ngIf="item.duration === 12">                  <div class="card-title2" >{{item.name}}</div>                  <div>                  <span class="card-body2" *ngIf="item.price === 0">                    Lighting Deal                  </span>                    <span class="card-body2" *ngIf="item.price !== 0">                    {{item.price | number:\'\':\'es\'}} COP                  </span>                                        <br>                     <span class="card-subtitle2">                      {{item.description}}</span>                    </div>                   <div>                    <p class="planes2">                      Entrenamiento adaptado a ti. Cientos de ejercicios con o sin equipamiento.                    </p>                    <p  class="planes2">                      Nutrición adaptada a tus objetivos. Planificación, personalización e individualización de tu menú diario.                    </p>                    <p  class="planes2">                      Medición de progreso personalizada. Indicadores de salud e indicadores de composición física para asegurarte que estás progresando.                     </p>                  </div>                  <div class="card-footer">                    <ion-button expand="block" shape="round" class="custombtn2" (click)="pago(item.id)">                       <b>Elegir</b>                     </ion-button>                  </div>                </ion-card>                              </ion-slide>                </ion-slides>           </ion-col>      </ion-row>    </ion-grid>  </div>   <br>  <br>  <div style="position: relative; height: 20%;">    <div style="position: absolute;left: 35%;top: 31%;">      <img src="assets/img/logo-app.png" class="logo">    </div>  </div></ion-content><!-- <ion-footer class="ion-no-border">  <img src="assets/img/logo-app.png" class="logo"></ion-footer> --></div>'
+    var COMPONENTS = [{'name': 'ActividadPage', 'selector': 'app-actividad'},{'name': 'AlimentosEditarPage', 'selector': 'app-alimentos-editar'},{'name': 'AlimentosNoLikePage', 'selector': 'app-alimentos-no-like'},{'name': 'AlimentosSeleccionPage', 'selector': 'app-alimentos-seleccion'},{'name': 'AntecedentefamiliarPage', 'selector': 'app-antecedentefamiliar'},{'name': 'AntecedentefmliarComponent', 'selector': 'app-antecedentefmliar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackBtnComponent', 'selector': 'app-back-btn'},{'name': 'BateriaAlimentoPage', 'selector': 'app-bateria-alimento'},{'name': 'BateriacalentamientoesperahomePage', 'selector': 'app-bateriacalentamientoesperahome'},{'name': 'BateriacalentamientofinalizarPage', 'selector': 'app-bateriacalentamientofinalizar'},{'name': 'BateriacalentamientohomePage', 'selector': 'app-bateriacalentamientohome'},{'name': 'BateriaesperahomePage', 'selector': 'app-bateriaesperahome'},{'name': 'BateriaEstiramientosPage', 'selector': 'app-bateria-estiramientos'},{'name': 'BateriahomePage', 'selector': 'app-bateriahome'},{'name': 'BateriaPage', 'selector': 'app-bateria'},{'name': 'BateriaRemplazoPage', 'selector': 'app-bateria-remplazo'},{'name': 'BateriarutinaesperahomePage', 'selector': 'app-bateriarutinaesperahome'},{'name': 'BateriarutinahomePage', 'selector': 'app-bateriarutinahome'},{'name': 'BateriarutinaPage', 'selector': 'app-bateriarutina'},{'name': 'CalendarioPage', 'selector': 'app-calendario'},{'name': 'CalentamientodosPage', 'selector': 'app-calentamientodos'},{'name': 'CalentamientoInfoPage', 'selector': 'app-calentamiento-info'},{'name': 'CalentamientoPage', 'selector': 'app-calentamiento'},{'name': 'CambiarejercicioPage', 'selector': 'app-cambiarejercicio'},{'name': 'ComidaPage', 'selector': 'app-comida'},{'name': 'CorazonPage', 'selector': 'app-corazon'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DescargarPage', 'selector': 'app-descargar'},{'name': 'EdadComponent', 'selector': 'app-edad'},{'name': 'EntrenamientosPage', 'selector': 'app-entrenamientos'},{'name': 'Estatura2Component', 'selector': 'app-estatura2'},{'name': 'EstaturaComponent', 'selector': 'app-estatura'},{'name': 'EstiramientosPage', 'selector': 'app-estiramientos'},{'name': 'ExperienciaPage', 'selector': 'app-experiencia'},{'name': 'FormMedicoPage', 'selector': 'app-form-medico'},{'name': 'FotosComponent', 'selector': 'app-fotos'},{'name': 'HistorialComponent', 'selector': 'app-historial'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndicadorescomparacionComponent', 'selector': 'app-indicadorescomparacion'},{'name': 'IndicadoresComponent', 'selector': 'app-indicadores'},{'name': 'IndicadoresPage', 'selector': 'app-indicadores'},{'name': 'LineanutricionalPage', 'selector': 'app-lineanutricional'},{'name': 'ListadoalimentoPage', 'selector': 'app-listadoalimento'},{'name': 'ListaejercicioremplazarPage', 'selector': 'app-listaejercicioremplazar'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LugarEjerciciosPage', 'selector': 'app-lugar-ejercicios'},{'name': 'MedidasComponent', 'selector': 'app-medidas'},{'name': 'MedidasPage', 'selector': 'app-medidas'},{'name': 'MensajecapacidadPage', 'selector': 'app-mensajecapacidad'},{'name': 'MensajecorazonPage', 'selector': 'app-mensajecorazon'},{'name': 'ModalComparacionPage', 'selector': 'app-modal-comparacion'},{'name': 'ModalCorazonInfoPage', 'selector': 'app-modal-corazon-info'},{'name': 'ModalEmailPage', 'selector': 'app-modal-email'},{'name': 'ModalFotosPage', 'selector': 'app-modal-fotos'},{'name': 'ModalInfoPage', 'selector': 'app-modal-info'},{'name': 'ModalMedidasPage', 'selector': 'app-modal-medidas'},{'name': 'ObjetivoPage', 'selector': 'app-objetivo'},{'name': 'PasoinicialPage', 'selector': 'app-pasoinicial'},{'name': 'PaypalPage', 'selector': 'app-paypal'},{'name': 'PercepcionentrenamientoPage', 'selector': 'app-percepcionentrenamiento'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'PesoComponent', 'selector': 'app-peso'},{'name': 'PesoyestaturaPage', 'selector': 'app-pesoyestatura'},{'name': 'PlanesPagosPage', 'selector': 'app-planes-pagos'},{'name': 'PopinfoComponent', 'selector': 'app-popinfo'},{'name': 'PopmensajeComponent', 'selector': 'app-popmensaje'},{'name': 'PopremplazarComponent', 'selector': 'app-popremplazar'},{'name': 'PorcentajegrasaPage', 'selector': 'app-porcentajegrasa'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'ProgresoComponent', 'selector': 'app-progreso'},{'name': 'ProgresoPage', 'selector': 'app-progreso'},{'name': 'RangodeedadPage', 'selector': 'app-rangodeedad'},{'name': 'RegistrarInfoPage', 'selector': 'app-registrar-info'},{'name': 'RelacioncaderaPage', 'selector': 'app-relacioncadera'},{'name': 'RutinaEntrenamientoPage', 'selector': 'app-rutina-entrenamiento'},{'name': 'RutinaPage', 'selector': 'app-rutina'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TerminosPage', 'selector': 'app-terminos'},{'name': 'TestCapacidadInfoPage', 'selector': 'app-test-capacidad-info'},{'name': 'TestCapacidadManualPage', 'selector': 'app-test-capacidad-manual'},{'name': 'TestFuerzaCategoriaPage', 'selector': 'app-test-fuerza-categoria'},{'name': 'TestFuerzaInfoPage', 'selector': 'app-test-fuerza-info'},{'name': 'TestFuerzaManualPage', 'selector': 'app-test-fuerza-manual'},{'name': 'TestFuerzaManualPasosPage', 'selector': 'app-test-fuerza-manual-pasos'},{'name': 'TestFuerzaMenu2Page', 'selector': 'app-test-fuerza-menu2'},{'name': 'TestFuerzaMenu3Page', 'selector': 'app-test-fuerza-menu3'},{'name': 'TestFuerzaMenuPage', 'selector': 'app-test-fuerza-menu'},{'name': 'TestFuerzaPasos1Page', 'selector': 'app-test-fuerza-pasos1'},{'name': 'TestFuerzaPasos2Page', 'selector': 'app-test-fuerza-pasos2'},{'name': 'TestFuerzaPasos3Page', 'selector': 'app-test-fuerza-pasos3'},{'name': 'TestFuerzaPasos4Page', 'selector': 'app-test-fuerza-pasos4'},{'name': 'TestResistenciaPage', 'selector': 'app-test-resistencia'},{'name': 'TiendaPage', 'selector': 'app-tienda'},{'name': 'TiendaProductosPage', 'selector': 'app-tienda-productos'},{'name': 'TutorialAlimentacionPage', 'selector': 'app-tutorial-alimentacion'},{'name': 'TutorialAlimentoPaso1Component', 'selector': 'app-tutorial-alimento-paso1'},{'name': 'TutorialAlimentoPaso2Component', 'selector': 'app-tutorial-alimento-paso2'},{'name': 'TutorialAlimentoPaso3Component', 'selector': 'app-tutorial-alimento-paso3'},{'name': 'TutorialAlimentoPaso4Component', 'selector': 'app-tutorial-alimento-paso4'},{'name': 'TutorialPlanesPage', 'selector': 'app-tutorial-planes'},{'name': 'TutorialPlanesPaso1Component', 'selector': 'app-tutorial-planes-paso1'},{'name': 'TutorialPlanesPaso2Component', 'selector': 'app-tutorial-planes-paso2'},{'name': 'TutorialPlanesPaso3Component', 'selector': 'app-tutorial-planes-paso3'},{'name': 'TutorialPlanesPaso4Component', 'selector': 'app-tutorial-planes-paso4'}];
+    var DIRECTIVES = [{'name': 'TwoDigitDecimaNumberDirective', 'selector': '[appTwoDigitDecimaNumber]'}];
+    var ACTUAL_COMPONENT = {'name': 'PlanesPagosPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlanesPagosPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

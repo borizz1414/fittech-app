@@ -1,0 +1,657 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+    <li>Modules</li>
+    <li>AppRoutingModule</li>
+</ol>
+
+
+<ul class="nav nav-tabs" role="tablist">
+    <li  class="active" >
+        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+    <li >
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/app-routing.module.ts</code>
+        </p>
+
+
+
+
+        <div class="container-fluid module">
+            <div class="row">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &quot;@angular/core&quot;;
+import { PreloadAllModules, RouterModule, Routes } from &quot;@angular/router&quot;;
+import { IntroGuard } from &quot;./guards/intro.guard&quot;;
+import { LoginGuard } from &quot;./guards/login.guard&quot;;
+import { NutricionGuard } from &quot;./guards/nutricion.guard&quot;;
+import { TutorialGuard } from &quot;./guards/tutorial.guard&quot;;
+
+const routes: Routes &#x3D; [
+  {
+    path: &quot;home&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/home/home.module\&quot;).then((m) &#x3D;&gt; m.HomePageModule)&quot;,
+  },
+  {
+    path: &quot;objetivo&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/objetivo/objetivo.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ObjetivoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;pasoinicial&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/pasoinicial/pasoinicial.module\&quot;).then(\
+        (m) &#x3D;&gt; m.PasoinicialPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;login&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/login/login.module\&quot;).then((m) &#x3D;&gt; m.LoginPageModule)&quot;,
+    canActivate: [LoginGuard],
+  },
+  {
+    path: &quot;terminos&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/terminos/terminos.module\&quot;).then(\
+        (m) &#x3D;&gt; m.TerminosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;registrar-info&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./registrar-info/registrar-info.module\&quot;).then(\
+        (m) &#x3D;&gt; m.RegistrarInfoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;experiencia&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/experiencia/experiencia.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ExperienciaPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;lugar-ejercicios&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/lugar-ejercicios/lugar-ejercicios.module\&quot;).then(\
+        (m) &#x3D;&gt; m.LugarEjerciciosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;actividad&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/actividad/actividad.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ActividadPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;dashboard&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/dashboard/dashboard.module\&quot;).then(\
+        (m) &#x3D;&gt; m.DashboardPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;corazon&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./corazon/corazon.module\&quot;).then((m) &#x3D;&gt; m.CorazonPageModule)&quot;,
+  },
+  {
+    path: &quot;antecedentefamiliar&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/antecedentefamiliar/antecedentefamiliar.module\&quot;).then(\
+        (m) &#x3D;&gt; m.AntecedentefamiliarPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;test-fuerza-info&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-info/test-fuerza-info.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaInfoPageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-manual&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-manual/test-fuerza-manual.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaManualPageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-pasos1&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-pasos1/test-fuerza-pasos1.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaPasos1PageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-pasos2&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-pasos2/test-fuerza-pasos2.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaPasos2PageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-pasos3&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-pasos3/test-fuerza-pasos3.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaPasos3PageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-pasos4&quot;, ///:id
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-pasos4/test-fuerza-pasos4.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaPasos4PageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-menu&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-menu/test-fuerza-menu.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaMenuPageModule)&quot;,
+  },
+  {
+    path: &quot;calendario&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/calendario/calendario.module\&quot;).then(\
+        (m) &#x3D;&gt; m.CalendarioPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;rutina&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/rutina/rutina.module\&quot;).then((m) &#x3D;&gt; m.RutinaPageModule)&quot;,
+  },
+  {
+    path: &quot;comida&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/comida/comida.module\&quot;).then((m) &#x3D;&gt; m.ComidaPageModule)&quot;,
+  },
+  {
+    path: &quot;perfil&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/perfil/perfil.module\&quot;).then((m) &#x3D;&gt; m.PerfilPageModule)&quot;,
+  },
+  {
+    path: &quot;tabs&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/tabs/tabs.module\&quot;).then((m) &#x3D;&gt; m.TabsPageModule)&quot;,
+  },
+  {
+    path: &quot;test-resistencia&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestResistencia/test-resistencia/test-resistencia.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestResistenciaPageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-categoria&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-categoria/test-fuerza-categoria.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaCategoriaPageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-menu2&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-menu2/test-fuerza-menu2.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaMenu2PageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-menu3&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-menu3/test-fuerza-menu3.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaMenu3PageModule)&quot;,
+  },
+  {
+    path: &quot;mensajecorazon&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/mensajecorazon/mensajecorazon.module\&quot;).then(\
+        (m) &#x3D;&gt; m.MensajecorazonPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;entrenamientos&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./entrenamientos/entrenamientos.module\&quot;).then(\
+        (m) &#x3D;&gt; m.EntrenamientosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateria/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateria/bateria.module\&quot;).then((m) &#x3D;&gt; m.BateriaPageModule)&quot;,
+  },
+  {
+    path: &quot;test-fuerza-manual-pasos/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestFuerza/test-fuerza-manual-pasos/test-fuerza-manual-pasos.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestFuerzaManualPasosPageModule)&quot;,
+  },
+  {
+    path: &quot;calentamiento&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/calentamiento/calentamiento.module\&quot;).then(\
+        (m) &#x3D;&gt; m.CalentamientoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;cambiarejercicio&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./cambiarejercicio/cambiarejercicio.module\&quot;).then(\
+        (m) &#x3D;&gt; m.CambiarejercicioPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;listaejercicioremplazar&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./listaejercicioremplazar/listaejercicioremplazar.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ListaejercicioremplazarPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;calentamientodos&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/calentamientodos/calentamientodos.module\&quot;).then(\
+        (m) &#x3D;&gt; m.CalentamientodosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateriarutina&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateriarutina/bateriarutina.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriarutinaPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;relacioncadera&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./relacioncadera/relacioncadera.module\&quot;).then(\
+        (m) &#x3D;&gt; m.RelacioncaderaPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;test-capacidad-info&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestCapacidad/test-capacidad-info/test-capacidad-info.module\&quot;\
+      ).then((m) &#x3D;&gt; m.TestCapacidadInfoPageModule)&quot;,
+  },
+  {
+    path: &quot;bateriahome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./pages/TestCapacidad/bateriahome/bateriahome.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriahomePageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateriaesperahome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestCapacidad/bateriaesperahome/bateriaesperahome.module\&quot;\
+      ).then((m) &#x3D;&gt; m.BateriaesperahomePageModule)&quot;,
+  },
+  {
+    path: &quot;mensajecapacidad/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/TestCapacidad/mensajecapacidad/mensajecapacidad.module\&quot;\
+      ).then((m) &#x3D;&gt; m.MensajecapacidadPageModule)&quot;,
+  },
+  {
+    path: &quot;percepcionentrenamiento&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./pages/percepcionentrenamiento/percepcionentrenamiento.module\&quot;\
+      ).then((m) &#x3D;&gt; m.PercepcionentrenamientoPageModule)&quot;,
+  },
+  {
+    path: &quot;bateriarutinahome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateriarutinahome/bateriarutinahome.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriarutinahomePageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateriarutinaesperahome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateriarutinaesperahome/bateriarutinaesperahome.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriarutinaesperahomePageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;descargar&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./descargar/descargar.module\&quot;).then((m) &#x3D;&gt; m.DescargarPageModule)&quot;,
+  },
+  {
+    path: &quot;rangodeedad&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./seriedepreguntas/rangodeedad/rangodeedad.module\&quot;).then(\
+        (m) &#x3D;&gt; m.RangodeedadPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;pesoyestatura&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./seriedepreguntas/pesoyestatura/pesoyestatura.module\&quot;).then(\
+        (m) &#x3D;&gt; m.PesoyestaturaPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;form-medico&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./seriedepreguntas/form-medico/form-medico.module\&quot;).then(\
+        (m) &#x3D;&gt; m.FormMedicoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;test-capacidad-manual&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./test-capacidad-manual/test-capacidad-manual.module\&quot;).then(\
+        (m) &#x3D;&gt; m.TestCapacidadManualPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;calentamiento-info&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./calentamiento-info/calentamiento-info.module\&quot;).then(\
+        (m) &#x3D;&gt; m.CalentamientoInfoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateriacalentamientohome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateriacalentamientohome/bateriacalentamientohome.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriacalentamientohomePageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateriacalentamientoesperahome/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./bateriacalentamientoesperahome/bateriacalentamientoesperahome.module\&quot;\
+      ).then((m) &#x3D;&gt; m.BateriacalentamientoesperahomePageModule)&quot;,
+  },
+  {
+    path: &quot;bateriacalentamientofinalizar&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\
+        \&quot;./bateriacalentamientofinalizar/bateriacalentamientofinalizar.module\&quot;\
+      ).then((m) &#x3D;&gt; m.BateriacalentamientofinalizarPageModule)&quot;,
+  },
+  {
+    path: &quot;estiramientos&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./estiramientos/estiramientos.module\&quot;).then(\
+        (m) &#x3D;&gt; m.EstiramientosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;rutina-entrenamiento&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./rutina-entrenamiento/rutina-entrenamiento.module\&quot;).then(\
+        (m) &#x3D;&gt; m.RutinaEntrenamientoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;porcentajegrasa&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./porcentajegrasa/porcentajegrasa.module\&quot;).then(\
+        (m) &#x3D;&gt; m.PorcentajegrasaPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;medidas&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./medidas/medidas.module\&quot;).then((m) &#x3D;&gt; m.MedidasPageModule)&quot;,
+  },
+  {
+    path: &quot;indicadores&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./indicadores/indicadores.module\&quot;).then(\
+        (m) &#x3D;&gt; m.IndicadoresPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;lineanutricional&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./lineanutricional/lineanutricional.module\&quot;).then(\
+        (m) &#x3D;&gt; m.LineanutricionalPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;alimentos-no-like&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./alimentos-no-like/alimentos-no-like.module\&quot;).then(\
+        (m) &#x3D;&gt; m.AlimentosNoLikePageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;bateria-alimento&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateria-alimento/bateria-alimento.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriaAlimentoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;alimentos-seleccion/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./alimentos-seleccion/alimentos-seleccion.module\&quot;).then(\
+        (m) &#x3D;&gt; m.AlimentosSeleccionPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;listadoalimento/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./listadoalimento/listadoalimento.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ListadoalimentoPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;alimentos-editar/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./alimentos-editar/alimentos-editar.module\&quot;).then(\
+        (m) &#x3D;&gt; m.AlimentosEditarPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;modal-medidas&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./modal-medidas/modal-medidas.module\&quot;).then(\
+        (m) &#x3D;&gt; m.ModalMedidasPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;progreso&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./progreso/progreso.module\&quot;).then((m) &#x3D;&gt; m.ProgresoPageModule)&quot;,
+  },
+  {
+    path: &quot;bateria-estiramientos&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateria-estiramientos/bateria-estiramientos.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriaEstiramientosPageModule\
+      )&quot;,
+  },
+  {
+    path: &quot;tutorial-alimentacion&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./tutorial-alimentacion/tutorial-alimentacion.module\&quot;).then(\
+        (m) &#x3D;&gt; m.TutorialAlimentacionPageModule\
+      )&quot;,
+      canActivate: [TutorialGuard],
+  },
+  {
+    path: &quot;bateria-remplazo/:id&quot;,
+    loadChildren: () &#x3D;&gt;
+      &quot;import(\&quot;./bateria-remplazo/bateria-remplazo.module\&quot;).then(\
+        (m) &#x3D;&gt; m.BateriaRemplazoPageModule\
+      )&quot;,
+  },
+  {
+    path: &#x27;tienda&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./tienda/tienda.module&#x27;).then( m &#x3D;&gt; m.TiendaPageModule)&quot;
+  },
+  {
+    path: &#x27;tienda-productos&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./tienda-productos/tienda-productos.module&#x27;).then( m &#x3D;&gt; m.TiendaProductosPageModule)&quot;
+  },
+  {
+    path: &#x27;&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./tutorial-planes/tutorial-planes.module&#x27;).then( m &#x3D;&gt; m.TutorialPlanesPageModule)&quot;,
+    canActivate: [IntroGuard]
+  },
+  {
+    path: &#x27;planes-pagos&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./planes-pagos/planes-pagos.module&#x27;).then( m &#x3D;&gt; m.PlanesPagosPageModule)&quot;
+  },
+  {
+    path: &#x27;modal-fotos&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./modal-fotos/modal-fotos.module&#x27;).then( m &#x3D;&gt; m.ModalFotosPageModule)&quot;
+  },
+  {
+    path: &#x27;modal-comparacion&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./modal-comparacion/modal-comparacion.module&#x27;).then( m &#x3D;&gt; m.ModalComparacionPageModule)&quot;
+  },  {
+    path: &#x27;paypal&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./paypal/paypal.module&#x27;).then( m &#x3D;&gt; m.PaypalPageModule)&quot;
+  },
+
+
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

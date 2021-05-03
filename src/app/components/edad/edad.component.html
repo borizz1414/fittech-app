@@ -1,0 +1,27 @@
+<div>
+  <h2 class="titulo animated fadeInLeft delay-1s">¿En que rango esta tu <ion-text color="danger">edad
+  </ion-text>?</h2>
+  <ion-item lines="none" class="animated fadeInLeft delay-1s" >
+                      <!--22-->
+    <ion-label style="font-size: 18px;position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;" *ngIf="!valor">Seleccionar</ion-label>
+    <ion-select interface="action-sheet" cancel-text="salir" (ionChange)="imc($event)">
+      <ion-select-option value="0">18-25</ion-select-option>
+      <ion-select-option value="1">26-36</ion-select-option>
+      <ion-select-option value="2">36-45</ion-select-option>
+      <ion-select-option value="3">46-55</ion-select-option>
+      <ion-select-option value="4">56-65</ion-select-option>
+      <ion-select-option value="5">+65</ion-select-option>
+    </ion-select>
+  </ion-item>
+</div>
+
+<!--   <ion-fab vertical="bottom"  horizontal="center" slot="fixed" class="animated fadeInUp delay-2s" >
+    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+
+

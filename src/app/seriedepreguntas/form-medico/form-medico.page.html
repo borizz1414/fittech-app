@@ -1,0 +1,93 @@
+<ion-header class="ion-no-border animated fadeIn delay-1s">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Paso 3 de 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="animated fadeInRight delay-1s">
+ 
+  <h2>Tu historial médico</h2>
+  <div class="ion-text-center">
+    <ion-button color="danger">
+      <ion-icon name="analytics-outline" class="iconSize" ></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="ion-text-center">
+    <p style="opacity: 0.7px;"> Presentas alguna de estas patologias</p>
+  </div>
+
+  <ion-list lines="none">
+
+    <ion-item>
+      <ion-label>No presento ninguna</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hipertension</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hipotension</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Desvanecimiento</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Diabetes insulinodependiente</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dolores en el pecho</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fatiga insual en actividades</ion-label>
+      <ion-toggle slot="start"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Patologia cardiacas</ion-label>
+      <ion-select interface="action-sheet" cancel-text="salir">
+        <ion-select-option [value]="1">Aritmias</ion-select-option>
+        <ion-select-option [value]="1">Taquicardia</ion-select-option>
+        <ion-select-option [value]="1">Insuficiencia cardiaca</ion-select-option>
+        <ion-select-option [value]="1">Infartos</ion-select-option>
+        <ion-select-option [value]="1">Soplo en el corazon</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="margen-inferior">
+      <ion-label>Enfermedades pulmonares</ion-label>
+      <ion-select interface="action-sheet" 
+      name="enfermedadPulmonar"  cancel-text="salir">
+        <ion-select-option [value]="1">Influenza</ion-select-option>
+        <ion-select-option [value]="1">Asma</ion-select-option>
+        <ion-select-option [value]="1">Bronquiti</ion-select-option>
+        <ion-select-option [value]="1">Hipertension pulmonar</ion-select-option>
+        <ion-select-option [value]="1">Enfermedad pulmonar obstructiva cronica</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button color="danger" (click)="atras()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+
+
+

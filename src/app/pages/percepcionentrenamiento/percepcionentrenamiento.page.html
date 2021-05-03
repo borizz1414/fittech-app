@@ -1,0 +1,84 @@
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row >
+      <ion-col  size="12">   
+        <div  class="ion-padding-horizontal">
+          <h2 class="titulo ion-text-center">Gracias a lo que comentas podemos mejorar cada vez más tu experiencia</h2>
+          <p class="ion-text-center">Tus comentarios nos ayudan a mejorar nuestras sesiones</p>
+        </div>   
+      </ion-col>
+      <ion-col  size="12">   
+        <ion-input type="text" placeholder="comentar..." name="comentario" [(ngModel)]="comentario"></ion-input>   
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  
+  <ion-item-divider></ion-item-divider>
+
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center" >
+      <ion-col  size="12">   
+        <div  class="ion-padding-horizontal">
+          <p class="ion-text-center">¿Como te sentiste tú entrenamiento?</p>
+        </div>  
+      </ion-col>
+        <ion-col  size="2">   
+          <div class="ion-padding-horizontal"  [ngClass]="{'cambiarOpacidad': evaluarColor}"  (click)="puntuacion(0)">
+            <img src="assets/img/muy-facil.png"/>
+          </div>
+          <p class="ion-text-center" style="font-weight: bold;">Muy Fácil</p>
+        </ion-col> 
+        <ion-col  size="2"> 
+          <div class="ion-padding-horizontal"  [ngClass]="{'cambiarOpacidad': evaluarColor1}" (click)="puntuacion(1)">
+            <img src="assets/img/facil.png"/>
+          </div>  
+          <p class="ion-text-center" style="font-weight: bold;">Fácil</p>
+
+        </ion-col> 
+        <ion-col  size="2">   
+          <div class="ion-padding-horizontal"  [ngClass]="{'cambiarOpacidad': evaluarColor2}" (click)="puntuacion(2)">
+            <img src="assets/img/bueno.png"/>
+          </div>
+          <p class="ion-text-center" style="font-weight: bold;">Bueno</p>
+        </ion-col> 
+
+        <ion-col  size="2">   
+          <div class="ion-padding-horizontal"  [ngClass]="{'cambiarOpacidad': evaluarColor3}" (click)="puntuacion(3)">
+            <img src="assets/img/duro.png"/>
+          </div>
+          <p class="ion-text-center" style="font-weight: bold;">Duro</p>
+        </ion-col> 
+
+        <ion-col  size="2">   
+          <div class="ion-padding-horizontal"  [ngClass]="{'cambiarOpacidad': evaluarColor4}" (click)="puntuacion(4)">
+            <img src="assets/img/extremo.png"/>
+          </div>
+          <p class="ion-text-center" style="font-weight: bold;">Extremo</p>
+        </ion-col> 
+    </ion-row>
+  </ion-grid>  
+  
+
+
+  <ion-grid class="ion-padding">
+    <ion-row >
+      <ion-col  size="12">   
+        <div>
+          <ion-card color="danger" (click)="final()" style="
+          width: 286px; 
+          border-radius: 10px;
+          text-transform: uppercase;
+          font-family: 'Open Sans';
+          margin: 0 auto;
+        ">
+            <h2 class="ion-text-center" style="position:relative;margin: 10px;">Finalizar</h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+
+</ion-content>

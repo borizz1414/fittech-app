@@ -1,0 +1,1508 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>NutricionService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/nutricion.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#listadocomida">listadocomida</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ActualizarComida">ActualizarComida</a>
+                            </li>
+                            <li>
+                                <a href="#BorrarMenu">BorrarMenu</a>
+                            </li>
+                            <li>
+                                <a href="#calculate_menu">calculate_menu</a>
+                            </li>
+                            <li>
+                                <a href="#foodNoDeseados">foodNoDeseados</a>
+                            </li>
+                            <li>
+                                <a href="#getFoods">getFoods</a>
+                            </li>
+                            <li>
+                                <a href="#GetPrice">GetPrice</a>
+                            </li>
+                            <li>
+                                <a href="#getResumes">getResumes</a>
+                            </li>
+                            <li>
+                                <a href="#grease">grease</a>
+                            </li>
+                            <li>
+                                <a href="#historyIndicators">historyIndicators</a>
+                            </li>
+                            <li>
+                                <a href="#historyMeasures">historyMeasures</a>
+                            </li>
+                            <li>
+                                <a href="#indicadores">indicadores</a>
+                            </li>
+                            <li>
+                                <a href="#ListadoComida">ListadoComida</a>
+                            </li>
+                            <li>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                <a href="#storeMenu">storeMenu</a>
+                            </li>
+                            <li>
+                                <a href="#updateTypeFood">updateTypeFood</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, service: <a href="../injectables/ApiFitechService.html">ApiFitechService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/services/nutricion.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiFitechService.html" target="_self" >ApiFitechService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ActualizarComida"></a>
+                    <span class="name">
+                        <b>
+                            ActualizarComida
+                        </b>
+                        <a href="#ActualizarComida"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ActualizarComida(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="234"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:234</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="BorrarMenu"></a>
+                    <span class="name">
+                        <b>
+                            BorrarMenu
+                        </b>
+                        <a href="#BorrarMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>BorrarMenu(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculate_menu"></a>
+                    <span class="name">
+                        <b>
+                            calculate_menu
+                        </b>
+                        <a href="#calculate_menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculate_menu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="foodNoDeseados"></a>
+                    <span class="name">
+                        <b>
+                            foodNoDeseados
+                        </b>
+                        <a href="#foodNoDeseados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>foodNoDeseados(valor)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valor</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFoods"></a>
+                    <span class="name">
+                        <b>
+                            getFoods
+                        </b>
+                        <a href="#getFoods"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFoods()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetPrice"></a>
+                    <span class="name">
+                        <b>
+                            GetPrice
+                        </b>
+                        <a href="#GetPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>GetPrice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="331"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:331</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getResumes"></a>
+                    <span class="name">
+                        <b>
+                            getResumes
+                        </b>
+                        <a href="#getResumes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getResumes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="grease"></a>
+                    <span class="name">
+                        <b>
+                            grease
+                        </b>
+                        <a href="#grease"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>grease(valor)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valor</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="historyIndicators"></a>
+                    <span class="name">
+                        <b>
+                            historyIndicators
+                        </b>
+                        <a href="#historyIndicators"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>historyIndicators()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="304"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:304</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="historyMeasures"></a>
+                    <span class="name">
+                        <b>
+                            historyMeasures
+                        </b>
+                        <a href="#historyMeasures"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>historyMeasures()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="indicadores"></a>
+                    <span class="name">
+                        <b>
+                            indicadores
+                        </b>
+                        <a href="#indicadores"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>indicadores()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ListadoComida"></a>
+                    <span class="name">
+                        <b>
+                            ListadoComida
+                        </b>
+                        <a href="#ListadoComida"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ListadoComida(comida: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, day: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>comida</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>day</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="menu"></a>
+                    <span class="name">
+                        <b>
+                            menu
+                        </b>
+                        <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>menu(comida: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>comida</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storeMenu"></a>
+                    <span class="name">
+                        <b>
+                            storeMenu
+                        </b>
+                        <a href="#storeMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>storeMenu(menu)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>menu</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateTypeFood"></a>
+                    <span class="name">
+                        <b>
+                            updateTypeFood
+                        </b>
+                        <a href="#updateTypeFood"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateTypeFood(valor)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/services/nutricion.service.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valor</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listadocomida"></a>
+                        <span class="name">
+                            <b>
+                            listadocomida</b>
+                            <a href="#listadocomida"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    desayuno:null,
+    almuerzo:null,
+    cena:null,
+    snack:null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/services/nutricion.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpHeaders, HttpClient } from &#x27;@angular/common/http&#x27;;
+import { ApiFitechService } from &#x27;./api-fitech.service&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+const URL  &#x3D; environment.url
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class NutricionService {
+  listadocomida&#x3D;{
+    desayuno:null,
+    almuerzo:null,
+    cena:null,
+    snack:null
+  }
+
+  constructor(private http: HttpClient, private service: ApiFitechService) { }
+  // nivel de grasa
+  grease(valor){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+      const data &#x3D; {
+        grease : valor
+      }      
+      this.http.post(&#x60;${URL}/auth/grease_record&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+          
+            resolve(true)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+  // tipo de alimento
+  updateTypeFood(valor){
+    console.log(&quot;que se esta enviando a la ruta typefood&quot;,valor)
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+  
+      //      this.http.get(&#x60;${URL}/auth/routine&#x60;,{headers})
+
+      this.http.post(&#x60;${URL}/auth/update-type-food&#x60;, valor, {headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(true)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+  // comida no deseada
+  foodNoDeseados(valor){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Accept&#x27;:&#x27;application/x-www-form-urlencoded&#x27;,
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+
+      const data &#x3D; {
+        foods : valor
+      }
+
+      this.http.post(&#x60;${URL}/auth/foods-not-like&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(true)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+  // listado de alimentos
+  getFoods(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }      
+      this.http.post(&#x60;http://fittech247.com/fittech/api/auth/foods&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            resolve(resp[&#x27;Alimentos&#x27;])
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+  }
+
+  // calcular el menu del usuario
+  calculate_menu(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })      
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }    
+      this.http.post(&#x60;${URL}/auth/calculate_menu&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(true)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+
+  storeMenu(menu){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })   
+      this.http.post(&#x60;${URL}/auth/store-menu&#x60;, menu, {headers})
+          .subscribe(resp&#x3D;&gt;{
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(err)
+          })
+      })
+
+  }
+
+  //Calculos de indicadores
+  indicadores(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })      
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }    
+      this.http.post(&#x60;${URL}/auth/indicators&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            resolve(resp)
+          },err&#x3D;&gt;{
+            resolve(false)
+          })
+      }).catch(function(e) {
+        console.log(&quot;se ejecuta el catch&quot;,e); 
+        return false
+      });
+
+  }
+
+  // listado de nutriente necesario  para consumir del usuario / esto va en resumen
+  getResumes(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }      
+      this.http.post(&#x60;${URL}/auth/resume-food&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+  }
+
+  // TRAE EL MENU DEL USUARIO DESAYUNO,ALMUERZO,CENA PARA ESCOGER
+  menu(comida:any){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        type_food : comida
+      }   
+      
+      this.http.post(&#x60;${URL}/auth/menu&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+
+  // TREA EL LISTADO DE ALIMENTOS GUARDADOS 
+  ListadoComida(comida:any,day:any){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        type_food : comida,
+        day:day
+      }   
+      
+      this.http.post(&#x60;${URL}/auth/ready-food&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            // console.log(resp)
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+
+  // Actualizar el LISTADO DE ALIMENTOS GUARDADOS 
+  ActualizarComida(data:any){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+ 
+      this.http.post(&#x60;${URL}/auth/update-menu&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+  
+  // borrar el menu
+  BorrarMenu(id:any){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        menu_id: id,
+      }   
+      
+      this.http.post(&#x60;${URL}/auth/delete-menu&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(resp)
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+
+
+  // listado de medidas
+  historyMeasures(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }      
+      this.http.post(&#x60;http://fittech247.com/fittech/api/auth/progress&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            if(resp[&#x27;Progress&#x27;].length &gt; 0){
+              resolve(resp[&#x27;Progress&#x27;])
+            }else{
+              resolve(&quot;vacio&quot;)
+            }
+       
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+  }
+
+  // listado de indicadores
+  historyIndicators(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+      // si no se envia un dato no  funciona la ruta
+      const data &#x3D; {
+        valor : &quot;ignorar&quot;
+      }      
+      this.http.post(&#x60;http://fittech247.com/fittech/api/auth/progress&#x60;,data,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            if(resp[&#x27;Progress_food&#x27;].length &gt; 0){
+              resolve(resp)
+            }else{
+              resolve(&quot;vacio&quot;)
+            }
+        
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+  }
+
+
+  // lista de pagos
+  GetPrice(){
+    return new Promise( async (resolve, reject)  &#x3D;&gt; {
+      const headers &#x3D; new HttpHeaders({
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + await this.service.cargarToken(),
+        &#x27;Content-Type&#x27;:&#x27;application/json&#x27;,
+      })
+  
+      this.http.get(&#x60;${URL}/auth/planes&#x60;,{headers})
+          .subscribe(resp&#x3D;&gt;{
+            console.log(resp)
+            resolve(resp[&#x27;Planes&#x27;])
+          },err&#x3D;&gt;{
+            reject(false)
+          })
+      })
+
+  }
+
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'NutricionService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

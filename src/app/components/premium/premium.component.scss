@@ -1,0 +1,21 @@
+.tarjeta{
+    border: 1px solid red;
+    p:nth-child(1){
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+    }
+    p:nth-child(2){
+        color: #cdcdcd;
+        font-size: 16px;
+    }
+}
+
+
+.tarjeta:hover{
+  background: red;
+}
+
+.btn-izquierda{
+    float: right;
+}

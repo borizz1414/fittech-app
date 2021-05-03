@@ -1,0 +1,55 @@
+ion-thumbnail {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+ion-thumbnail img {
+  width: auto !important;
+  height: auto !important;
+}
+
+.toolbar-background {
+  --background: black;
+  --color: white;
+}
+
+.imagenmodificada {
+  width: 50px;
+  height: 50px;
+}
+
+.contenedor-padre {
+  overflow: hidden;
+}
+
+.float {
+  padding: 6px;
+  position: fixed;
+  width: 100px;
+  height: 29px;
+  bottom: 20px;
+  border-radius: 12px;
+  right: 35%;
+  background-color: #f32415;
+  color: #FFF;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  text-decoration: none;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+ion-item {
+  --padding-end: 0px !important;
+  --padding-start: 0px !important;
+}
+
+ion-buttons {
+  padding: 0px !important;
+  margin: 0px !important;
+}

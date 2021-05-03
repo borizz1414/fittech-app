@@ -1,0 +1,112 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+  }
+  
+  ion-content {
+    --background: #fcfcfc;
+    /*
+    background-image: url('/assets/img/imagen-datos.jpg');    
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 80%;*/
+  }
+  
+  ion-input{
+    text-align: start;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 3px 7px 10px -5px rgba(0,0,0,0.2);
+  }
+
+
+  .logo{
+    margin: 0 auto;
+    max-height: 150px;
+  }
+  
+  .cabezera{
+    max-height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  .contenedor{
+    padding-top: 20px !important;
+    text-align: center;
+    overflow: hidden;
+  }
+
+ 
+  .titulo{
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+ 
+
+.imagen{
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.tarjeta{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+  ion-col{
+      margin-bottom: 8px!important;
+  }
+
+  .my-grid {
+    height: 100% !important;
+ }
+.parent-row {
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+ }
+
+ .letra{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 18px;
+    text-align: justify;
+    opacity: 0.7;
+ }
+
+ ion-card{
+   margin: 0 auto;
+    width: 80%;
+}
+
+ ion-card:hover{
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+.mensaje{
+ font-size: 11px;
+ opacity: 0.5;
+ text-align: center;
+}
+
+.color-tarjeta{
+ color: white;
+ background-color: #000000;
+}

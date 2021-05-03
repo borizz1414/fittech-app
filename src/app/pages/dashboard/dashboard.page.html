@@ -1,0 +1,96 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<!-- Logo incluido ante no estaba -->
+
+<ion-content class="animated fadeIn delay-1s">
+  <!-- BIENVENIDO ARRIBA / ALINEADO -->
+    <h1 style="padding-left: 1.5rem;"><b>Hola,  {{Bienvenido}} </b></h1>
+    <h4 style="padding-left: 1.5rem;" *ngIf="week.routine_ready_week == 1">Has realizado  <b style="color: red;">{{week['routine_ready_week'] || 0}}</b> sesión de entrenamiento esta semana </h4>
+    <h4 style="padding-left: 1.5rem;" *ngIf="week.routine_ready_week > 1 || week.routine_ready_week == 0">Has realizado  <b style="color: red;">{{week['routine_ready_week'] }}</b> sesiones de entrenamiento esta semana </h4>
+
+  <!-- EXAMEN -->
+  <!-- <div *ngIf="ExamenCliente === 0">
+    <ion-grid id="tablaexamen">
+      <ion-row >
+        <h4 class="ion-padding-horizontal">Completa los <b>test ahora!</b> </h4>
+        <ion-col  size="6" id="fuerza">   
+          <div  class="ion-padding-vertical" (click)="Fuerza()" >
+            <div class="centered">Test de Fuerza</div>
+            <img class="bor" src="assets/img/test-fuerza2.png"/>
+          </div>   
+        </ion-col>
+        <ion-col  size="6"  id="resistencia">   
+          <div  class="ion-padding-vertical" (click)="Resistencia()">
+            <div class="centered">Test de Resistencia</div>
+            <img class="bor" src="assets/img/test-resistencia2.png" />
+          </div>   
+        </ion-col>
+      </ion-row>
+    </ion-grid>   
+  </div>  -->
+
+  <div *ngIf="ExamenCliente === 2" id="ocultar">
+    <!-- <h1 class="ion-padding ion-text-center" id="capacidad"><b>Debes realizar el test para poder empezar tu entrenamiento</b></h1> -->
+    <ion-grid *ngIf="!capacidad">
+        <ion-row>        
+          <ion-col  size="12">   
+            <!-- <h4 class="ion-padding-horizontal" style="color: red;">Empieza <b>Aqui</b> </h4>
+            <img class="bor" src="assets/img/imagen-mujer-test1.png"/>
+            <ion-button shape="round" color="dark" class="centered2" (click)="Capacidad()">Hacer el test</ion-button>  -->
+            <div style="position: relative; width: auto; height: auto;">
+              <ion-card style="   
+              background: #EF4044;
+              color: white;
+              width: 170px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+            margin:  0 auto;"
+              (click)="Capacidad()">
+            <h6 style="text-align: center; margin: 6px;">
+              <span><b>Empieza Aqui</b> </span>
+              <span style="margin-left: 10px;"><ion-icon style="position: absolute; top: .5rem;"  name="arrow-down-outline" color="dark"></ion-icon></span>
+            </h6>  
+              </ion-card>
+              <img class="bor" src="assets/img/imagen-mujer-test2.jpg"/>
+              <ion-button shape="round" color="dark" class="centered3 vibrate-1" (click)="Capacidad()">Hacer el test</ion-button> 
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>  
+  </div>
+  
+  <!-- TARJETAS -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">   
+
+        <h4 class="ion-padding-horizontal">Tu <b>entrenamiento</b> de hoy</h4>
+          <img  src="assets/img/rutina2.png"  class="ejercicio bor"/>
+          <ion-button shape="round" color="dark" class="centered2" (click)="rutinas()">Ver  entrenamiento</ion-button>
+      </ion-col>
+
+      <ion-col size="12"> 
+      <hr>  
+        <h4 class="ion-padding-horizontal">Tu plan <b>nutricional</b></h4>
+          <ion-button shape="round" color="dark" class="centered2" (click)="nutricion()">Ver plan</ion-button>
+          <img  src="assets/img/comidas.png" class="ejercicio bor"/>
+      </ion-col>
+
+      <ion-col size="12"> 
+      <hr>  
+        <h4 class="ion-padding-horizontal">Tu <b>progreso</b></h4>
+          <ion-button shape="round" color="dark" class="centered2" (click)="progreso()">Ver progreso</ion-button>
+          <img  src="assets/img/graficas.png" class="ejercicio bor" />
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>  
+
+
+</ion-content>
+

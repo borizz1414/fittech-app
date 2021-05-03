@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <!-- <ion-buttons slot="start">
+      <ion-back-button defaultHref="/bateria-alimento"></ion-back-button>
+    </ion-buttons> -->
+    <ion-buttons slot="end" (click)="saltar()">
+      Saltar 
+    </ion-buttons>
+    <ion-title class="ion-text-center" mode="ios">Alimentación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="box-img-container">
+    <span class="identificador"> 2 / 2 </span>
+    <img src="assets/img/alimentacion2@2x.png">
+  </div>
+
+  <div class="box-text-container">
+    <!-- <p class="parrafo">
+      Tus requerimientos nutricionales según tu objetivo son:
+    </p> -->
+    <p class="parrafo">
+      Puedes ver nuestro tutorial para uso de la aplicación en nuestro canal oficial.
+    </p>
+  </div>
+
+  <!-- <img src="assets/img/barra.png" alt=""> -->
+
+  <iframe [src]="videoURL" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+
+  <div class="box-text-container">
+    <!-- <p class="parrafo">
+      Esta debería ser tu ingesta diaria de macronutrientes, según el objetivo que elegiste.
+    </p> -->
+    <!-- <p class="parrafo">
+      Selecciona la imagen para redirigir al videotutorial.
+    </p> -->
+  </div>
+
+
+
+</ion-content>
+
+

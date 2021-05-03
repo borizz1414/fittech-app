@@ -1,0 +1,52 @@
+<ion-grid style="background-color:#F4F3F1; padding: 0px;" >
+  <ion-row >
+    <ion-col size="12" style="padding: 0px;" >
+      <img src="assets/img/pressbanca.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+       <p class="ion-text-center titulo">{{nombre}}</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid class="ion-grid2">
+
+  <ion-row class="ion-row2">
+
+    <div *ngIf="evaluar === 0">
+      <ion-col size="12">
+        <h2 class="ion-text-center"> Repeticiones x {{repeticion}}</h2>
+        <h2 class="ion-text-center"> Peso : {{peso}}</h2>
+      </ion-col>
+    </div>
+
+    <div *ngIf="evaluar === 2">
+      <ion-col size="12">
+        <h2 class="ion-text-center sui"> 00:30</h2>
+      </ion-col>
+    </div>
+
+  </ion-row>
+
+</ion-grid>
+
+<ion-fab vertical="bottom"  horizontal="start" slot="fixed">
+  <ion-fab-button color="light" (click)="atras()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom"  horizontal="center" slot="fixed" *ngIf="mostrar">
+  <ion-fab-button color="dark" (click)="finalizar()">
+    <ion-icon name="trophy-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom"  horizontal="end" slot="fixed">
+  <ion-fab-button color="danger" (click)="siguiente()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="grid1">
+    <ion-row>
+      <p class="ion-text-center titulo2" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">Comienza en</p>
+      <p class="center">{{zero}}{{timeLeft}}</p>
+      <p class="center do">Tu siguiente ejercicio es: </p>
+      <p class="center do" style="color: red;">{{nombre}} </p>
+      <ion-col class="centerdo" size="8" style="padding: 0px;">
+        <img *ngIf="imagen" [src]="imagen">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="grid2">
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <ion-fab-button color="light" (click)="atras()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="light" (click)="redirigir()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <h1 class="titulodescanso" style="margin-top: 0px !important;color: red;">Descanso</h1>
+  </div>
+</ion-content>

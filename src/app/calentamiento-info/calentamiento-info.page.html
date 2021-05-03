@@ -1,0 +1,71 @@
+<ion-buttons slot="start">
+  <ion-fab vertical="center" style="margin-top:-4.75rem;"  horizontal="start" slot="fixed" class="animated fadeInUp delay-2s" >
+   <ion-fab-button style="--background:#ef4044" (click)="atras()" size="small">
+     <ion-icon name="arrow-back-outline"></ion-icon>
+   </ion-fab-button>
+ </ion-fab>
+</ion-buttons>
+
+<ion-header [translucent]="true" class="ion-no-border">
+    <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+    </div>
+</ion-header>
+
+<!-- cabezera -->
+
+<ion-content fullscreen>
+
+  <ion-row>
+    <ion-col size="12" style="padding: 0px;" >
+      <img src="assets/img/calentamientoFinal2.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <div  class="ion-padding ion-text-center titulo">
+    Calentamiento
+  </div> 
+  <div  class="ion-padding ion-text-justify">
+    Calentar el cuerpo es crucial para elevar tu frecuencia cardíaca de forma gradual, elevar tu temperatura corporal y que tus músculos estén listos para iniciar el entrenamiento.
+  </div>   
+
+  <ion-grid class="ion-padding">
+    <ion-row >
+      <ion-col  size="12">   
+        <div>
+          <ion-card style="   
+             background: #EF4044;
+             color: white;
+             width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+          
+             " (click)="continuar()">
+            <h2 style="text-align: center; margin: 10px;">
+             <b> Continuar </b> </h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+      
+    </ion-row>
+    <ion-row >
+      <ion-col  size="12">   
+          <ion-card style="  
+            background: #EF4044;
+            color: white;
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';" (click)="saltarCalentamiento()">
+            <h2 style="text-align: center; margin: 10px;">
+             <b> Saltar calentamiento </b>
+            </h2>  
+          </ion-card>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>   
+
+
+</ion-content>

@@ -1,0 +1,145 @@
+
+.logo{
+    margin: 0 auto;
+    max-height: 4rem;
+  }
+
+.cabezera{
+    max-height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  ion-col{
+    display: table;
+    height: 200px;
+    ion-label{
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: white;
+    }
+    ion-input{
+        border: 1px solid #dcdcdc;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    ion-select{
+      color: white;
+      text-align: left;
+      display: contents;
+      width: 100%;
+      font-size: 17px;
+    }
+
+    // retocar color interno de icono
+    ion-select::part(icon) {
+    color: red!important;
+    }
+
+
+    ion-avatar{
+        display: table-cell;
+        top: 1.5rem;
+        position: relative;
+        ion-fab-button{
+            position: absolute;
+            right: 0;
+            bottom: 30%;
+            --background: #EF4044;
+          }
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+  }
+
+  ion-buttons{
+    position: absolute;
+    right: 0;
+  }
+
+  .perfil{
+    background-color: red;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+.indicadores{
+  background-color: red;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+.medidas{
+  background-color: red;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.pago{
+  background-color: red;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.imagen{
+  background-color: red;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+  ion-title{
+      text-align: center;
+  }
+
+.titulo{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+  /*   opacity: 0.7; */
+    margin-bottom: 0;
+  }
+
+  form{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  ion-content{
+    --ion-background-color:black;
+}
+
+ion-item{
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+
+.pencil-grey{
+  position: absolute;right: 1rem;color: grey;font-size: 1.2rem;
+}
+.pencil-red{
+  position: absolute;right: 1rem;color: red;font-size: 1.2rem;
+}
+
+.card{
+    width: 150px;
+    height: 160px;
+    background: #232323;
+}
+.center-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 101px;
+    height: 80px;
+}

@@ -1,0 +1,84 @@
+<ion-buttons slot="start">
+  <ion-fab vertical="center" style="margin-top:1.25rem;"  horizontal="start" slot="fixed" class="animated fadeInUp delay-2s" >
+   <ion-fab-button style="--background:#ef4044" (click)="atras()" size="small">
+     <ion-icon name="arrow-back-outline"></ion-icon>
+   </ion-fab-button>
+ </ion-fab>
+</ion-buttons>
+
+<ion-content>
+  <ion-card *ngIf="!mostrar">
+    <img src="assets/img/imagenpulso2.jpg" />
+    <ion-card-header>
+      <ion-card-title>Pulso radial</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      1. Ubica los dedos índice y medio cerca de la base del pulgar.
+      <div></div>
+      2. Haz una leve presión con los dedos si es necesario para sentir las pulsaciones.
+      <div></div>
+      3. Usa un cronómetro y cuenta tus latidos por 10 segundos.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="mostrar">
+    <img src="assets/img/pulso-carotideo.jpg" />
+    <ion-card-header>
+      <ion-card-title>Pulso Carotídeo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Colocar los dedos indices y corazón suavemente hasta sentir la arteria carotída de cualquier de los dos lados del cuello, en el espacio situado entre la tráquea y el musculo esternacleidomastoide(derecho o izquierdo), bajo
+      la mandibula.
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-padding">
+    <b>Total de pulsaciones en 10 segundos:</b>
+    <!-- Contar los latidos por 10 segundo <b>y nosotros calculáremos tus latidos
+      por minutos.</b> -->
+  </div>
+
+  <ion-list lines="full" class="ion-padding ion-margin-bottom">
+    <ion-item >
+      <ion-label position="floating" style="color: red;" >Frecuencia cardíaca <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="number" inputmode="numeric" (ionInput)="valor($event)" ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-col  size="12">      
+    <ion-card  style="
+      background: #EF4044;
+      color: white;
+      width: 286px; 
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      text-align: center;
+      margin: 0 auto;
+      "
+   (click)="salir()">
+    <h2 style="margin: 10px; text-align: center;">
+      <b> Continuar </b>
+    </h2> 
+   </ion-card>
+  </ion-col>
+
+  
+</ion-content>
+
+
+<!-- <ion-footer class="contenedor">
+  <ion-toolbar >
+    <ion-buttons slot="end"  (click)="acceder()">
+      <ion-button id="changeText" >
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start" (click)="atras()" >
+      <ion-button id="changeText" >
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer> -->

@@ -1,0 +1,109 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" slot="fixed">
+
+  <div class="contenedor">
+
+      <h2 class="titulo">¿Listo para comenzar?</h2>
+    
+      <ion-grid class="my-grid  animated fadeIn delay-2s">
+      <ion-row class="parent-row">
+        <ion-col size="12">      
+          <ion-input type="text" placeholder="Email*" name="email" [(ngModel)]="login.email"></ion-input>
+        </ion-col>
+        <ion-col  size="12">      
+          <ion-input type="password" placeholder="Password*" name="password" [(ngModel)]="login.password"></ion-input>
+        </ion-col>
+        <ion-col  size="12">      
+
+          <!-- <ion-card style="
+            --background:#92949c;
+            width: 286px; "
+            (click)="acceder()" [disabled]="facebookhabilitar">
+            <ion-item style="--background:#92949c; color:white;">
+              <ion-icon name="mail-outline" slot="start"></ion-icon>
+              <ion-label style="font-size:14px;  font-family: 'Open Sans';text-transform: uppercase;"> Acceder con Email</ion-label>
+            </ion-item>
+          </ion-card> -->
+
+          <ion-button style="
+            width: 286px; 
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+            "  color="medium"
+          (click)="acceder()" [disabled]="facebookhabilitar" class="disminuirboton">
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+            Acceder con Email
+          </ion-button>
+
+        </ion-col>
+        <ion-col  size="12">   
+
+          <!-- <ion-card  style="
+          --background:#eb445a;
+          width: 286px; "
+          (click)="googleLogin()" [disabled]="googlehabilitar">
+          <ion-item style="--background:#eb445a; color:white;">
+            <ion-icon src="./assets/icon/buscar.svg" slot="start"></ion-icon>
+            <ion-label style="font-size:14px; font-family: 'Open Sans';text-transform: uppercase;"> Acceder con Google</ion-label>
+          </ion-item>
+        </ion-card>    -->
+
+          <ion-button style="
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+            "  color="danger" 
+            (click)="googleLogin()" [disabled]="googlehabilitar" class="disminuirboton">
+            <ion-icon src="./assets/icon/buscar.svg" slot="start"></ion-icon>
+
+            Acceder con Google
+          </ion-button> 
+
+        </ion-col>
+        <ion-col  size="12">    
+          <!-- <ion-card  style="
+          --background:#3b5998;
+          width: 286px; "
+          color="primary"
+          (click)="facebookLogin()" [disabled]="facebookhabilitar">
+          <ion-item style="--background:#3b5998; color:white;">
+            <ion-icon name="logo-facebook" slot="start"></ion-icon>
+            <ion-label style="font-size:14px;  font-family: 'Open Sans';text-transform: uppercase;"> Acceder con Facebook </ion-label>
+          </ion-item>
+        </ion-card>   -->
+
+         <ion-button style="
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+            "  color="primary" 
+          (click)="facebookLogin()" [disabled]="facebookhabilitar" class="disminuirboton">
+            <ion-icon name="logo-facebook" slot="start"></ion-icon>
+            Acceder con Facebook
+          </ion-button>
+
+        </ion-col>
+        <ion-col  size="12">      
+          <a href="#" style="color: black;" (click)="recuperar()">Recuperar Contraseña</a>
+        </ion-col>
+      </ion-row>
+      </ion-grid>      
+  </div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="piepagina ion-text-center">
+      <p class="animated fadeIn delay-1s">¿Aun no posee una cuenta?</p>
+      <p class="animated fadeInUp delay-2s" style="font-weight: bold;" (click)="goto('/registrar-info')">Registrarse</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

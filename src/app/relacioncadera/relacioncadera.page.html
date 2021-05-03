@@ -1,0 +1,54 @@
+<ion-header [translucent]="true" class="ion-no-border animated fadeIn delay-1s">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" slot="fixed" class="animated fadeIn delay-1s">
+
+  <div class="contenedor">
+
+      <h2 class="titulo">Ingresa Tus Medidas</h2>
+      
+      <div class="letra">
+        (Porfavor, medir con un centimetro)
+      </div>
+
+
+      <ion-grid class="my-grid animated fadeIn delay-2s">
+      <ion-row class="parent-row">
+        <p class="mensaje"></p>
+        <ion-col  size="12">   
+          <div class="tarjeta">
+            <p class="mensaje">¿Cual es su medida maxima de cintura?</p>
+              
+            <img src="./assets/img/cintura.jpg" class="imagen"/>
+            <ion-input type="number" class="sa" name="max_cintura" placeholder="cm"
+              (ionChange)="validar($event,1)"  [(ngModel)]="medidasCorporales.max_cintura"></ion-input>  
+
+          </div> 
+         
+        </ion-col>
+        <ion-col  size="12"> 
+              <p class="mensaje">¿Cual es su medida de cadera?</p>
+              
+          <div class="tarjeta" >
+            <img src="./assets/img/cadera.png" class="imagen"/>
+             <ion-input  size="8" type="number" class="sa" name="cadera" placeholder="cm"
+              (ionChange)="validar($event,2)"   [(ngModel)]="medidasCorporales.cadera"></ion-input> 
+
+          </div>   
+           
+        </ion-col>
+                <ion-col size="12">      
+          <ion-card class="color-tarjeta" (click)="finalizar()" [disabled]="habilitar">
+            <h2>Finalizar</h2>
+          </ion-card>
+        </ion-col>
+
+      
+      </ion-row>
+      </ion-grid>      
+  </div>
+
+

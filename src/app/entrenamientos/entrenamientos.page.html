@@ -1,0 +1,110 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-back-btn defaultHref="tabs/dashboard"></app-back-btn>
+    </ion-buttons>
+    <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<!-- cabezera -->
+
+<ion-content fullscreen>
+
+  <div *ngIf="ocultar">
+
+    <!-- titulo -->
+    <div class="ion-text-center" style="padding: 1rem;">
+      Esta rutina tiene una duración de <span style="color:red; font-weight: bold;">{{minutos}}:00</span>
+    </div>
+
+    <ion-list *ngIf="stage1.length > 0" style="padding-top: 0px;">
+      <p class="ion-text-center opci incrementar"><b> Secuencia <span style="color:red"> 1 </span> </b>
+        <!-- <b style="color: #ff0000;"> X </b>  <b>{{stage1.totalRepeat}}</b> -->
+      </p>
+      <p class="ion-text-left opci"><b>Series a completar</b> <b style="color:red"> {{ calculateRepetitions(1) }} </b>
+        <!-- <b style="color: #ff0000;"> X </b>  <b>{{stage1.totalRepeat}}</b> -->
+      </p>
+
+      <ion-item *ngFor="let ejercicio of stage1; trackBy: customTB">
+
+        <ion-thumbnail slot="start">
+          <img src="http://fittech247.com/fittech/imagenes/{{ejercicio.cod}}/{{ejercicio.id}}.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <h2>{{ucFirst(ejercicio.name) }}</h2>
+        </ion-label>
+        <!--  <ion-badge color="danger" style="position: absolute;top: 0;">1 x {{ejercicio.repeat}}</ion-badge> -->
+        <ion-buttons slot="end">
+          <ion-button (click)="mostrarpop($event, ejercicio)">
+            <ion-icon slot="start" md="ellipsis-horizontal"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngIf="stage2.length > 0">
+      <p class="ion-text-center opci incrementar"><b> Secuencia <span style="color:red"> 2 </span> </b>
+        <!--  <b style="color: red;"> X </b>  <b>{{stage2.totalRepeat}}</b> -->
+      </p>
+      <p class="ion-text-left opci"><b>Series a completar</b> <b style="color:red"> {{ calculateRepetitions(2) }} </b>
+        <!-- <b style="color: #ff0000;"> X </b>  <b>{{stage1.totalRepeat}}</b> -->
+      </p>
+
+      <ion-item *ngFor="let ejercicio of stage2; trackBy: customTB">
+        <ion-thumbnail slot="start">
+          <img src="http://fittech247.com/fittech/imagenes/{{ejercicio.cod}}/{{ejercicio.id}}.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <h2>{{ucFirst(ejercicio.name) }}</h2>
+        </ion-label>
+        <!--  <ion-badge color="danger" style="position: absolute;top: 0;">1 x {{ejercicio.repeat}}</ion-badge> -->
+        <ion-buttons slot="end">
+          <ion-button (click)="mostrarpop($event, ejercicio)">
+            <ion-icon slot="start" md="ellipsis-horizontal"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngIf="stage3.length > 0">
+      <p class="ion-text-center opci incrementar"><b> Secuencia <span style="color:red"> 3 </span> </b>
+        <!-- <b style="color: red;"> X </b>  <b>{{stage3.totalRepeat}}</b> -->
+      </p>
+      <p class="ion-text-left opci"><b>Series a completar</b> <b style="color:red"> {{ calculateRepetitions(3) }} </b>
+        <!-- <b style="color: #ff0000;"> X </b>  <b>{{stage1.totalRepeat}}</b> -->
+      </p>
+
+      <ion-item *ngFor="let ejercicio of stage3; trackBy: customTB">
+        <ion-thumbnail slot="start">
+          <img src="http://fittech247.com/fittech/imagenes/{{ejercicio.cod}}/{{ejercicio.id}}.jpg">
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <h2>{{ucFirst(ejercicio.name) }}</h2>
+        </ion-label>
+        <!--  <ion-badge color="danger" style="position: absolute;top: 0;">1 x {{ejercicio.repeat}}</ion-badge> -->
+        <ion-buttons slot="end">
+          <ion-button (click)="mostrarpop($event, ejercicio)">
+            <ion-icon slot="start" md="ellipsis-horizontal"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+    </ion-list>
+
+
+  </div>
+
+  <div *ngIf="!ocultar">
+    <p class="ion-text-center">Complete los test para cargar las rutinas</p>
+  </div>
+
+
+</ion-content>
+<ion-footer>
+  <ion-button expand="block" shape="round" (click)="comenzar()" class="float">
+    <b> ¡Comenzar!</b>
+  </ion-button>
+</ion-footer>

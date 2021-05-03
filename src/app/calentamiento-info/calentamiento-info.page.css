@@ -1,0 +1,53 @@
+/*logo*/
+.logo {
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.cabezera {
+  max-height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*fin logo*/
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+ion-card {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 10px !important;
+  width: 88%;
+  margin: 0 auto !important;
+  word-wrap: break-word;
+}
+
+ion-card h2 {
+  font-size: 17px !important;
+  opacity: 0.9;
+}
+
+.aumentartitulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ion-content {
+  --color: black;
+  --background: white;
+}
+
+.toolbar-background {
+  --background: black;
+  --color: white;
+}

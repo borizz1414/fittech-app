@@ -1,0 +1,98 @@
+
+
+  <div class="contenedor animated fadeIn delay-1s">
+     
+      <div class="letra">
+        ¿Alguno de tus familiares de primer grado (Padres, hermanos o hijos) ha sufrido las enfermedades o afecciones siguientes?
+      </div>
+
+
+      <ion-grid class="my-grid animated fadeIn delay-2s">
+      <ion-row class="parent-row">
+        <ion-col  size="12">   
+          <ion-list>
+            <ion-list-header>(Marcar en caso afirmativo)</ion-list-header>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="ninguna" 
+              (ionChange)="historialcorazon('none')"  [(ngModel)]="condicionPersona.ninguna"></ion-toggle>
+              <ion-label>Ninguna de las siguientes</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Arritmia cardiaca</ion-label>
+              <ion-toggle color="dark"  slot="start" name="arritmia_corazon" 
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.arritmia_corazon"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark"  slot="start" name="ataque_corazon"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.ataque_corazon"></ion-toggle>
+              <ion-label>Ataque al corazón</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="operacion_corazon"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.operacion_corazon"></ion-toggle>
+              <ion-label>Operación de corazón</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="enfermedad_corazon"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.enfermedad_corazon"></ion-toggle>
+              <ion-label>Enfermedad cardiaca congénita</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="presion_corazon"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.presion_corazon"></ion-toggle>
+              <ion-label>Presión arterial alta</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="diabete_corazon"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.diabete_corazon"></ion-toggle>
+              <ion-label>Diabetes</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-toggle color="dark" slot="start" name="muerte_prematura"
+              (ionChange)="historialcorazon('option')" [(ngModel)]="condicionPersona.muerte_prematura"></ion-toggle>
+              <ion-label style="font-size: 14px;">Muerte prematura antes de los 50 años</ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-toggle color="dark"  slot="start" name="insuficiencia_renal"
+              (ionChange)="historialcorazon('option')"
+              [(ngModel)]="condicionPersona.insuficiencia_renal"></ion-toggle>
+              <ion-label>Insuficiencia renal</ion-label>
+            </ion-item>
+
+          </ion-list>
+            
+          
+        </ion-col>
+ 
+        <ion-col size="12">      
+       <!--    <ion-card class="color-tarjeta" (click)="avanzar()" [disabled]="habilitar" style="
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: 'Open Sans';
+          ">
+            <h2 style="position:relative;margin: 10px;">Continuar</h2>
+          </ion-card> -->
+
+        
+        </ion-col>
+       
+      </ion-row>
+      </ion-grid>
+     
+  </div>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed"    >
+    <ion-fab-button color="danger" (click)="atras()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>   
+
+
+

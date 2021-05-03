@@ -1,0 +1,77 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+   
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+<ng-container *ngIf="!estiramientos">
+
+
+  <div  class="ion-padding ion-text-center aumentartitulo">
+   <H2><B> ESTIRAMIENTOS</B></H2>
+  </div> 
+  <div  class="ion-padding ion-text-center">
+    <h3 style="color: red;"> <b> Ahora por favor realiza estos estiramientos</b></h3>
+
+  </div>   
+  <div class="ion-padding ion-text-center">
+    Respira profundo, vuelve a la calma y estira todo tu cuerpo, no te tomará más de cinco minutos.
+  </div>
+
+  <ion-grid class="ion-padding">
+   <ion-row >
+      <ion-col  size="12">   
+        <ion-card style="  
+    background: #EF4044;
+    color: white;
+    width: 286px; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Open Sans';" (click)="iniciar()">
+    <h2 style="text-align: center; margin: 10px; font-size: 17px;">
+    <b> Continuar </b>
+    </h2>  
+        </ion-card>  
+      </ion-col>
+
+      <ion-col  size="12">   
+        <ion-card style="  
+    background: #EF4044;
+    color: white;
+    width: 286px; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Open Sans';" (click)="saltar()">
+    <h2 style="text-align: center; margin: 10px; font-size: 17px;">
+    <b> Saltar Estiramientos </b>
+    </h2>  
+        </ion-card>  
+      </ion-col>
+      
+    </ion-row> 
+
+  </ion-grid>   
+</ng-container>
+
+<ng-container *ngIf="estiramientos">
+  <div  class="ion-padding ion-text-center aumentartitulo">
+    <H1><B> ESTIRAMIENTOS</B></H1>
+   </div> 
+  <ion-grid>
+    <ion-row >
+      <ion-col  size="12">   
+        <div  class="ion-padding-horizontal">
+          <img src="assets/img/casa.jpg"/>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ng-container>
+
+
+</ion-content>

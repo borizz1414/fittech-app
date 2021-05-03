@@ -1,0 +1,25 @@
+ion-input{
+    border: solid 1px grey;
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .cambiarOpacidad{
+     opacity: 0.2;
+ }
+
+ .tarjeta:hover{
+     opacity: 0.7;
+ }
+
+ .titulo{
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+ .ion-text-center {
+    font-weight: bold;
+}

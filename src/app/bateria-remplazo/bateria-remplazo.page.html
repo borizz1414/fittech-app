@@ -1,0 +1,41 @@
+<ion-header [translucent]="true" class="ion-no-border">
+    <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+    </div>
+</ion-header>
+
+
+<video #myVideo playsinline width="100%" class="videoReproductor" (ended)="videoEnd()" autoplay
+  poster="assets/img/videogif.gif" (loadedmetadata)="onMetadata($event, video)" *ngIf="video">
+  <source [src]="video" />
+</video>
+
+
+<ion-content>
+
+  <div class="contenedor-cabezera">
+    <p class="titulo" style="color: white;">{{ucFirst(name)}}</p>
+    <p style="color: white;">Demostración del ejercicio</p>
+  </div>
+
+
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button color="light" (click)="atras()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" *ngIf="mostrar">
+  <ion-fab-button color="danger" (click)="pauseVideo()">
+    <ion-icon name="pause-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" *ngIf="!mostrar">
+  <ion-fab-button color="danger" (click)="playVideo()">
+    <ion-icon name="play-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

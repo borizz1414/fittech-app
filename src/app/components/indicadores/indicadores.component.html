@@ -1,0 +1,88 @@
+
+<!-- <div style="margin-bottom: 0;"  class="ion-padding ion-text-center titulo">
+  Indicadores de salud
+</div>  -->
+<ng-container>
+  <ion-grid>
+    <ion-row *ngIf="!info">
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-icon name="alert-circle" (click)="mostrar(info, 0)" style="font-size: 1.25rem; color: white;"></ion-icon>
+        <p class="tituloindicador">IMC  =</p>
+        <ion-label class="tamanoindicador" *ngIf="dato.imc !== null">
+          {{dato.imc}}
+        </ion-label>
+        <ion-label class="tamanoindicador2 ion-text-wrap" *ngIf="dato.imc === null">Debe ingresar sus medida</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-icon name="alert-circle"  (click)="mostrar(info, 1)" style="font-size: 1.25rem; color: white;"></ion-icon>
+        <p class="tituloindicador">ICA  =</p>
+        <ion-label class="tamanoindicador" *ngIf="dato.ica !== null">{{dato.ica}}</ion-label>
+        <ion-label class="tamanoindicador2 ion-text-wrap" *ngIf="dato.ica == null">Debe ingresar sus medidas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-icon name="alert-circle"  (click)="mostrar(info,2)" style="font-size: 1.25rem; color: white;"></ion-icon>
+        <p class="tituloindicador">Perímetro de cintura =</p>
+        <ion-label class="tamanoindicador" *ngIf="dato.Perimetro_Cintura !== null">{{dato.Perimetro_Cintura}}</ion-label>
+        <ion-label class="tamanoindicador2 ion-text-wrap" *ngIf="dato.Perimetro_Cintura === null">Debe ingresar sus medidas</ion-label>
+
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-icon name="alert-circle" (click)="mostrar(info,3)" style="font-size: 1.25rem; color: white;"></ion-icon>
+        <p class="tituloindicador">TBMA  =</p>
+        <ion-label class="tamanoindicador" *ngIf="dato.tmb !== null">{{dato.tmb}} calorías</ion-label>
+        <ion-label class="tamanoindicador2 ion-text-wrap" *ngIf="dato.tmb === null">
+          Aún no ha completado información nutricional
+        </ion-label>
+
+      </ion-item>
+    </ion-col>
+
+
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-icon name="alert-circle"  (click)="mostrar(info,4)" style="font-size: 1.25rem; color: white;"></ion-icon>
+        <p class="tituloindicador">Estrategia nutricional  =</p>
+        <ion-label class="tamanoindicador" *ngIf="dato.Estrategia_N !== null">{{dato.Estrategia_N}}%</ion-label>
+        <ion-label class="tamanoindicador2 ion-text-wrap" *ngIf="dato.Estrategia_N === null">
+          Aún no ha completado información nutricional
+        </ion-label>
+
+      </ion-item>
+    </ion-col>
+
+    </ion-row>
+    <div class="animated fadeInLeft" *ngIf="info">
+      <ion-grid class="my-grid">
+          <ion-row class="parent-row animated fadeInLeft">
+              <div class="container">
+                  <h5 class="titulo" style="text-align: center; color: white;">Ayuda
+                      <ion-icon style="color: white;" class="ayudad2" name="close-outline" (click)="cerrar()"></ion-icon>
+                  </h5>
+                  <p *ngIf="indicador == 0" class="ion-text-left" style="color: white; font-size: 1.2rem;"><b> IMC:</b> Es un indicador en el cual nos basamos solo para relacionar algunas enfermedades o inconvenientes relacionadas con la salud, y no para saber el estado de sobrepeso de una persona, ya que no toma en cuenta el % graso.</p>
+                  <p  *ngIf="indicador == 1" class="ion-text-left" style="color: white; font-size: 1.2rem;"><b> ICA:</b> Indica un riesgo aproximado de enfermedades cardiovasculares, relacionando la cintura con la altura.A mayor valor mayor riesgo. A partir de 0.5 se considera en riesgo de padecer síndrome metabólico (colesterol, hipertensión, diabetes, tiroides).</p>
+                  <p *ngIf="indicador == 2" class="ion-text-left" style="color: white; font-size: 1.2rem;"><b> Perímetro de cintura:</b> Indica el riesgo de enfermedades cardiovasculares que pueden empezar a ocurrir si se pasa de los siguientes limites. Hombres: 102 cm / Mujeres: 88 cm</p>
+                  <p *ngIf="indicador == 3" class="ion-text-left" style="color: white; font-size: 1.2rem;"><b> TBMA:</b> Tasa Metabólica Basal Activa, no es nada más que la energía que necesita para mantener sus actividades del día a día, sin modificar su peso, por ello si se consume menor valor se pierde peso y viceversa.</p>
+                  <p *ngIf="indicador == 4" class="ion-text-left" style="color: white; font-size: 1.2rem;"><b> Estrategia nutricional:</b> Es el déficit o superávit calórico dispuesto en su plan nutricional, para cumplir sus objetivos.</p>
+              </div>
+
+          </ion-row>
+      </ion-grid>
+    </div>
+  </ion-grid>
+</ng-container >
+
+<!-- <ng-container *ngIf="detectar === false">
+  <p class="ion-text-center ion-padding">
+    Debes completar el formulario en nutrición para poder ver sus indicadores
+     <span style="color: red;"> * </span></p>
+</ng-container> -->

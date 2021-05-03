@@ -1,0 +1,108 @@
+/*logo*/
+.logo {
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.cabezera {
+  max-height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (orientation: landscape) {
+  .cabezera {
+    display: none !important;
+  }
+}
+
+/*fin logo*/
+.videoReproductor {
+  object-fit: cover;
+  width: 100%;
+  height: 13em;
+}
+
+@media (max-height: 640px) {
+  .videoReproductor {
+    height: auto;
+    object-fit: fill;
+  }
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-cabezera {
+  width: 100%;
+  max-height: 35%;
+  height: auto;
+  background-color: black;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contenedor-cabezera p {
+  margin: 5px !important;
+}
+
+.contenedor-cuerpo {
+  width: 100%;
+  max-height: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlar-texto {
+  margin: 10px;
+}
+
+.titulo {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.reloj {
+  margin: 10px !important;
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.redondear {
+  flex-grow: 1;
+  border: 4px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+
+/*Cambio de pantalla*/
+.fullscrean {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  color: #f53d3d;
+  margin-right: 4%;
+  top: 9.375rem;
+}
+
+video[poster] {
+  object-fit: cover;
+}

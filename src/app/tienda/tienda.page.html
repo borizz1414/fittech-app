@@ -1,0 +1,41 @@
+<ion-toolbar color="dark">
+
+  <ion-buttons slot="primary">
+    <ion-button>
+      <div class="cabezera">
+        <img src="assets/img/logo-app.png" class="logo">
+      </div>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-title>Tienda</ion-title>
+</ion-toolbar>
+
+<ion-content>
+
+  <div class="ion-text-center" style="margin:1rem; color: #E6E6E6;font-size: 20px;
+  font-weight: bold;">
+    Bienvenidos a nuestra tienda
+  </div>
+
+  <div class="ion-text-center" style="margin:1rem; color: #E6E6E6;">
+    Aquí encontraras los productos necesarios para tu entrenamiento a través de nuestras marcas aliadas.
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of tienda">
+        <ion-card class="card" (click)="go(item)">
+          <img src="http://fittech247.com/fittech/imagenes/Aliados/{{item.id}}.png" class="center-img" />
+          <ion-card-header>
+            <ion-card-title style="color: white; font-size: 18px;text-align: center;">{{item.name}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+
+</ion-content>
+
+

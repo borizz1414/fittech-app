@@ -1,0 +1,1364 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HistorialComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/historial/historial.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-historial</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./historial.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./historial.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#datoEnfermedades">datoEnfermedades</a>
+                            </li>
+                            <li>
+                                <a href="#habilitar">habilitar</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalController">modalController</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#atras">atras</a>
+                            </li>
+                            <li>
+                                <a href="#avanzar">avanzar</a>
+                            </li>
+                            <li>
+                                <a href="#historialmedico">historialmedico</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cambiarPantalla">cambiarPantalla</a>
+                            </li>
+                            <li>
+                                <a href="#siguientePantalla">siguientePantalla</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modalController: ModalController, ruta: NavController, usuarioservicio: <a href="../injectables/UsuarioService.html">UsuarioService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="277" class="link-to-prism">src/app/components/historial/historial.component.ts:277</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modalController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ruta</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usuarioservicio</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsuarioService.html" target="_self" >UsuarioService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cambiarPantalla"></a>
+                        <b>cambiarPantalla</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/historial/historial.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="siguientePantalla"></a>
+                        <b>siguientePantalla</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/historial/historial.component.ts:18</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="atras"></a>
+                    <span class="name">
+                        <b>
+                            atras
+                        </b>
+                        <a href="#atras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>atras()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/app/components/historial/historial.component.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="avanzar"></a>
+                    <span class="name">
+                        <b>
+                            avanzar
+                        </b>
+                        <a href="#avanzar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>avanzar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/components/historial/historial.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="historialmedico"></a>
+                    <span class="name">
+                        <b>
+                            historialmedico
+                        </b>
+                        <a href="#historialmedico"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>historialmedico(datos?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/components/historial/historial.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>datos</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="284"
+                            class="link-to-prism">src/app/components/historial/historial.component.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="datoEnfermedades"></a>
+                        <span class="name">
+                            <b>
+                            datoEnfermedades</b>
+                            <a href="#datoEnfermedades"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    patologiaCardiaca:0,
+    enfermedadPulmonar:0,
+
+    hipertensionPulmonar:0,
+    pulmonarcronica:0,
+    taquicardia:0,
+    asma:0,
+    bronquiti:0,
+    aritmias:0,
+    hipertension:0,
+    hipotension:0,
+    desvanecimiento:0,
+    diabete:0,
+    infartos:0,
+    soplo:0,
+    influenza:0,
+    dolorPecho:0,
+    fatiga:0,
+    insuficiencia:0,
+    insuficiencia_renal: 0,
+    noEnfermedad: false
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/historial/historial.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="habilitar"></a>
+                        <span class="name">
+                            <b>
+                            habilitar</b>
+                            <a href="#habilitar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/historial/historial.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modalController</b>
+                            <a href="#modalController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ModalController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="280" class="link-to-prism">src/app/components/historial/historial.component.ts:280</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Output,EventEmitter, HostListener, ViewChild, ElementRef} from &#x27;@angular/core&#x27;;
+import { ModalController, IonContent } from &#x27;@ionic/angular&#x27;;
+import { ModalInfoPage } from &#x27;src/app/modal-info/modal-info.page&#x27;;
+import { NavController } from &#x27;@ionic/angular&#x27;;
+import { UsuarioService } from &#x27;src/app/services/usuario.service&#x27;;
+
+
+@Component({
+  selector: &#x27;app-historial&#x27;,
+  templateUrl: &#x27;./historial.component.html&#x27;,
+  styleUrls: [&#x27;./historial.component.scss&#x27;],
+})
+export class HistorialComponent implements OnInit {
+
+  habilitar &#x3D; true
+
+  @Output() cambiarPantalla &#x3D; new EventEmitter();
+  @Output() siguientePantalla &#x3D; new EventEmitter();
+  datoEnfermedades &#x3D; {
+    patologiaCardiaca:0,
+    enfermedadPulmonar:0,
+
+    hipertensionPulmonar:0,
+    pulmonarcronica:0,
+    taquicardia:0,
+    asma:0,
+    bronquiti:0,
+    aritmias:0,
+    hipertension:0,
+    hipotension:0,
+    desvanecimiento:0,
+    diabete:0,
+    infartos:0,
+    soplo:0,
+    influenza:0,
+    dolorPecho:0,
+    fatiga:0,
+    insuficiencia:0,
+    insuficiencia_renal: 0,
+    noEnfermedad: false
+  }
+
+
+  historialmedico(datos?){
+
+
+    if(typeof (datos) &#x3D;&#x3D; &#x27;string&#x27;){
+      if(this.datoEnfermedades.noEnfermedad){
+        console.log(&#x27;Entro&#x27;);
+         this.habilitar &#x3D; false 
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+        this.datoEnfermedades.hipertension &#x3D; 0
+        this.datoEnfermedades.aritmias &#x3D; 0
+        this.datoEnfermedades.taquicardia &#x3D; 0
+        this.datoEnfermedades.insuficiencia &#x3D; 0
+        this.datoEnfermedades.infartos &#x3D; 0
+        this.datoEnfermedades.soplo &#x3D; 0
+        this.datoEnfermedades.influenza &#x3D; 0
+        this.datoEnfermedades.asma &#x3D; 0
+        this.datoEnfermedades.bronquiti &#x3D; 0
+        this.datoEnfermedades.hipertensionPulmonar &#x3D; 0
+        this.datoEnfermedades.pulmonarcronica &#x3D; 0
+        this.datoEnfermedades.hipotension &#x3D; 0
+        this.datoEnfermedades.desvanecimiento &#x3D; 0
+        this.datoEnfermedades.diabete &#x3D; 0
+        this.datoEnfermedades.dolorPecho &#x3D; 0
+        this.datoEnfermedades.fatiga &#x3D; 0
+        this.datoEnfermedades.insuficiencia_renal &#x3D; 0
+        //habilitar boton
+
+      }else{
+
+      }
+      
+    }else{
+      if(this.datoEnfermedades.hipertension){
+        this.datoEnfermedades.hipertension &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.hipertension &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.hipotension){
+        this.datoEnfermedades.hipotension &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+                //habilitar boton
+                this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.hipotension &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.desvanecimiento){
+        this.datoEnfermedades.desvanecimiento &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+                //habilitar boton
+                this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.desvanecimiento &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.diabete){
+        this.datoEnfermedades.diabete &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+                //habilitar boton
+                this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.diabete &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.dolorPecho){
+        this.datoEnfermedades.dolorPecho &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+                //habilitar boton
+                this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.dolorPecho &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.fatiga){
+        this.datoEnfermedades.fatiga &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+                //habilitar boton
+                this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.fatiga &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.asma){
+        this.datoEnfermedades.asma &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.asma &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.bronquiti){
+        this.datoEnfermedades.bronquiti &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.bronquiti &#x3D; 0
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+
+      }
+  
+      if(this.datoEnfermedades.aritmias){
+        this.datoEnfermedades.aritmias &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+  
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.aritmias &#x3D; 0
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+
+      }
+  
+      if(this.datoEnfermedades.soplo){
+        this.datoEnfermedades.soplo &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.soplo &#x3D; 0
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.influenza){
+        this.datoEnfermedades.influenza &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+      }else{
+        this.datoEnfermedades.influenza &#x3D; 0
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+
+      }
+  
+      if(this.datoEnfermedades.infartos){
+        this.datoEnfermedades.infartos &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.infartos &#x3D; 0
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+        
+      }
+  
+      if(this.datoEnfermedades.insuficiencia){
+        this.datoEnfermedades.insuficiencia &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.insuficiencia &#x3D; 0
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.taquicardia){
+        this.datoEnfermedades.taquicardia &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.taquicardia &#x3D; 0
+        this.datoEnfermedades.patologiaCardiaca &#x3D; 0
+      }
+  
+      if(this.datoEnfermedades.pulmonarcronica){
+        this.datoEnfermedades.pulmonarcronica &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.pulmonarcronica &#x3D; 0
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+
+      }
+  
+      if(this.datoEnfermedades.hipertensionPulmonar){
+        this.datoEnfermedades.hipertensionPulmonar &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.hipertensionPulmonar &#x3D; 0 
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+      }
+
+      if(this.datoEnfermedades.insuficiencia_renal){
+        this.datoEnfermedades.insuficiencia_renal &#x3D; 1
+        this.datoEnfermedades.noEnfermedad &#x3D; false
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 1
+          //habilitar boton
+          this.habilitar &#x3D; false
+  
+      }else{
+        this.datoEnfermedades.hipertensionPulmonar &#x3D; 0 
+        this.datoEnfermedades.enfermedadPulmonar &#x3D; 0
+      }
+    }
+    console.log(datos);
+
+    console.log(this.datoEnfermedades);
+    console.log(this.habilitar);
+}
+
+   
+  constructor(public modalController: ModalController , private ruta: NavController,private usuarioservicio:UsuarioService) {
+
+  }
+
+  ngOnInit() {
+
+  }
+
+  
+
+  avanzar(){
+
+    if(this.datoEnfermedades.noEnfermedad){
+      this.usuarioservicio.enfermedades(this.datoEnfermedades)
+      this.siguientePantalla.emit(1);
+    }else if(
+      this.datoEnfermedades.aritmias &#x3D;&#x3D;&#x3D; 0 &amp;&amp; 
+      this.datoEnfermedades.asma &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.bronquiti &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.desvanecimiento &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.diabete &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.dolorPecho &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.enfermedadPulmonar &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.fatiga &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.hipertension &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.hipertensionPulmonar &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.hipotension &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.infartos &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.influenza &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.insuficiencia &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.patologiaCardiaca &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.pulmonarcronica &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.soplo &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.insuficiencia_renal &#x3D;&#x3D;&#x3D; 0  &amp;&amp; 
+      this.datoEnfermedades.taquicardia &#x3D;&#x3D;&#x3D; 0 ){
+      this.habilitar &#x3D; true
+    }else{
+      this.usuarioservicio.enfermedades(this.datoEnfermedades)
+      this.siguientePantalla.emit(1);
+    }
+
+
+
+
+
+
+   /*  this.ruta.navigateRoot([&#x27;/registrar-info&#x27;]) */
+  }
+
+  atras(){
+    this.cambiarPantalla.emit(1)
+  }
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+
+  &lt;h2 class&#x3D;&quot;titulo&quot;&gt;Tu historial médico&lt;/h2&gt;
+  &lt;ion-button color&#x3D;&quot;danger&quot; class&#x3D;&quot;tamanobtn&quot;&gt;
+    &lt;ion-icon name&#x3D;&quot;document-text&quot; class&#x3D;&quot;iconSize&quot; &gt;&lt;/ion-icon&gt;
+  &lt;/ion-button&gt;
+
+  &lt;ion-grid&gt;
+    &lt;ion-row class&#x3D;&quot;ion-justify-content-center&quot;&gt;
+      &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+
+        &lt;ion-list lines&#x3D;&quot;none&quot; class&#x3D;&quot;itemcustom&quot; &gt;
+          &lt;ion-list-header style&#x3D;&quot;padding-left: 0; opacity: 0.7; transform: translate(10%,0); font-size: 18px;&quot;&gt;
+            ¿Tienes alguna de las siguientes enfermedades?
+          &lt;/ion-list-header&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(&#x27;enfermedad&#x27;)&quot;
+         name&#x3D;&quot;noEnfermedad&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.noEnfermedad&quot;
+        &gt;&lt;/ion-toggle&gt;
+        &lt;ion-label&gt;Ninguna de las siguientes&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Hipertensión&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.hipertension)&quot;
+        name&#x3D;&quot;hipertension&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.hipertension&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.hipotension)&quot;
+         name&#x3D;&quot;hipotension&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.hipotension&quot;
+        &gt;&lt;/ion-toggle&gt;
+        &lt;ion-label&gt;Hipotensión&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Desvanecimiento&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot;   (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.desvanecimiento)&quot;
+        name&#x3D;&quot;desvanecimiento&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.desvanecimiento&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Diabetes insulinodependiente&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;diabete&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.diabete)&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.diabete&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;dolorPecho&quot;
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.dolorPecho)&quot;   [(ngModel)]&#x3D;&quot;datoEnfermedades.dolorPecho&quot;
+        &gt;&lt;/ion-toggle&gt;
+        &lt;ion-label&gt;Dolores en el pecho&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Fatiga inusual en actividades&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;fatiga&quot;
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.fatiga)&quot;   [(ngModel)]&#x3D;&quot;datoEnfermedades.fatiga&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Arritmias&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.aritmias)&quot; name&#x3D;&quot;aritmias&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.aritmias&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;taquicardia&quot;
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.taquicardia)&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.taquicardia&quot;
+        &gt;&lt;/ion-toggle&gt;
+        &lt;ion-label&gt;Taquicardia&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Insuficiencia cardiaca&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;insuficiencia&quot;
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.insuficiencia)&quot;  [(ngModel)]&#x3D;&quot;datoEnfermedades.insuficiencia&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Infartos&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.infartos)&quot;  name&#x3D;&quot;infartos&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.infartos&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot;
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.soplo)&quot;  name&#x3D;&quot;soplo&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.soplo&quot; 
+        &gt;&lt;/ion-toggle&gt;
+        &lt;ion-label&gt;Soplo en el corazón&lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Influenza&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.influenza)&quot; name&#x3D;&quot;influenza&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.influenza&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+        
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Asma&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;asma&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.asma)&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.asma&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+        &lt;ion-label&gt;Bronquitis&lt;/ion-label&gt;
+        &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; 
+        (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.bronquiti)&quot; name&#x3D;&quot;bronquiti&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.bronquiti&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+      
+        &lt;ion-item&gt;
+          &lt;ion-label&gt;Hipertensión pulmonar&lt;/ion-label&gt;
+          &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; 
+          (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.hipertensionPulmonar)&quot; name&#x3D;&quot;hipertensionPulmonar&quot; [(ngModel)]&#x3D;&quot;datoEnfermedades.hipertensionPulmonar&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+        
+        &lt;ion-item&gt;
+          &lt;ion-label&gt;Enfermedad pulmonar obstructiva crónica&lt;/ion-label&gt;
+          &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;pulmonarcronica&quot;
+          (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.pulmonarcronica)&quot;  [(ngModel)]&#x3D;&quot;datoEnfermedades.pulmonarcronica&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item&gt;
+          &lt;ion-label&gt;Insuficiencia renal&lt;/ion-label&gt;
+          &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;insuficiencia_renal&quot;
+          (ionChange)&#x3D;&quot;historialmedico(datoEnfermedades.insuficiencia_renal)&quot;  [(ngModel)]&#x3D;&quot;datoEnfermedades.insuficiencia_renal&quot;&gt;&lt;/ion-toggle&gt;
+        &lt;/ion-item&gt;
+        
+        &lt;/ion-list&gt;
+
+
+        &lt;div&gt;&lt;br&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;br&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;br&gt;&lt;/div&gt;
+
+
+      &lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+  &lt;/ion-grid&gt;
+
+
+  &lt;ion-fab vertical&#x3D;&quot;bottom&quot; horizontal&#x3D;&quot;start&quot; slot&#x3D;&quot;fixed&quot;    &gt;
+    &lt;ion-fab-button color&#x3D;&quot;danger&quot; (click)&#x3D;&quot;atras()&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;arrow-back-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+  &lt;/ion-fab&gt;
+
+  &lt;ion-fab vertical&#x3D;&quot;bottom&quot; horizontal&#x3D;&quot;end&quot; slot&#x3D;&quot;fixed&quot; &gt;
+    &lt;ion-fab-button color&#x3D;&quot;danger&quot; (click)&#x3D;&quot;avanzar()&quot; [disabled]&#x3D;&quot;habilitar&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;arrow-forward-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+  &lt;/ion-fab&gt;
+
+ 
+
+
+  
+
+
+
+
+
+
+
+  &lt;!-- &lt;ion-grid class&#x3D;&quot;my-grid animated fadeIn delay-2s&quot;&gt;
+    &lt;ion-row class&#x3D;&quot;parent-row&quot;&gt;
+      &lt;ion-col  size&#x3D;&quot;12&quot;&gt;   
+        &lt;ion-list&gt;
+          &lt;ion-list-header&gt;Presentas alguna de estas patologias&lt;/ion-list-header&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;ninguna&quot; 
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;none&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Ninguna de las siguientes&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-label&gt;Hipertension&lt;/ion-label&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;arritmia_corazon&quot; 
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;ataque_corazon&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Hipotension&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;operacion_corazon&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot;&gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Desvanecimiento&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;enfermedad_corazon&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Diabetes insulinodependiente&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;presion_corazon&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot;&gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Dolores en el pecho&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;diabete_corazon&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label&gt;Fatiga insual en actividades&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Aritmias&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Taquicardia&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Insuficiencia cardiaca&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Infartos&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Soplo en el corazon&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Influenza&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Asma&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Bronquiti&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Hipertension pulmonar&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+          &lt;ion-item&gt;
+            &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+            (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; &gt;&lt;/ion-toggle&gt;
+            &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Enfermedad pulmonar obstructiva cronica&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+
+        &lt;/ion-list&gt;
+          
+        
+      &lt;/ion-col&gt;
+
+     
+    &lt;/ion-row&gt;
+    &lt;/ion-grid&gt;     --&gt;
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./historial.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+  .titulo{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+.iconSize {
+    font-size: 27px;
+  }
+
+.svgSize{
+    width: 250px;
+}
+
+.margin-parrafo{
+    margin-bottom: 0px;
+}
+
+.margin-last{
+    margin-bottom: 40px;
+}
+
+.contenedor{
+padding: 20px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>  <h2 class="titulo">Tu historial médico</h2>  <ion-button color="danger" class="tamanobtn">    <ion-icon name="document-text" class="iconSize" ></ion-icon>  </ion-button>  <ion-grid>    <ion-row class="ion-justify-content-center">      <ion-col size="12">        <ion-list lines="none" class="itemcustom" >          <ion-list-header style="padding-left: 0; opacity: 0.7; transform: translate(10%,0); font-size: 18px;">            ¿Tienes alguna de las siguientes enfermedades?          </ion-list-header>              <ion-item>        <ion-toggle color="dark" slot="start"         (ionChange)="historialmedico(\'enfermedad\')"         name="noEnfermedad" [(ngModel)]="datoEnfermedades.noEnfermedad"        ></ion-toggle>        <ion-label>Ninguna de las siguientes</ion-label>        </ion-item>              <ion-item>        <ion-label>Hipertensión</ion-label>        <ion-toggle color="dark"  slot="start" (ionChange)="historialmedico(datoEnfermedades.hipertension)"        name="hipertension" [(ngModel)]="datoEnfermedades.hipertension"></ion-toggle>        </ion-item>              <ion-item>        <ion-toggle color="dark" slot="start" (ionChange)="historialmedico(datoEnfermedades.hipotension)"         name="hipotension" [(ngModel)]="datoEnfermedades.hipotension"        ></ion-toggle>        <ion-label>Hipotensión</ion-label>        </ion-item>              <ion-item>        <ion-label>Desvanecimiento</ion-label>        <ion-toggle color="dark"  slot="start"   (ionChange)="historialmedico(datoEnfermedades.desvanecimiento)"        name="desvanecimiento" [(ngModel)]="datoEnfermedades.desvanecimiento"></ion-toggle>        </ion-item>              <ion-item>        <ion-label>Diabetes insulinodependiente</ion-label>        <ion-toggle color="dark"  slot="start" name="diabete"         (ionChange)="historialmedico(datoEnfermedades.diabete)" [(ngModel)]="datoEnfermedades.diabete"></ion-toggle>        </ion-item>              <ion-item>        <ion-toggle color="dark" slot="start" name="dolorPecho"        (ionChange)="historialmedico(datoEnfermedades.dolorPecho)"   [(ngModel)]="datoEnfermedades.dolorPecho"        ></ion-toggle>        <ion-label>Dolores en el pecho</ion-label>        </ion-item>              <ion-item>        <ion-label>Fatiga inusual en actividades</ion-label>        <ion-toggle color="dark"  slot="start" name="fatiga"        (ionChange)="historialmedico(datoEnfermedades.fatiga)"   [(ngModel)]="datoEnfermedades.fatiga"></ion-toggle>        </ion-item>              <ion-item>        <ion-label>Arritmias</ion-label>        <ion-toggle color="dark"  slot="start"         (ionChange)="historialmedico(datoEnfermedades.aritmias)" name="aritmias" [(ngModel)]="datoEnfermedades.aritmias"></ion-toggle>        </ion-item>              <ion-item>        <ion-toggle color="dark" slot="start" name="taquicardia"        (ionChange)="historialmedico(datoEnfermedades.taquicardia)" [(ngModel)]="datoEnfermedades.taquicardia"        ></ion-toggle>        <ion-label>Taquicardia</ion-label>        </ion-item>              <ion-item>        <ion-label>Insuficiencia cardiaca</ion-label>        <ion-toggle color="dark"  slot="start" name="insuficiencia"        (ionChange)="historialmedico(datoEnfermedades.insuficiencia)"  [(ngModel)]="datoEnfermedades.insuficiencia"></ion-toggle>        </ion-item>              <ion-item>        <ion-label>Infartos</ion-label>        <ion-toggle color="dark"  slot="start"         (ionChange)="historialmedico(datoEnfermedades.infartos)"  name="infartos" [(ngModel)]="datoEnfermedades.infartos"></ion-toggle>        </ion-item>              <ion-item>        <ion-toggle color="dark" slot="start"        (ionChange)="historialmedico(datoEnfermedades.soplo)"  name="soplo" [(ngModel)]="datoEnfermedades.soplo"         ></ion-toggle>        <ion-label>Soplo en el corazón</ion-label>        </ion-item>              <ion-item>        <ion-label>Influenza</ion-label>        <ion-toggle color="dark"  slot="start"         (ionChange)="historialmedico(datoEnfermedades.influenza)" name="influenza" [(ngModel)]="datoEnfermedades.influenza"></ion-toggle>        </ion-item>                <ion-item>        <ion-label>Asma</ion-label>        <ion-toggle color="dark"  slot="start" name="asma"         (ionChange)="historialmedico(datoEnfermedades.asma)" [(ngModel)]="datoEnfermedades.asma"></ion-toggle>        </ion-item>              <ion-item>        <ion-label>Bronquitis</ion-label>        <ion-toggle color="dark"  slot="start"         (ionChange)="historialmedico(datoEnfermedades.bronquiti)" name="bronquiti" [(ngModel)]="datoEnfermedades.bronquiti"></ion-toggle>        </ion-item>              <ion-item>          <ion-label>Hipertensión pulmonar</ion-label>          <ion-toggle color="dark"  slot="start"           (ionChange)="historialmedico(datoEnfermedades.hipertensionPulmonar)" name="hipertensionPulmonar" [(ngModel)]="datoEnfermedades.hipertensionPulmonar"></ion-toggle>        </ion-item>                <ion-item>          <ion-label>Enfermedad pulmonar obstructiva crónica</ion-label>          <ion-toggle color="dark"  slot="start" name="pulmonarcronica"          (ionChange)="historialmedico(datoEnfermedades.pulmonarcronica)"  [(ngModel)]="datoEnfermedades.pulmonarcronica"></ion-toggle>        </ion-item>        <ion-item>          <ion-label>Insuficiencia renal</ion-label>          <ion-toggle color="dark"  slot="start" name="insuficiencia_renal"          (ionChange)="historialmedico(datoEnfermedades.insuficiencia_renal)"  [(ngModel)]="datoEnfermedades.insuficiencia_renal"></ion-toggle>        </ion-item>                </ion-list>        <div><br></div>        <div><br></div>        <div><br></div>      </ion-col>    </ion-row>  </ion-grid>  <ion-fab vertical="bottom" horizontal="start" slot="fixed"    >    <ion-fab-button color="danger" (click)="atras()">      <ion-icon name="arrow-back-outline"></ion-icon>    </ion-fab-button>  </ion-fab>  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">      <ion-icon name="arrow-forward-outline"></ion-icon>    </ion-fab-button>  </ion-fab>     <!-- <ion-grid class="my-grid animated fadeIn delay-2s">    <ion-row class="parent-row">      <ion-col  size="12">           <ion-list>          <ion-list-header>Presentas alguna de estas patologias</ion-list-header>          <ion-item>            <ion-toggle color="dark" slot="start" name="ninguna"             (ionChange)="historialcorazon(\'none\')" ></ion-toggle>            <ion-label>Ninguna de las siguientes</ion-label>          </ion-item>          <ion-item>            <ion-label>Hipertension</ion-label>            <ion-toggle color="dark"  slot="start" name="arritmia_corazon"             (ionChange)="historialcorazon(\'option\')" ></ion-toggle>          </ion-item>          <ion-item>            <ion-toggle color="dark"  slot="start" name="ataque_corazon"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label>Hipotension</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="operacion_corazon"            (ionChange)="historialcorazon(\'option\')"></ion-toggle>            <ion-label>Desvanecimiento</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="enfermedad_corazon"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label>Diabetes insulinodependiente</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="presion_corazon"            (ionChange)="historialcorazon(\'option\')"></ion-toggle>            <ion-label>Dolores en el pecho</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="diabete_corazon"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label>Fatiga insual en actividades</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Aritmias</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Taquicardia</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Insuficiencia cardiaca</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Infartos</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Soplo en el corazon</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Influenza</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Asma</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Bronquiti</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Hipertension pulmonar</ion-label>          </ion-item>          <ion-item>            <ion-toggle color="dark" slot="start" name="muerte_prematura"            (ionChange)="historialcorazon(\'option\')" ></ion-toggle>            <ion-label style="font-size: 14px;">Enfermedad pulmonar obstructiva cronica</ion-label>          </ion-item>        </ion-list>                        </ion-col>         </ion-row>    </ion-grid>     --></div>'
+    var COMPONENTS = [{'name': 'ActividadPage', 'selector': 'app-actividad'},{'name': 'AlimentosEditarPage', 'selector': 'app-alimentos-editar'},{'name': 'AlimentosNoLikePage', 'selector': 'app-alimentos-no-like'},{'name': 'AlimentosSeleccionPage', 'selector': 'app-alimentos-seleccion'},{'name': 'AntecedentefamiliarPage', 'selector': 'app-antecedentefamiliar'},{'name': 'AntecedentefmliarComponent', 'selector': 'app-antecedentefmliar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackBtnComponent', 'selector': 'app-back-btn'},{'name': 'BateriaAlimentoPage', 'selector': 'app-bateria-alimento'},{'name': 'BateriacalentamientoesperahomePage', 'selector': 'app-bateriacalentamientoesperahome'},{'name': 'BateriacalentamientofinalizarPage', 'selector': 'app-bateriacalentamientofinalizar'},{'name': 'BateriacalentamientohomePage', 'selector': 'app-bateriacalentamientohome'},{'name': 'BateriaesperahomePage', 'selector': 'app-bateriaesperahome'},{'name': 'BateriaEstiramientosPage', 'selector': 'app-bateria-estiramientos'},{'name': 'BateriahomePage', 'selector': 'app-bateriahome'},{'name': 'BateriaPage', 'selector': 'app-bateria'},{'name': 'BateriaRemplazoPage', 'selector': 'app-bateria-remplazo'},{'name': 'BateriarutinaesperahomePage', 'selector': 'app-bateriarutinaesperahome'},{'name': 'BateriarutinahomePage', 'selector': 'app-bateriarutinahome'},{'name': 'BateriarutinaPage', 'selector': 'app-bateriarutina'},{'name': 'CalendarioPage', 'selector': 'app-calendario'},{'name': 'CalentamientodosPage', 'selector': 'app-calentamientodos'},{'name': 'CalentamientoInfoPage', 'selector': 'app-calentamiento-info'},{'name': 'CalentamientoPage', 'selector': 'app-calentamiento'},{'name': 'CambiarejercicioPage', 'selector': 'app-cambiarejercicio'},{'name': 'ComidaPage', 'selector': 'app-comida'},{'name': 'CorazonPage', 'selector': 'app-corazon'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DescargarPage', 'selector': 'app-descargar'},{'name': 'EdadComponent', 'selector': 'app-edad'},{'name': 'EntrenamientosPage', 'selector': 'app-entrenamientos'},{'name': 'Estatura2Component', 'selector': 'app-estatura2'},{'name': 'EstaturaComponent', 'selector': 'app-estatura'},{'name': 'EstiramientosPage', 'selector': 'app-estiramientos'},{'name': 'ExperienciaPage', 'selector': 'app-experiencia'},{'name': 'FormMedicoPage', 'selector': 'app-form-medico'},{'name': 'FotosComponent', 'selector': 'app-fotos'},{'name': 'HistorialComponent', 'selector': 'app-historial'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndicadorescomparacionComponent', 'selector': 'app-indicadorescomparacion'},{'name': 'IndicadoresComponent', 'selector': 'app-indicadores'},{'name': 'IndicadoresPage', 'selector': 'app-indicadores'},{'name': 'LineanutricionalPage', 'selector': 'app-lineanutricional'},{'name': 'ListadoalimentoPage', 'selector': 'app-listadoalimento'},{'name': 'ListaejercicioremplazarPage', 'selector': 'app-listaejercicioremplazar'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LugarEjerciciosPage', 'selector': 'app-lugar-ejercicios'},{'name': 'MedidasComponent', 'selector': 'app-medidas'},{'name': 'MedidasPage', 'selector': 'app-medidas'},{'name': 'MensajecapacidadPage', 'selector': 'app-mensajecapacidad'},{'name': 'MensajecorazonPage', 'selector': 'app-mensajecorazon'},{'name': 'ModalComparacionPage', 'selector': 'app-modal-comparacion'},{'name': 'ModalCorazonInfoPage', 'selector': 'app-modal-corazon-info'},{'name': 'ModalEmailPage', 'selector': 'app-modal-email'},{'name': 'ModalFotosPage', 'selector': 'app-modal-fotos'},{'name': 'ModalInfoPage', 'selector': 'app-modal-info'},{'name': 'ModalMedidasPage', 'selector': 'app-modal-medidas'},{'name': 'ObjetivoPage', 'selector': 'app-objetivo'},{'name': 'PasoinicialPage', 'selector': 'app-pasoinicial'},{'name': 'PaypalPage', 'selector': 'app-paypal'},{'name': 'PercepcionentrenamientoPage', 'selector': 'app-percepcionentrenamiento'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'PesoComponent', 'selector': 'app-peso'},{'name': 'PesoyestaturaPage', 'selector': 'app-pesoyestatura'},{'name': 'PlanesPagosPage', 'selector': 'app-planes-pagos'},{'name': 'PopinfoComponent', 'selector': 'app-popinfo'},{'name': 'PopmensajeComponent', 'selector': 'app-popmensaje'},{'name': 'PopremplazarComponent', 'selector': 'app-popremplazar'},{'name': 'PorcentajegrasaPage', 'selector': 'app-porcentajegrasa'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'ProgresoComponent', 'selector': 'app-progreso'},{'name': 'ProgresoPage', 'selector': 'app-progreso'},{'name': 'RangodeedadPage', 'selector': 'app-rangodeedad'},{'name': 'RegistrarInfoPage', 'selector': 'app-registrar-info'},{'name': 'RelacioncaderaPage', 'selector': 'app-relacioncadera'},{'name': 'RutinaEntrenamientoPage', 'selector': 'app-rutina-entrenamiento'},{'name': 'RutinaPage', 'selector': 'app-rutina'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TerminosPage', 'selector': 'app-terminos'},{'name': 'TestCapacidadInfoPage', 'selector': 'app-test-capacidad-info'},{'name': 'TestCapacidadManualPage', 'selector': 'app-test-capacidad-manual'},{'name': 'TestFuerzaCategoriaPage', 'selector': 'app-test-fuerza-categoria'},{'name': 'TestFuerzaInfoPage', 'selector': 'app-test-fuerza-info'},{'name': 'TestFuerzaManualPage', 'selector': 'app-test-fuerza-manual'},{'name': 'TestFuerzaManualPasosPage', 'selector': 'app-test-fuerza-manual-pasos'},{'name': 'TestFuerzaMenu2Page', 'selector': 'app-test-fuerza-menu2'},{'name': 'TestFuerzaMenu3Page', 'selector': 'app-test-fuerza-menu3'},{'name': 'TestFuerzaMenuPage', 'selector': 'app-test-fuerza-menu'},{'name': 'TestFuerzaPasos1Page', 'selector': 'app-test-fuerza-pasos1'},{'name': 'TestFuerzaPasos2Page', 'selector': 'app-test-fuerza-pasos2'},{'name': 'TestFuerzaPasos3Page', 'selector': 'app-test-fuerza-pasos3'},{'name': 'TestFuerzaPasos4Page', 'selector': 'app-test-fuerza-pasos4'},{'name': 'TestResistenciaPage', 'selector': 'app-test-resistencia'},{'name': 'TiendaPage', 'selector': 'app-tienda'},{'name': 'TiendaProductosPage', 'selector': 'app-tienda-productos'},{'name': 'TutorialAlimentacionPage', 'selector': 'app-tutorial-alimentacion'},{'name': 'TutorialAlimentoPaso1Component', 'selector': 'app-tutorial-alimento-paso1'},{'name': 'TutorialAlimentoPaso2Component', 'selector': 'app-tutorial-alimento-paso2'},{'name': 'TutorialAlimentoPaso3Component', 'selector': 'app-tutorial-alimento-paso3'},{'name': 'TutorialAlimentoPaso4Component', 'selector': 'app-tutorial-alimento-paso4'},{'name': 'TutorialPlanesPage', 'selector': 'app-tutorial-planes'},{'name': 'TutorialPlanesPaso1Component', 'selector': 'app-tutorial-planes-paso1'},{'name': 'TutorialPlanesPaso2Component', 'selector': 'app-tutorial-planes-paso2'},{'name': 'TutorialPlanesPaso3Component', 'selector': 'app-tutorial-planes-paso3'},{'name': 'TutorialPlanesPaso4Component', 'selector': 'app-tutorial-planes-paso4'}];
+    var DIRECTIVES = [{'name': 'TwoDigitDecimaNumberDirective', 'selector': '[appTwoDigitDecimaNumber]'}];
+    var ACTUAL_COMPONENT = {'name': 'HistorialComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HistorialComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

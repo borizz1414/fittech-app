@@ -1,0 +1,86 @@
+<ion-buttons slot="start">
+  <ion-fab vertical="center" style="margin-top:-4.75rem;"  horizontal="start" slot="fixed" class="animated fadeInUp delay-2s" >
+   <ion-fab-button style="--background:#ef4044" (click)="atras()" size="small">
+     <ion-icon name="arrow-back-outline"></ion-icon>
+   </ion-fab-button>
+ </ion-fab>
+</ion-buttons>
+
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+<ion-content >
+
+<ng-container>
+    <div style="margin-bottom: 0;"  class="ion-padding ion-text-center titulo">
+      Indicadores de salud
+    </div> 
+    <ion-grid>
+      <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none">
+          <p class="tituloindicador">IMC  =</p>
+          <ion-label class="tamanoindicador" *ngIf="dato">{{dato.imc}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-item lines="none">
+          <p class="tituloindicador">ICA  =</p>
+          <ion-label class="tamanoindicador" *ngIf="dato">{{dato.ica}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-item lines="none">
+          <p class="tituloindicador">Perímetro de cintura =</p>
+          <ion-label class="tamanoindicador" *ngIf="dato">{{dato.Perimetro_Cintura}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-item lines="none">
+          <p class="tituloindicador">TBM  =</p>
+          <ion-label class="tamanoindicador" *ngIf="dato">{{dato.tmb}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+
+      <ion-col size="12">
+        <ion-item lines="none">
+          <p class="tituloindicador">Estrategia nutricional  =</p>
+          <ion-label class="tamanoindicador" *ngIf="dato">{{dato.Estrategia_N}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="ion-padding">
+      <ion-row >
+        <ion-col  size="12">   
+
+          <ion-card  style="
+          width: 286px; 
+          border-radius: 10px;
+          text-transform: uppercase;
+          font-family: 'Open Sans';
+          --background:#EF4044;
+          color:white;
+          ">
+        <h2 style="margin: 10px; text-align: center;" (click)="goTo()">
+          <b> SIGUIENTE</b></h2> 
+      </ion-card>
+
+
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>   
+</ng-container >
+
+
+
+</ion-content>

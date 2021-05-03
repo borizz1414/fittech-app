@@ -1,0 +1,77 @@
+ 
+<form [formGroup]="form">
+  <ion-grid>
+    <!-- Fotos Frente / Perfil  -->
+    <ion-row class="ion-justify-content-center" style="margin-bottom: 1rem;">
+      <ion-col size="12" >
+        <ion-label class="titulopeque2">Foto de frente
+
+          <sup>
+            <ion-icon (click)="modal(frente)" name="alert-circle" style="font-size: 1.25rem; color: white;">
+            </ion-icon>
+          </sup>
+
+        </ion-label>
+      <div class="img-size">
+        <img  (click)="captureImage(1)"  class="fluid-img"  [src]="frente" alt=""
+        onerror="this.src='https://images-na.ssl-images-amazon.com/images/I/51e6kpkyuIL._AC_SY355_.jpg'">
+      </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- Perfil  -->
+    <ion-row class="ion-justify-content-center" style="margin-bottom: 1rem;">
+      <ion-col size="12" >
+        <ion-label class="titulopeque2">Foto de perfil
+
+          <sup>
+            <ion-icon (click)="modal(perfil)" name="alert-circle" style="font-size: 1.25rem; color: white;">
+            </ion-icon>
+          </sup>
+
+        </ion-label>
+      <div class="img-size">
+         <img  (click)="captureImage(2)"  class="fluid-img" [src]="perfil" alt=""
+        onerror="this.src='https://images-na.ssl-images-amazon.com/images/I/51e6kpkyuIL._AC_SY355_.jpg'">
+      </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- Fotos espalda -->
+    <ion-row style="margin-bottom: 2rem;" class="ion-justify-content-center">
+      <ion-col size="12">
+        <ion-label class="titulopeque2">Foto de espalda
+
+          <sup>
+            <ion-icon (click)="modal(espalda)" name="alert-circle" style="font-size: 1.25rem; color: white;">
+            </ion-icon>
+          </sup>
+
+        </ion-label>
+      <div class="img-size">
+        <img  (click)="captureImage(3)"  class="fluid-img" [src]="espalda" alt=""
+        onerror="this.src='https://images-na.ssl-images-amazon.com/images/I/51e6kpkyuIL._AC_SY355_.jpg'">
+      </div>
+      </ion-col>
+    </ion-row>
+
+
+
+      <ion-card  style="
+      width: 254px; 
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      --background:#EF4044;
+      color:white;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      "
+      (click)="update()">
+    <h4   style="margin: 10px; text-align: center;"> 
+      <b>Actualizar</b>
+    </h4> 
+      </ion-card>
+  </ion-grid>
+</form>
+

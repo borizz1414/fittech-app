@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar  color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" mode="ios">Test de fuerza</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row >
+      <ion-col  size="12">   
+        <div  class="ion-padding-horizontal">
+          <img src="assets/img/gym1.jpg"/>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>   
+  <div  class="ion-padding ion-text-justify">
+    Saca un tiempo en tu próxima sesión de entrenamiento y realizalo, ya que es crucial saber realmente cuánta fuerza tienes en cada ejercicio para poder brindarte una personalización completa.
+  </div>   
+  <div class="ion-padding ion-text-justify">
+    Recuerda que hacer esto te va a permitir evaluarte cada 6 semanas y medir tu progreso.
+  </div>
+
+  <ion-grid class="ion-padding">
+    <ion-row >
+      <ion-col  size="12">   
+        <div>
+          <ion-card color="dark" (click)="test()" style="
+          width: 286px; 
+          border-radius: 10px;
+          text-transform: uppercase;
+          font-family: 'Open Sans';
+          ">
+            <h2 class="ion-text-center">Hacer el Test</h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+      <ion-col  size="12">   
+        <div >
+          <ion-card color="dark" (click)="manual()">
+            <h2 class="ion-text-center">Ingresar manualmente</h2>  
+          </ion-card>
+        </div>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>   
+
+
+</ion-content>

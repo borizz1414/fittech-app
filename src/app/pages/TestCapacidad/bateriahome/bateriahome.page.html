@@ -1,0 +1,77 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+
+
+<!-- contenedor descanso -->
+<ion-content *ngIf="status == 'descanso'" style="--background:black;">
+<ion-grid class="grid1">
+  <ion-row class="ion-justify-content-center">
+    <p style="margin-top: 0; text-align: center; margin-bottom: 0; width: 100%; font-size: 22px;
+    padding-top: 10px;">Comienza en</p>
+    <p class="center">0{{timeLeft}}</p>
+    <p style="font-size: 22px; margin: 0; width: 100%; text-align: center;">Tu siguiente ejercicio es: </p>
+    <!-- <p  style="color: red; width: 100%; text-align: center;" > NOMBRE DEL EJERCICIO</p> -->
+    <!-- {{nombre || capitalize}} -->
+    <ion-col class="ion-text-center" size="12" style="padding: 0px;">
+      <video autoplay loop width="100%"  class="videoReproductor" poster="assets/img/videogif.gif">
+        <source [src]= "video2" *ngIf="video2" type="video/mp4" />
+      </video>
+      <!-- <div>
+        <img  src="assets/img/videogif.gif">
+      </div> -->
+    </ion-col>
+  </ion-row>
+  <ion-row style="margin-top: -1rem;">
+    <ion-col size="12">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<div class="grid2">
+  <h1 class="titulodescanso" style="margin-top: 10px !important;color: white;">Descanso</h1>
+</div>
+</ion-content>
+
+<!-- contenedor rutina -->
+<ng-container *ngIf="status == 'rutina'">
+<!-- Video -->
+<video #myVideo  playsinline  class="videoReproductor"
+width="100%"
+loop
+muted="muted" 
+poster="assets/img/videogif.gif">
+  <source [src]= "video" *ngIf="video" />
+</video>
+
+
+<ion-content>
+
+  <div class="contenedor">
+    <div class="contenedor-cabezera">
+      <p>
+        Esfuérzate al máximo y la primera vez que pares toca el botón</p>
+    </div>
+    <div class="contenedor-cuerpo">
+      <p class="reloj">{{zero}}{{timeLeft}}</p>
+      <p class="segundos">Segundos</p>
+    </div>
+    <div class="contenedor-piepagina">
+      <ion-card style="  
+      background: #EF4044;
+      color: white;
+      width: 80%; 
+      border-radius: 10px;
+      font-family: 'Open Sans';" (click)="finalizar()" *ngIf="ready">
+      <h2 style="text-align: center;">
+       <b> Hasta aquí llegué </b>
+      </h2>  
+    </ion-card>
+    </div>
+  </div>
+    
+</ion-content>
+
+</ng-container>

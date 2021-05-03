@@ -1,0 +1,14 @@
+ion-thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+ion-thumbnail img {
+  width: auto !important;
+  height: auto !important;
+}
+
+ion-list-header {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,162 @@
+
+.logo{
+    margin: 0 auto;
+    max-height: 150px;
+  }
+
+.cabezera{
+    max-height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      overflow: hidden;
+  }
+
+.titulo{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+  /*   opacity: 0.7; */
+    margin-bottom: 0;
+  }
+
+//   contenedor de alimentos
+.contenedorMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    // background-color: #EF4044;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.09);
+}
+
+// original
+.contenedorMenuItem{
+    // hacerlo todo del mismo tamaño
+    flex: 1; 
+    // espacio entre ambos items
+   /*  margin: 0 10px; */
+    // centrar
+  
+    
+    text-align: center;
+}
+
+
+// los fondo diferente
+.contenedorMenuItem1{
+  // hacerlo todo del mismo tamaño
+  flex: 1; 
+  // espacio entre ambos items
+  // margin: 0 10px;
+  // centrar
+  text-align: center;
+  background-color: black;
+  border-radius: 12px 0px 0px 12px;
+
+}
+
+.contenedorMenuItem2{
+  // hacerlo todo del mismo tamaño
+  flex: 1; 
+  // espacio entre ambos items
+  // margin: 0 10px;
+  // centrar
+  text-align: center;
+  background-color: #EF4044;
+}
+
+.contenedorMenuItem3{
+  // hacerlo todo del mismo tamaño
+  flex: 1; 
+  // espacio entre ambos items
+  // margin: 0 10px;
+  // centrar
+  text-align: center;
+  background-color: #959595;
+  border-radius: 0px 12px 12px 0px;
+
+}
+
+
+
+
+
+
+.tituloMenuItem{
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: .9;
+}
+
+.ContenedorTarjeta{
+    width: 95%;
+    height: 200px;
+    background-color: #f1f1f1;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    &Titulo{
+      position: absolute;
+      top: 10%;
+      left: 40%;
+      transform: translate(0%,-50%);
+      background-color: #EF4044;  
+      color: white;
+      margin: 1rem;
+      float: right;
+      border-radius: 6px;
+      padding: 5px;
+      width: 72px;
+      text-align: center;
+    }
+    &Icono{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.progress-bar1{
+  --progress-background: red;
+  --background: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar2{
+  width: 80%;
+  margin: 0 auto;
+  --progress-background: black;
+  --background: grey;
+}
+.carboP{
+  --progress-background: red;
+  --background: white;
+}
+.proteP{
+  --progress-background: red;
+  --background: white;
+}
+.grasaP{
+  --progress-background: red;
+  --background: white;
+}
+.complete{
+  --progress-background: black !important;
+  --background: grey;
+}
+
+.titulo2{
+  font-size: 18px;
+}

@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar  color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/test-fuerza-info"></ion-back-button>
+    </ion-buttons>
+    <ion-title  mode="ios">Test de fuerza</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <h4 class="ion-padding-horizontal ion-text-center">Complete un solo ejercicio.</h4>
+
+  <ion-list>
+    <!-- 
+    <p style="font-size: medium; text-align: center;">Vista previa de los entrenamientos</p>-->
+    <ion-item (click)="squat()">
+      <ion-thumbnail slot="start">
+        <img src="assets/img/squat-3.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Squat</h2>
+      </ion-label>
+      <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    
+    <p style="font-size: medium; text-align: center;" class="ion-padding"> <b>Si no puedes realizar squat , por favor realizar leg extension</b></p>
+    
+
+    <ion-item (click)="legextension()">
+      <ion-thumbnail slot="start">
+        <img src="assets/img/legextension.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Leg extension</h2>
+      </ion-label>
+      <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>
+
+
+<!--
+
+    <ion-grid>
+    <ion-row >
+      <ion-col  size="12">   
+        <div  class="ion-padding" (click)="squat()" id="squat">
+          <img src="assets/img/squat-3.png"/>
+        </div>   
+      </ion-col>
+      <ion-col  size="12">   
+        <div  class="ion-padding" (click)="legextension()" id="extension">
+          <img src="assets/img/legextension.jpg"/>
+        </div>   
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid> 
+  
+-->

@@ -1,0 +1,102 @@
+.imagenmodificada {
+  width: 50px;
+  height: 50px;
+}
+
+ion-button {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.contenedorMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.09);
+  color: white;
+}
+
+.contenedorMenuItem {
+  flex: 1;
+  /*  margin: 0 10px; */
+  text-align: center;
+  filter: brightness(0.5);
+  transition: all ease .3s;
+}
+
+.customtarjeta {
+  filter: brightness(1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.titulo {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.titulo2 {
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.container2 {
+  width: 100%;
+}
+
+ion-progress-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carboP {
+  --progress-background: red;
+  --background: white;
+}
+
+.proteP {
+  --progress-background: red;
+  --background: white;
+}
+
+.grasaP {
+  --progress-background: red;
+  --background: white;
+}
+
+.complete {
+  --progress-background: black !important;
+  --background: grey;
+}
+
+.raya:nth-child(odd) {
+  border-right: 1px solid #cecece;
+}
+
+ion-item {
+  --inner-border-width: 0;
+}

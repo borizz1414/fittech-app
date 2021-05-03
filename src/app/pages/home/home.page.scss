@@ -1,0 +1,109 @@
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+ion-toolbar{
+  --background:black;
+}
+ion-content {
+  --background: #FCFCFC;
+  /*
+  background-image: url('/assets/img/imagen-genero.jpg');    
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  */
+}
+
+.logo{
+  margin: 0 auto;
+  max-height: 150px;
+  padding: 0;
+}
+
+.cabezera{
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor{
+  padding-top: 10%;
+  h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+}
+
+.color-tarjeta{
+  background-color: #ED1E24;
+}
+
+.color-tarjeta2{
+  background-color: #000000;
+}
+
+.color-tarjeta3{
+  //background: linear-gradient(45deg, rgba(0,0,0,1), rgba(255,0,0,1));
+  background: linear-gradient(to left bottom, red 0%, red 50%, black 51%,black 100%);
+
+
+}
+
+
+svg{
+  display: block;
+  margin: auto;
+  fill: white!important;
+}
+
+ion-card{
+  padding: 0px;
+  padding-top: 25px !important;
+  border-radius: 10px !important;
+  max-width: 150px;
+  max-height: 150px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.1s;
+}
+
+ion-card:hover{
+  box-shadow: 0 5px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+// .centrar-row{
+//   display: flex;
+//   justify-content: center;
+// }
+
+ion-card-content{
+  color:white;
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+
+
+
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+      <img src="assets/img/logo-app.png" class="logo">
+  </div>
+  <ion-toolbar class="ion-no-border animated fadeIn delay-1s">
+    <ion-title class="ion-text-center">Paso {{contador}} de 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-header class="ion-no-border animated fadeIn delay-1s">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Paso {{contador}} de 3</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true"   [scrollEvents]="true">
+  <ion-progress-bar value="{{progressbar}}" color="danger" class="animated slideInLeft delay-1s"></ion-progress-bar>
+  <!-- bajar -->
+  <ng-container *ngIf="ocultar">
+    <ion-fab  vertical="top" horizontal="end" slot="fixed" *ngIf="contador == 2">
+      <ion-fab-button color='danger' (click)="bajar()">
+        <ion-icon name="arrow-down" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
+  
+  <!-- subir -->
+  <ng-container *ngIf="!ocultar">
+    <ion-fab  vertical="top" horizontal="end" slot="fixed" *ngIf="contador == 2">
+      <ion-fab-button color='danger' (click)="arriba()">
+        <ion-icon name="arrow-up" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
+  
+
+
+
+  <ion-slides  [ngClass]="condicionalCss ? 'ion-slides' : 'ion-noslides' "  #slide>
+  <!--   <ion-slide>
+      <ion-grid class="my-grid">
+        <ion-row class="parent-row">
+          <app-edad (cambiarPantalla)="cambiar($event)"></app-edad>
+        </ion-row>
+      </ion-grid>
+    </ion-slide> -->
+
+    <ion-slide *ngIf="slideshow == 2" >
+      <ion-grid class="my-grid">
+        <ion-row class="parent-row">
+          <app-estatura (cambiarPantalla)="cambiar($event)" (progressbar)="progressbar = $event" (back)="back($event)"></app-estatura>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide *ngIf="slideshow == 3" class="animated slideInLeft delay-1s">
+            <app-historial  (cambiarPantalla)="cambiar($event)" (siguientePantalla)="siguiente($event)"></app-historial>
+    </ion-slide>
+
+    <ion-slide *ngIf="slideshow == 4" class="animated slideInLeft delay-1s">
+      <app-antecedentefmliar (cambiarPantalla)="cambiar($event)"></app-antecedentefmliar>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+

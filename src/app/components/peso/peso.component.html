@@ -1,0 +1,26 @@
+<h2>¿Cuánto <ion-text color="danger">pesas</ion-text>?
+</h2>
+<ion-item lines="none" >
+  <ion-input 
+  (ionInput)="valor($event)"
+  type="tel" 
+  value="0" 
+  inputmode="numeric"
+  maxlength="3"></ion-input>
+</ion-item>
+<ion-label class="titulopeque">{{mensaje}}</ion-label>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" >
+    <ion-fab-button color="danger" (click)="atras()" >
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+

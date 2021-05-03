@@ -1,0 +1,186 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/*
+{
+font-family: 'Roboto', sans-serif;  
+}
+*/
+
+@mixin telefono-responsivo {
+  @media screen and (max-width: 600px)  {
+      @content;
+  }
+}
+
+/*logo*/
+.logo{
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.vibrate-1 {
+  -webkit-animation: jello-horizontal 1.5s infinite both;
+	        animation: jello-horizontal 1.5s infinite both;
+}
+
+ @-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
+
+.cabezera{
+  max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*fin logo*/
+
+
+
+
+
+
+
+
+
+.ejercicio{
+  max-width: 100%;
+  height: auto;
+}
+
+.evaluacion{
+  width: 100%;
+  height: auto!important;
+}
+
+.ocultar{
+  display: none;
+}
+
+
+.centered {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2{
+  opacity: 0.7;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered3{
+  opacity: 0.7;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  @include telefono-responsivo(){
+    left: 29.5%;
+  }
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.ion-padding-horizontal {
+    margin-top: 0px;
+}
+.ion-padding {
+    padding-bottom: 0px;
+}
+.ion-padding-vertical {
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+img.bor {
+    border-radius: 20px;
+}
+hr{
+
+    border-bottom: 1px solid #c2c2c2;
+    margin-top: 0px;
+    margin-bottom: 13px;
+
+}

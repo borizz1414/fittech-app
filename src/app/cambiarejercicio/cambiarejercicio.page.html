@@ -1,0 +1,38 @@
+<ion-grid style="background-color:#F4F3F1; padding: 0px;" >
+  <ion-row >
+    <ion-col size="12" style="padding: 0px;" >
+      <img src="assets/img/pressbanca.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+       <p class="ion-text-center titulo">{{nombre}}</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid class="ion-grid2">
+
+  <ion-row class="ion-row2">
+    <ion-col size="12">
+      <h2 class="ion-text-center"> repeticiones x {{repeticion}}</h2>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+<ion-fab vertical="bottom"  horizontal="start" slot="fixed">
+  <ion-fab-button color="light" (click)="atras()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+<!--
+<ion-fab vertical="bottom"  horizontal="end" slot="fixed">
+  <ion-fab-button color="primary" (click)="siguiente()">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+-->

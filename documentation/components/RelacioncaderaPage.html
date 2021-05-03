@@ -1,0 +1,1094 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RelacioncaderaPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/relacioncadera/relacioncadera.page.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-relacioncadera</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./relacioncadera.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./relacioncadera.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#elementoValidar">elementoValidar</a>
+                            </li>
+                            <li>
+                                <a href="#medidasCorporales">medidasCorporales</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#asignarValidacion">asignarValidacion</a>
+                            </li>
+                            <li>
+                                <a href="#asignarValidacionErronea">asignarValidacionErronea</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#finalizar">finalizar</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#validar">validar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(mensajeservice: <a href="../injectables/MensajesService.html">MensajesService</a>, ApiService: <a href="../injectables/ApiFitechService.html">ApiFitechService</a>, ruta: NavController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>mensajeservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MensajesService.html" target="_self" >MensajesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiFitechService.html" target="_self" >ApiFitechService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ruta</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="asignarValidacion"></a>
+                    <span class="name">
+                        <b>
+                            asignarValidacion
+                        </b>
+                        <a href="#asignarValidacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>asignarValidacion(asignacion)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>asignacion</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="asignarValidacionErronea"></a>
+                    <span class="name">
+                        <b>
+                            asignarValidacionErronea
+                        </b>
+                        <a href="#asignarValidacionErronea"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>asignarValidacionErronea(asignacion)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>asignacion</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="finalizar"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            finalizar
+                        </b>
+                        <a href="#finalizar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>finalizar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validar"></a>
+                    <span class="name">
+                        <b>
+                            validar
+                        </b>
+                        <a href="#validar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validar(valor, asignacion)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valor</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>asignacion</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="elementoValidar"></a>
+                        <span class="name">
+                            <b>
+                            elementoValidar</b>
+                            <a href="#elementoValidar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    elemenUno:false,
+    elemenDos:false,
+    elemenTre:false,
+    elemenCua:false,
+    elemenCin:false,
+    elemenSei:false,
+    elemenSie:false,
+    elemenOch:false,
+    elemenNue:false,
+    elemenDie:false,
+    elemenOnc:false,
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="medidasCorporales"></a>
+                        <span class="name">
+                            <b>
+                            medidasCorporales</b>
+                            <a href="#medidasCorporales"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    min_cintura:null,
+    max_cintura:null,
+    cadera:null,
+    cuello:null,
+    muslo_derecho:null,
+    muslo_izquierdo:null,
+    brazo_derecho:null,
+    brazo_izquierdo:null,
+    pantorrilla_derecho:null,
+    pantorrilla_izquierda:null,
+    pecho:null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/relacioncadera/relacioncadera.page.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MensajesService } from &#x27;../services/mensajes.service&#x27;;
+import { ApiFitechService } from &#x27;../services/api-fitech.service&#x27;;
+import { NavController } from &#x27;@ionic/angular&#x27;;
+
+@Component({
+  selector: &#x27;app-relacioncadera&#x27;,
+  templateUrl: &#x27;./relacioncadera.page.html&#x27;,
+  styleUrls: [&#x27;./relacioncadera.page.scss&#x27;],
+})
+export class RelacioncaderaPage implements OnInit {
+
+  medidasCorporales &#x3D; {
+    min_cintura:null,
+    max_cintura:null,
+    cadera:null,
+    cuello:null,
+    muslo_derecho:null,
+    muslo_izquierdo:null,
+    brazo_derecho:null,
+    brazo_izquierdo:null,
+    pantorrilla_derecho:null,
+    pantorrilla_izquierda:null,
+    pecho:null
+  }
+
+  elementoValidar &#x3D; {
+    elemenUno:false,
+    elemenDos:false,
+    elemenTre:false,
+    elemenCua:false,
+    elemenCin:false,
+    elemenSei:false,
+    elemenSie:false,
+    elemenOch:false,
+    elemenNue:false,
+    elemenDie:false,
+    elemenOnc:false,
+  }
+
+  constructor(private mensajeservice:MensajesService,private ApiService:ApiFitechService,private ruta: NavController) { }
+
+  ngOnInit() {
+  }
+
+  async finalizar(){
+    if(this.elementoValidar.elemenUno &amp;&amp; this.elementoValidar.elemenDos  &amp;&amp; this.elementoValidar.elemenTre
+      &amp;&amp; this.elementoValidar.elemenCua&amp;&amp; this.elementoValidar.elemenCin&amp;&amp; this.elementoValidar.elemenSei
+      &amp;&amp; this.elementoValidar.elemenSie &amp;&amp; this.elementoValidar.elemenOch &amp;&amp; this.elementoValidar.elemenNue
+      &amp;&amp; this.elementoValidar.elemenDie &amp;&amp; this.elementoValidar.elemenOnc){
+
+
+      const valido &#x3D; await this.ApiService.cinturacadera(this.medidasCorporales)
+      if(valido){
+       this.ruta.navigateRoot([&#x27;/tabs&#x27;])
+      }else{
+        return
+      }
+
+
+
+      }else{
+        this.mensajeservice.alertaInformatica(&#x27;Todo los campos deben ser obligatorio, y su valor mayor a 0 y menor a 4 digitos&#x27;)
+      }
+
+  }
+
+  validar(valor,asignacion){
+
+    if(valor.target.value  &lt;&#x3D; 0 ||  valor.target.value.length &lt;&#x3D; 1 ||  valor.target.value.length &gt; 4   ){
+      console.log(&quot;error &quot;)
+      this.asignarValidacionErronea(asignacion)
+      console.log(this.elementoValidar)
+    }else{
+      this.asignarValidacion(asignacion)
+    }
+
+  }
+
+  asignarValidacion(asignacion){
+    if(asignacion &#x3D;&#x3D; 1){
+      this.elementoValidar.elemenUno  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 2){
+      this.elementoValidar.elemenDos  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 3){
+      this.elementoValidar.elemenTre  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 4){
+      this.elementoValidar.elemenCua  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 5){
+      this.elementoValidar.elemenCin  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 6){
+      this.elementoValidar.elemenSei  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 7){
+      this.elementoValidar.elemenSie  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 8){
+      this.elementoValidar.elemenOch  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 9){
+      this.elementoValidar.elemenNue  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 10){
+      this.elementoValidar.elemenDie  &#x3D; true
+    }
+    if(asignacion &#x3D;&#x3D; 11){
+      this.elementoValidar.elemenOnc  &#x3D; true
+    }
+
+  }
+
+  asignarValidacionErronea(asignacion){
+    if(asignacion &#x3D;&#x3D; 1){
+      this.elementoValidar.elemenUno  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 2){
+      this.elementoValidar.elemenDos  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 3){
+      this.elementoValidar.elemenTre  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 4){
+      this.elementoValidar.elemenCua  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 5){
+      this.elementoValidar.elemenCin  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 6){
+      this.elementoValidar.elemenSei  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 7){
+      this.elementoValidar.elemenSie  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 8){
+      this.elementoValidar.elemenOch  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 9){
+      this.elementoValidar.elemenNue  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 10){
+      this.elementoValidar.elemenDie  &#x3D; false
+    }
+    if(asignacion &#x3D;&#x3D; 11){
+      this.elementoValidar.elemenOnc  &#x3D; false
+    }
+
+  }
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header [translucent]&#x3D;&quot;true&quot; class&#x3D;&quot;ion-no-border animated fadeIn delay-1s&quot;&gt;
+  &lt;div class&#x3D;&quot;cabezera&quot;&gt;
+    &lt;img src&#x3D;&quot;assets/img/logo-app.png&quot; class&#x3D;&quot;logo&quot;&gt;
+  &lt;/div&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content [fullscreen]&#x3D;&quot;true&quot; slot&#x3D;&quot;fixed&quot; class&#x3D;&quot;animated fadeIn delay-1s&quot;&gt;
+
+  &lt;div class&#x3D;&quot;contenedor&quot;&gt;
+
+      &lt;h2 class&#x3D;&quot;titulo&quot;&gt;Ingresa Tus Medidas&lt;/h2&gt;
+      
+      &lt;div class&#x3D;&quot;letra&quot;&gt;
+        (Porfavor, medir con un centimetro)
+      &lt;/div&gt;
+
+
+      &lt;ion-grid class&#x3D;&quot;my-grid animated fadeIn delay-2s&quot;&gt;
+      &lt;ion-row class&#x3D;&quot;parent-row&quot;&gt;
+        &lt;p class&#x3D;&quot;mensaje&quot;&gt;&lt;/p&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;   
+          &lt;div class&#x3D;&quot;tarjeta&quot;&gt;
+            &lt;p class&#x3D;&quot;mensaje&quot;&gt;¿Cual es su medida maxima de cintura?&lt;/p&gt;
+              
+            &lt;img src&#x3D;&quot;./assets/img/cintura.jpg&quot; class&#x3D;&quot;imagen&quot;/&gt;
+            &lt;ion-input type&#x3D;&quot;number&quot; class&#x3D;&quot;sa&quot; name&#x3D;&quot;max_cintura&quot; placeholder&#x3D;&quot;cm&quot;
+              (ionChange)&#x3D;&quot;validar($event)&quot;  [(ngModel)]&#x3D;&quot;medidasCorporales.max_cintura&quot;&gt;&lt;/ion-input&gt;  
+
+          &lt;/div&gt; 
+         
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt; 
+              &lt;p class&#x3D;&quot;mensaje&quot;&gt;¿Cual es su medida de cadera?&lt;/p&gt;
+              
+          &lt;div class&#x3D;&quot;tarjeta&quot; &gt;
+            &lt;img src&#x3D;&quot;./assets/img/cadera.png&quot; class&#x3D;&quot;imagen&quot;/&gt;
+             &lt;ion-input  size&#x3D;&quot;8&quot; type&#x3D;&quot;number&quot; class&#x3D;&quot;sa&quot; name&#x3D;&quot;cadera&quot; placeholder&#x3D;&quot;cm&quot;
+              (ionChange)&#x3D;&quot;validar2($event)&quot;   [(ngModel)]&#x3D;&quot;medidasCorporales.cadera&quot;&gt;&lt;/ion-input&gt; 
+
+          &lt;/div&gt;   
+           
+        &lt;/ion-col&gt;
+                &lt;ion-col size&#x3D;&quot;12&quot;&gt;      
+          &lt;ion-card class&#x3D;&quot;color-tarjeta&quot; (click)&#x3D;&quot;finalizar()&quot; [disabled]&#x3D;&quot;habilitar&quot;&gt;
+            &lt;h2&gt;Finalizar&lt;/h2&gt;
+          &lt;/ion-card&gt;
+        &lt;/ion-col&gt;
+
+      
+      &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;      
+  &lt;/div&gt;
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./relacioncadera.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ion-content {
+  --background: #fcfcfc;
+  /*
+  background-image: url(&#x27;/assets/img/imagen-datos.jpg&#x27;);    
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 80%;*/
+}
+
+
+
+
+.logo{
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.cabezera{
+  max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor{
+  padding-top: 20px !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.titulo{
+  text-align: center;
+  font-size: 25px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+
+
+.imagen{
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+.tarjeta{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+ion-col{
+    margin-bottom: 8px!important;
+}
+
+.my-grid {
+  height: 100% !important;
+}
+.parent-row {
+  height: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.letra{
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 18px;
+  text-align: justify;
+  opacity: 0.7;
+}
+
+ion-card{
+ margin: 0 auto;
+  width: 80%;
+}
+
+ion-card:hover{
+transition: 0.1s;
+opacity: 0.5;
+}
+
+.mensaje{
+font-size: 14px;
+opacity: 0.5;
+text-align: center;
+}
+
+.color-tarjeta{
+color: white;
+background-color: #000000;
+}
+ion-input{
+  opacity: 0.7;
+
+  text-align: center;
+}
+
+.sa {
+
+  border-bottom: 1px solid red;
+  max-width: 50%;
+  margin: 0 auto;
+
+}
+
+
+input[type&#x3D;number]::-webkit-inner-spin-button,
+input[type&#x3D;number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+margin: 0;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true" class="ion-no-border animated fadeIn delay-1s">  <div class="cabezera">    <img src="assets/img/logo-app.png" class="logo">  </div></ion-header><ion-content [fullscreen]="true" slot="fixed" class="animated fadeIn delay-1s">  <div class="contenedor">      <h2 class="titulo">Ingresa Tus Medidas</h2>            <div class="letra">        (Porfavor, medir con un centimetro)      </div>      <ion-grid class="my-grid animated fadeIn delay-2s">      <ion-row class="parent-row">        <p class="mensaje"></p>        <ion-col  size="12">             <div class="tarjeta">            <p class="mensaje">¿Cual es su medida maxima de cintura?</p>                          <img src="./assets/img/cintura.jpg" class="imagen"/>            <ion-input type="number" class="sa" name="max_cintura" placeholder="cm"              (ionChange)="validar($event)"  [(ngModel)]="medidasCorporales.max_cintura"></ion-input>            </div>                  </ion-col>        <ion-col  size="12">               <p class="mensaje">¿Cual es su medida de cadera?</p>                        <div class="tarjeta" >            <img src="./assets/img/cadera.png" class="imagen"/>             <ion-input  size="8" type="number" class="sa" name="cadera" placeholder="cm"              (ionChange)="validar2($event)"   [(ngModel)]="medidasCorporales.cadera"></ion-input>           </div>                      </ion-col>                <ion-col size="12">                <ion-card class="color-tarjeta" (click)="finalizar()" [disabled]="habilitar">            <h2>Finalizar</h2>          </ion-card>        </ion-col>            </ion-row>      </ion-grid>        </div></div>'
+    var COMPONENTS = [{'name': 'ActividadPage', 'selector': 'app-actividad'},{'name': 'AlimentosEditarPage', 'selector': 'app-alimentos-editar'},{'name': 'AlimentosNoLikePage', 'selector': 'app-alimentos-no-like'},{'name': 'AlimentosSeleccionPage', 'selector': 'app-alimentos-seleccion'},{'name': 'AntecedentefamiliarPage', 'selector': 'app-antecedentefamiliar'},{'name': 'AntecedentefmliarComponent', 'selector': 'app-antecedentefmliar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackBtnComponent', 'selector': 'app-back-btn'},{'name': 'BateriaAlimentoPage', 'selector': 'app-bateria-alimento'},{'name': 'BateriacalentamientoesperahomePage', 'selector': 'app-bateriacalentamientoesperahome'},{'name': 'BateriacalentamientofinalizarPage', 'selector': 'app-bateriacalentamientofinalizar'},{'name': 'BateriacalentamientohomePage', 'selector': 'app-bateriacalentamientohome'},{'name': 'BateriaesperahomePage', 'selector': 'app-bateriaesperahome'},{'name': 'BateriaEstiramientosPage', 'selector': 'app-bateria-estiramientos'},{'name': 'BateriahomePage', 'selector': 'app-bateriahome'},{'name': 'BateriaPage', 'selector': 'app-bateria'},{'name': 'BateriaRemplazoPage', 'selector': 'app-bateria-remplazo'},{'name': 'BateriarutinaesperahomePage', 'selector': 'app-bateriarutinaesperahome'},{'name': 'BateriarutinahomePage', 'selector': 'app-bateriarutinahome'},{'name': 'BateriarutinaPage', 'selector': 'app-bateriarutina'},{'name': 'CalendarioPage', 'selector': 'app-calendario'},{'name': 'CalentamientodosPage', 'selector': 'app-calentamientodos'},{'name': 'CalentamientoInfoPage', 'selector': 'app-calentamiento-info'},{'name': 'CalentamientoPage', 'selector': 'app-calentamiento'},{'name': 'CambiarejercicioPage', 'selector': 'app-cambiarejercicio'},{'name': 'ComidaPage', 'selector': 'app-comida'},{'name': 'CorazonPage', 'selector': 'app-corazon'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DescargarPage', 'selector': 'app-descargar'},{'name': 'EdadComponent', 'selector': 'app-edad'},{'name': 'EntrenamientosPage', 'selector': 'app-entrenamientos'},{'name': 'Estatura2Component', 'selector': 'app-estatura2'},{'name': 'EstaturaComponent', 'selector': 'app-estatura'},{'name': 'EstiramientosPage', 'selector': 'app-estiramientos'},{'name': 'ExperienciaPage', 'selector': 'app-experiencia'},{'name': 'FormMedicoPage', 'selector': 'app-form-medico'},{'name': 'FotosComponent', 'selector': 'app-fotos'},{'name': 'HistorialComponent', 'selector': 'app-historial'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndicadorescomparacionComponent', 'selector': 'app-indicadorescomparacion'},{'name': 'IndicadoresComponent', 'selector': 'app-indicadores'},{'name': 'IndicadoresPage', 'selector': 'app-indicadores'},{'name': 'LineanutricionalPage', 'selector': 'app-lineanutricional'},{'name': 'ListadoalimentoPage', 'selector': 'app-listadoalimento'},{'name': 'ListaejercicioremplazarPage', 'selector': 'app-listaejercicioremplazar'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LugarEjerciciosPage', 'selector': 'app-lugar-ejercicios'},{'name': 'MedidasComponent', 'selector': 'app-medidas'},{'name': 'MedidasPage', 'selector': 'app-medidas'},{'name': 'MensajecapacidadPage', 'selector': 'app-mensajecapacidad'},{'name': 'MensajecorazonPage', 'selector': 'app-mensajecorazon'},{'name': 'ModalComparacionPage', 'selector': 'app-modal-comparacion'},{'name': 'ModalCorazonInfoPage', 'selector': 'app-modal-corazon-info'},{'name': 'ModalEmailPage', 'selector': 'app-modal-email'},{'name': 'ModalFotosPage', 'selector': 'app-modal-fotos'},{'name': 'ModalInfoPage', 'selector': 'app-modal-info'},{'name': 'ModalMedidasPage', 'selector': 'app-modal-medidas'},{'name': 'ObjetivoPage', 'selector': 'app-objetivo'},{'name': 'PasoinicialPage', 'selector': 'app-pasoinicial'},{'name': 'PaypalPage', 'selector': 'app-paypal'},{'name': 'PercepcionentrenamientoPage', 'selector': 'app-percepcionentrenamiento'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'PesoComponent', 'selector': 'app-peso'},{'name': 'PesoyestaturaPage', 'selector': 'app-pesoyestatura'},{'name': 'PlanesPagosPage', 'selector': 'app-planes-pagos'},{'name': 'PopinfoComponent', 'selector': 'app-popinfo'},{'name': 'PopmensajeComponent', 'selector': 'app-popmensaje'},{'name': 'PopremplazarComponent', 'selector': 'app-popremplazar'},{'name': 'PorcentajegrasaPage', 'selector': 'app-porcentajegrasa'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'ProgresoComponent', 'selector': 'app-progreso'},{'name': 'ProgresoPage', 'selector': 'app-progreso'},{'name': 'RangodeedadPage', 'selector': 'app-rangodeedad'},{'name': 'RegistrarInfoPage', 'selector': 'app-registrar-info'},{'name': 'RelacioncaderaPage', 'selector': 'app-relacioncadera'},{'name': 'RutinaEntrenamientoPage', 'selector': 'app-rutina-entrenamiento'},{'name': 'RutinaPage', 'selector': 'app-rutina'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TerminosPage', 'selector': 'app-terminos'},{'name': 'TestCapacidadInfoPage', 'selector': 'app-test-capacidad-info'},{'name': 'TestCapacidadManualPage', 'selector': 'app-test-capacidad-manual'},{'name': 'TestFuerzaCategoriaPage', 'selector': 'app-test-fuerza-categoria'},{'name': 'TestFuerzaInfoPage', 'selector': 'app-test-fuerza-info'},{'name': 'TestFuerzaManualPage', 'selector': 'app-test-fuerza-manual'},{'name': 'TestFuerzaManualPasosPage', 'selector': 'app-test-fuerza-manual-pasos'},{'name': 'TestFuerzaMenu2Page', 'selector': 'app-test-fuerza-menu2'},{'name': 'TestFuerzaMenu3Page', 'selector': 'app-test-fuerza-menu3'},{'name': 'TestFuerzaMenuPage', 'selector': 'app-test-fuerza-menu'},{'name': 'TestFuerzaPasos1Page', 'selector': 'app-test-fuerza-pasos1'},{'name': 'TestFuerzaPasos2Page', 'selector': 'app-test-fuerza-pasos2'},{'name': 'TestFuerzaPasos3Page', 'selector': 'app-test-fuerza-pasos3'},{'name': 'TestFuerzaPasos4Page', 'selector': 'app-test-fuerza-pasos4'},{'name': 'TestResistenciaPage', 'selector': 'app-test-resistencia'},{'name': 'TiendaPage', 'selector': 'app-tienda'},{'name': 'TiendaProductosPage', 'selector': 'app-tienda-productos'},{'name': 'TutorialAlimentacionPage', 'selector': 'app-tutorial-alimentacion'},{'name': 'TutorialAlimentoPaso1Component', 'selector': 'app-tutorial-alimento-paso1'},{'name': 'TutorialAlimentoPaso2Component', 'selector': 'app-tutorial-alimento-paso2'},{'name': 'TutorialAlimentoPaso3Component', 'selector': 'app-tutorial-alimento-paso3'},{'name': 'TutorialAlimentoPaso4Component', 'selector': 'app-tutorial-alimento-paso4'},{'name': 'TutorialPlanesPage', 'selector': 'app-tutorial-planes'},{'name': 'TutorialPlanesPaso1Component', 'selector': 'app-tutorial-planes-paso1'},{'name': 'TutorialPlanesPaso2Component', 'selector': 'app-tutorial-planes-paso2'},{'name': 'TutorialPlanesPaso3Component', 'selector': 'app-tutorial-planes-paso3'},{'name': 'TutorialPlanesPaso4Component', 'selector': 'app-tutorial-planes-paso4'}];
+    var DIRECTIVES = [{'name': 'TwoDigitDecimaNumberDirective', 'selector': '[appTwoDigitDecimaNumber]'}];
+    var ACTUAL_COMPONENT = {'name': 'RelacioncaderaPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RelacioncaderaPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

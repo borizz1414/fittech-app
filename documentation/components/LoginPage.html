@@ -1,0 +1,1647 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LoginPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/login/login.page.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-login</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./login.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./login.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#afAuth">afAuth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#alertController">alertController</a>
+                            </li>
+                            <li>
+                                <a href="#facebookData">facebookData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fb">fb</a>
+                            </li>
+                            <li>
+                                <a href="#googleData">googleData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loadingController">loadingController</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#logeado">logeado</a>
+                            </li>
+                            <li>
+                                <a href="#login">login</a>
+                            </li>
+                            <li>
+                                <a href="#registrar">registrar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#acceder">acceder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#dashboard">dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#facebookLogin">facebookLogin</a>
+                            </li>
+                            <li>
+                                <a href="#googleLogin">googleLogin</a>
+                            </li>
+                            <li>
+                                <a href="#goto">goto</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillEnter">ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentLoading">presentLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#recuperar">recuperar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ApiService: <a href="../injectables/ApiFitechService.html">ApiFitechService</a>, ruta: NavController, mensajeservice: <a href="../injectables/MensajesService.html">MensajesService</a>, afAuth: AngularFireAuth, gplus: GooglePlus, fb: Facebook, alertController: AlertController, platform: Platform, storage: Storage, usuarioService: <a href="../injectables/UsuarioService.html">UsuarioService</a>, loadingController: LoadingController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/pages/login/login.page.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiFitechService.html" target="_self" >ApiFitechService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ruta</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mensajeservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MensajesService.html" target="_self" >MensajesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>afAuth</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFireAuth</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>gplus</td>
+                                                  
+                                                        <td>
+                                                                    <code>GooglePlus</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                    <code>Facebook</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertController</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>storage</td>
+                                                  
+                                                        <td>
+                                                                    <code>Storage</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usuarioService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsuarioService.html" target="_self" >UsuarioService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loadingController</td>
+                                                  
+                                                        <td>
+                                                                    <code>LoadingController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="acceder"></a>
+                    <span class="name">
+                        <b>
+                            acceder
+                        </b>
+                        <a href="#acceder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>acceder()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dashboard"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            dashboard
+                        </b>
+                        <a href="#dashboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>dashboard(valor)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valor</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="facebookLogin"></a>
+                    <span class="name">
+                        <b>
+                            facebookLogin
+                        </b>
+                        <a href="#facebookLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>facebookLogin()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="googleLogin"></a>
+                    <span class="name">
+                        <b>
+                            googleLogin
+                        </b>
+                        <a href="#googleLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>googleLogin()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goto"></a>
+                    <span class="name">
+                        <b>
+                            goto
+                        </b>
+                        <a href="#goto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goto(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <b>
+                            ionViewWillEnter
+                        </b>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentLoading"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            presentLoading
+                        </b>
+                        <a href="#presentLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recuperar"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            recuperar
+                        </b>
+                        <a href="#recuperar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>recuperar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/pages/login/login.page.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="afAuth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            afAuth</b>
+                            <a href="#afAuth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AngularFireAuth</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pages/login/login.page.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="alertController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            alertController</b>
+                            <a href="#alertController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AlertController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/pages/login/login.page.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="facebookData"></a>
+                        <span class="name">
+                            <b>
+                            facebookData</b>
+                            <a href="#facebookData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>null</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/login/login.page.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fb"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            fb</b>
+                            <a href="#fb"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Facebook</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/pages/login/login.page.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="googleData"></a>
+                        <span class="name">
+                            <b>
+                            googleData</b>
+                            <a href="#googleData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>null</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/login/login.page.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loadingController</b>
+                            <a href="#loadingController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoadingController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/pages/login/login.page.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logeado"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            logeado</b>
+                            <a href="#logeado"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;firebase.User&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pages/login/login.page.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="login"></a>
+                        <span class="name">
+                            <b>
+                            login</b>
+                            <a href="#login"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    email: null,
+    password: null,
+    pushToken: null,
+    pushIdToken: null,
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/login/login.page.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="registrar"></a>
+                        <span class="name">
+                            <b>
+                            registrar</b>
+                            <a href="#registrar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    nombre:null,
+    email:null,
+    contra:&#x27;123456&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/login/login.page.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { ApiFitechService } from &quot;src/app/services/api-fitech.service&quot;;
+import { LoadingController, NavController } from &quot;@ionic/angular&quot;;
+import { AlertController } from &quot;@ionic/angular&quot;;
+import { MensajesService } from &quot;src/app/services/mensajes.service&quot;;
+import * as moment from &quot;moment&quot;;
+//google
+import * as firebase from &quot;firebase/app&quot;;
+import { AngularFireAuth } from &quot;@angular/fire/auth&quot;;
+import { GooglePlus } from &quot;@ionic-native/google-plus/ngx&quot;;
+import { Platform } from &quot;@ionic/angular&quot;;
+import { Observable } from &quot;rxjs&quot;;
+//facebook
+import { Facebook, FacebookLoginResponse } from &quot;@ionic-native/facebook/ngx&quot;;
+import { Storage } from &quot;@ionic/storage&quot;;
+import { UsuarioService } from &quot;src/app/services/usuario.service&quot;;
+
+@Component({
+  selector: &quot;app-login&quot;,
+  templateUrl: &quot;./login.page.html&quot;,
+  styleUrls: [&quot;./login.page.scss&quot;],
+})
+export class LoginPage implements OnInit {
+  public logeado: Observable&lt;firebase.User&gt;;
+  googleData &#x3D; null;
+  facebookData &#x3D; null;
+
+  login &#x3D; {
+    email: null,
+    password: null,
+    pushToken: null,
+    pushIdToken: null,
+  };
+
+ registrar &#x3D; {
+    nombre:null,
+    email:null,
+    contra:&#x27;123456&#x27;
+  }
+
+  constructor(
+    private ApiService: ApiFitechService,
+    private ruta: NavController,
+    private mensajeservice: MensajesService,
+    public afAuth: AngularFireAuth,
+    private gplus: GooglePlus,
+    public fb: Facebook,
+    public alertController: AlertController,
+    private platform: Platform,
+    private storage: Storage,
+    private usuarioService:UsuarioService,
+    public loadingController: LoadingController,
+  ) {
+    this.logeado &#x3D; this.afAuth.authState;
+  }
+
+  ngOnInit() {}
+
+  ionViewWillEnter() {
+
+    // llamado cache
+    this.ApiService.cargarFittechApp().then(resp&#x3D;&gt;{
+      console.log(&quot;si no tiene nada , llamas&quot; ,resp)
+      if(resp &#x3D;&#x3D;&#x3D; false){
+         this.ApiService.guardarFittechApp()
+      }
+    })
+
+  }
+
+  acceder() {
+    if (this.login.password.length &gt; 1 &amp;&amp; this.login.email.length &gt; 1) {
+      this.dashboard(this.login);
+    } else {
+      return;
+    }
+  }
+
+   googleLogin() {
+     this.gplus.login({}).then(async response &#x3D;&gt; {
+      this.presentLoading()
+       const email &#x3D; response.email
+       const name &#x3D; response.displayName 
+       const validar &#x3D; await this.ApiService.validarEmail(email)
+       if(validar){
+        this.loadingController.dismiss()
+        this.mensajeservice.alertaInformatica(&#x27;el correo ya existe en nuestra base de datos&#x27;)
+        return
+       }
+       this.loadingController.dismiss()
+       this.registrar.email &#x3D; email
+       this.registrar.nombre &#x3D; name
+       this.usuarioService.registrarEmail(this.registrar)
+       this.ruta.navigateForward([&quot;/terminos&quot;]);
+    }).catch(e &#x3D;&gt; {
+        alert(JSON.stringify(e))
+    });
+  }
+
+
+
+  facebookLogin() {
+    this.fb
+      .login([&quot;public_profile&quot;, &quot;email&quot;])
+      .then((res: FacebookLoginResponse) &#x3D;&gt; {
+        this.fb
+          .api(
+            &quot;me?fields&#x3D;id,name,email,first_name,picture.width(720).height(720).as(picture)&quot;,
+            []
+          )
+          .then(async (profile) &#x3D;&gt; { 
+            this.presentLoading()
+            const email &#x3D; profile[&quot;email&quot;]
+            const name &#x3D; profile[&quot;name&quot;]
+            const validar &#x3D; await this.ApiService.validarEmail(email)
+            if(validar){
+              this.loadingController.dismiss()
+              this.mensajeservice.alertaInformatica(&#x27;el correo ya existe en nuestra base de datos&#x27;)
+              return
+             }
+             this.loadingController.dismiss()
+             this.registrar.email &#x3D; email
+             this.registrar.nombre &#x3D; name
+             this.usuarioService.registrarEmail(this.registrar)
+             this.ruta.navigateForward([&quot;/terminos&quot;]);
+          });
+      });
+  }
+
+  async dashboard(valor) {
+    this.login.pushToken &#x3D; localStorage.getItem(&quot;pushToken&quot;);
+    this.login.pushIdToken &#x3D; localStorage.getItem(&quot;pushIdToken&quot;);
+    const valido &#x3D; await this.ApiService.Login(valor);
+    if (valido) {
+      this.ruta.navigateRoot([&quot;/tabs&quot;]);
+    } else {
+      this.mensajeservice.alertaInformatica(
+        &quot;Correo o contraseña no son correctas&quot;
+      );
+    }
+  }
+
+  goto(url: string) {
+    this.ruta.navigateForward([url]);
+  }
+
+  async recuperar() {
+    const alert &#x3D; await this.alertController.create({
+      cssClass: &quot;my-custom-class&quot;,
+      header: &quot;Por favor, introduzca su correo electrónico&quot;,
+      inputs: [
+        {
+          name: &quot;email&quot;,
+          type: &quot;text&quot;,
+          placeholder: &quot;email&quot;,
+        },
+      ],
+      buttons: [
+        {
+          text: &quot;Cancel&quot;,
+          role: &quot;cancel&quot;,
+          cssClass: &quot;secondary&quot;,
+          handler: () &#x3D;&gt; {
+            console.log(&quot;ignorar&quot;);
+          },
+        },
+        {
+          text: &quot;Ok&quot;,
+          handler: async (data) &#x3D;&gt; {
+            const validar &#x3D; await this.ApiService.recuperarPassword(data);
+            if (validar) {
+              this.mensajeservice.alertaInformatica(
+                &quot;Su clave fue enviada a su correo electrónico&quot;
+              );
+            } else {
+              this.mensajeservice.alertaInformatica(
+                &quot;El correo electrónico no existe en nuestra base de datos&quot;
+              );
+            }
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+
+
+
+  async presentLoading() {
+    const loading &#x3D; await this.loadingController.create({
+      message: &#x27;Por favor espere...&#x27;,
+      cssClass:&#x27;my-loading&#x27;
+    });
+    await loading.present();
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header [translucent]&#x3D;&quot;true&quot; class&#x3D;&quot;ion-no-border&quot;&gt;
+  &lt;div class&#x3D;&quot;cabezera&quot;&gt;
+    &lt;img src&#x3D;&quot;assets/img/logo-app.png&quot; class&#x3D;&quot;logo&quot;&gt;
+  &lt;/div&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content [fullscreen]&#x3D;&quot;true&quot; slot&#x3D;&quot;fixed&quot;&gt;
+
+  &lt;div class&#x3D;&quot;contenedor&quot;&gt;
+
+      &lt;h2 class&#x3D;&quot;titulo&quot;&gt;¿Listo para comenzar?&lt;/h2&gt;
+    
+      &lt;ion-grid class&#x3D;&quot;my-grid  animated fadeIn delay-2s&quot;&gt;
+      &lt;ion-row class&#x3D;&quot;parent-row&quot;&gt;
+        &lt;ion-col size&#x3D;&quot;12&quot;&gt;      
+          &lt;ion-input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email*&quot; name&#x3D;&quot;email&quot; [(ngModel)]&#x3D;&quot;login.email&quot;&gt;&lt;/ion-input&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;      
+          &lt;ion-input type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Password*&quot; name&#x3D;&quot;password&quot; [(ngModel)]&#x3D;&quot;login.password&quot;&gt;&lt;/ion-input&gt;
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;      
+
+          &lt;!-- &lt;ion-card style&#x3D;&quot;
+            --background:#92949c;
+            width: 286px; &quot;
+            (click)&#x3D;&quot;acceder()&quot; [disabled]&#x3D;&quot;facebookhabilitar&quot;&gt;
+            &lt;ion-item style&#x3D;&quot;--background:#92949c; color:white;&quot;&gt;
+              &lt;ion-icon name&#x3D;&quot;mail-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+              &lt;ion-label style&#x3D;&quot;font-size:14px;  font-family: &#x27;Open Sans&#x27;;text-transform: uppercase;&quot;&gt; Acceder con Email&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+          &lt;/ion-card&gt; --&gt;
+
+          &lt;ion-button style&#x3D;&quot;
+            width: 286px; 
+            text-transform: uppercase;
+            font-family: &#x27;Open Sans&#x27;;
+            &quot;  color&#x3D;&quot;medium&quot;
+          (click)&#x3D;&quot;acceder()&quot; [disabled]&#x3D;&quot;facebookhabilitar&quot; class&#x3D;&quot;disminuirboton&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;mail-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+            Acceder con Email
+          &lt;/ion-button&gt;
+
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;   
+
+          &lt;!-- &lt;ion-card  style&#x3D;&quot;
+          --background:#eb445a;
+          width: 286px; &quot;
+          (click)&#x3D;&quot;googleLogin()&quot; [disabled]&#x3D;&quot;googlehabilitar&quot;&gt;
+          &lt;ion-item style&#x3D;&quot;--background:#eb445a; color:white;&quot;&gt;
+            &lt;ion-icon src&#x3D;&quot;./assets/icon/buscar.svg&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+            &lt;ion-label style&#x3D;&quot;font-size:14px; font-family: &#x27;Open Sans&#x27;;text-transform: uppercase;&quot;&gt; Acceder con Google&lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+        &lt;/ion-card&gt;    --&gt;
+
+          &lt;ion-button style&#x3D;&quot;
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: &#x27;Open Sans&#x27;;
+            &quot;  color&#x3D;&quot;danger&quot; 
+            (click)&#x3D;&quot;googleLogin()&quot; [disabled]&#x3D;&quot;googlehabilitar&quot; class&#x3D;&quot;disminuirboton&quot;&gt;
+            &lt;ion-icon src&#x3D;&quot;./assets/icon/buscar.svg&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+
+            Acceder con Google
+          &lt;/ion-button&gt; 
+
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;    
+          &lt;!-- &lt;ion-card  style&#x3D;&quot;
+          --background:#3b5998;
+          width: 286px; &quot;
+          color&#x3D;&quot;primary&quot;
+          (click)&#x3D;&quot;facebookLogin()&quot; [disabled]&#x3D;&quot;facebookhabilitar&quot;&gt;
+          &lt;ion-item style&#x3D;&quot;--background:#3b5998; color:white;&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;logo-facebook&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+            &lt;ion-label style&#x3D;&quot;font-size:14px;  font-family: &#x27;Open Sans&#x27;;text-transform: uppercase;&quot;&gt; Acceder con Facebook &lt;/ion-label&gt;
+          &lt;/ion-item&gt;
+        &lt;/ion-card&gt;   --&gt;
+
+         &lt;ion-button style&#x3D;&quot;
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: &#x27;Open Sans&#x27;;
+            &quot;  color&#x3D;&quot;primary&quot; 
+          (click)&#x3D;&quot;facebookLogin()&quot; [disabled]&#x3D;&quot;facebookhabilitar&quot; class&#x3D;&quot;disminuirboton&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;logo-facebook&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt;
+            Acceder con Facebook
+          &lt;/ion-button&gt;
+
+        &lt;/ion-col&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;      
+          &lt;a href&#x3D;&quot;#&quot; style&#x3D;&quot;color: black;&quot; (click)&#x3D;&quot;recuperar()&quot;&gt;Recuperar Contraseña&lt;/a&gt;
+        &lt;/ion-col&gt;
+      &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;      
+  &lt;/div&gt;
+&lt;/ion-content&gt;
+
+
+&lt;ion-footer class&#x3D;&quot;ion-no-border&quot;&gt;
+  &lt;ion-toolbar&gt;
+    &lt;div class&#x3D;&quot;piepagina ion-text-center&quot;&gt;
+      &lt;p class&#x3D;&quot;animated fadeIn delay-1s&quot;&gt;¿Aun no posee una cuenta?&lt;/p&gt;
+      &lt;p class&#x3D;&quot;animated fadeInUp delay-2s&quot; style&#x3D;&quot;font-weight: bold;&quot; (click)&#x3D;&quot;goto(&#x27;/registrar-info&#x27;)&quot;&gt;Registrarse&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-footer&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./login.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ion-content {
+  --ion-background-color: #fcfcfc;
+}
+
+@mixin telefono-responsivo {
+  @media (max-width:370px) {
+      @content;
+  }
+}
+
+ion-input{
+  text-align: start;
+  margin: 0 auto;
+  width: 80%;
+  color: black;
+  box-shadow: 3px 7px 10px -5px rgba(0,0,0,0.2);
+}
+
+.fb-btn  {
+  button{
+    --border-radius:5px;    --ion-color-base: #3b5998 !important;
+  }
+}
+
+
+.logo{
+  margin: 0 auto;
+  max-height: 150px;
+}
+
+.cabezera{
+  max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor{
+  padding-top: 20px !important;
+  text-align: center;
+  overflow: hidden;
+  @include telefono-responsivo(){
+    padding-top: 0 !important;
+  }
+}
+
+
+.titulo{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  @include telefono-responsivo(){
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 26px;
+  }
+}
+
+
+
+
+ion-card{
+ padding: 0px !important;
+ margin: 0px !important;
+ margin-bottom: 10px !important;
+ width: 88%;
+ margin:0 auto !important;
+ word-wrap: break-word;
+
+ h2{
+  font-size: 17px!important;
+  opacity: 0.9;
+ }
+
+}
+
+ion-card:hover{
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+
+ion-col{
+    margin-bottom: 8px!important;
+    @include telefono-responsivo(){
+      margin-bottom: 0!important;
+    }
+}
+
+.my-grid {
+  height: 100% !important;
+  @include telefono-responsivo(){
+    height: auto !important;
+  }
+}
+.parent-row {
+  height: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  @include telefono-responsivo(){
+    height: auto !important;
+  }
+}
+
+.disminuirboton{
+  @include telefono-responsivo(){
+    height: 32px !important;
+  }
+}
+
+ion-button{
+  --border-radius:10px;
+width: 80%;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true" class="ion-no-border">  <div class="cabezera">    <img src="assets/img/logo-app.png" class="logo">  </div></ion-header><ion-content [fullscreen]="true" slot="fixed">  <div class="contenedor">      <h2 class="titulo">¿Listo para comenzar?</h2>          <ion-grid class="my-grid  animated fadeIn delay-2s">      <ion-row class="parent-row">        <ion-col size="12">                <ion-input type="text" placeholder="Email*" name="email" [(ngModel)]="login.email"></ion-input>        </ion-col>        <ion-col  size="12">                <ion-input type="password" placeholder="Password*" name="password" [(ngModel)]="login.password"></ion-input>        </ion-col>        <ion-col  size="12">                <!-- <ion-card style="            --background:#92949c;            width: 286px; "            (click)="acceder()" [disabled]="facebookhabilitar">            <ion-item style="--background:#92949c; color:white;">              <ion-icon name="mail-outline" slot="start"></ion-icon>              <ion-label style="font-size:14px;  font-family: \'Open Sans\';text-transform: uppercase;"> Acceder con Email</ion-label>            </ion-item>          </ion-card> -->          <ion-button style="            width: 286px;             text-transform: uppercase;            font-family: \'Open Sans\';            "  color="medium"          (click)="acceder()" [disabled]="facebookhabilitar" class="disminuirboton">            <ion-icon name="mail-outline" slot="start"></ion-icon>            Acceder con Email          </ion-button>        </ion-col>        <ion-col  size="12">             <!-- <ion-card  style="          --background:#eb445a;          width: 286px; "          (click)="googleLogin()" [disabled]="googlehabilitar">          <ion-item style="--background:#eb445a; color:white;">            <ion-icon src="./assets/icon/buscar.svg" slot="start"></ion-icon>            <ion-label style="font-size:14px; font-family: \'Open Sans\';text-transform: uppercase;"> Acceder con Google</ion-label>          </ion-item>        </ion-card>    -->          <ion-button style="            width: 286px;             border-radius: 10px;            text-transform: uppercase;            font-family: \'Open Sans\';            "  color="danger"             (click)="googleLogin()" [disabled]="googlehabilitar" class="disminuirboton">            <ion-icon src="./assets/icon/buscar.svg" slot="start"></ion-icon>            Acceder con Google          </ion-button>         </ion-col>        <ion-col  size="12">              <!-- <ion-card  style="          --background:#3b5998;          width: 286px; "          color="primary"          (click)="facebookLogin()" [disabled]="facebookhabilitar">          <ion-item style="--background:#3b5998; color:white;">            <ion-icon name="logo-facebook" slot="start"></ion-icon>            <ion-label style="font-size:14px;  font-family: \'Open Sans\';text-transform: uppercase;"> Acceder con Facebook </ion-label>          </ion-item>        </ion-card>   -->         <ion-button style="            width: 286px;             border-radius: 10px;            text-transform: uppercase;            font-family: \'Open Sans\';            "  color="primary"           (click)="facebookLogin()" [disabled]="facebookhabilitar" class="disminuirboton">            <ion-icon name="logo-facebook" slot="start"></ion-icon>            Acceder con Facebook          </ion-button>        </ion-col>        <ion-col  size="12">                <a href="#" style="color: black;" (click)="recuperar()">Recuperar Contraseña</a>        </ion-col>      </ion-row>      </ion-grid>        </div></ion-content><ion-footer class="ion-no-border">  <ion-toolbar>    <div class="piepagina ion-text-center">      <p class="animated fadeIn delay-1s">¿Aun no posee una cuenta?</p>      <p class="animated fadeInUp delay-2s" style="font-weight: bold;" (click)="goto(\'/registrar-info\')">Registrarse</p>    </div>  </ion-toolbar></ion-footer></div>'
+    var COMPONENTS = [{'name': 'ActividadPage', 'selector': 'app-actividad'},{'name': 'AlimentosEditarPage', 'selector': 'app-alimentos-editar'},{'name': 'AlimentosNoLikePage', 'selector': 'app-alimentos-no-like'},{'name': 'AlimentosSeleccionPage', 'selector': 'app-alimentos-seleccion'},{'name': 'AntecedentefamiliarPage', 'selector': 'app-antecedentefamiliar'},{'name': 'AntecedentefmliarComponent', 'selector': 'app-antecedentefmliar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackBtnComponent', 'selector': 'app-back-btn'},{'name': 'BateriaAlimentoPage', 'selector': 'app-bateria-alimento'},{'name': 'BateriacalentamientoesperahomePage', 'selector': 'app-bateriacalentamientoesperahome'},{'name': 'BateriacalentamientofinalizarPage', 'selector': 'app-bateriacalentamientofinalizar'},{'name': 'BateriacalentamientohomePage', 'selector': 'app-bateriacalentamientohome'},{'name': 'BateriaesperahomePage', 'selector': 'app-bateriaesperahome'},{'name': 'BateriaEstiramientosPage', 'selector': 'app-bateria-estiramientos'},{'name': 'BateriahomePage', 'selector': 'app-bateriahome'},{'name': 'BateriaPage', 'selector': 'app-bateria'},{'name': 'BateriaRemplazoPage', 'selector': 'app-bateria-remplazo'},{'name': 'BateriarutinaesperahomePage', 'selector': 'app-bateriarutinaesperahome'},{'name': 'BateriarutinahomePage', 'selector': 'app-bateriarutinahome'},{'name': 'BateriarutinaPage', 'selector': 'app-bateriarutina'},{'name': 'CalendarioPage', 'selector': 'app-calendario'},{'name': 'CalentamientodosPage', 'selector': 'app-calentamientodos'},{'name': 'CalentamientoInfoPage', 'selector': 'app-calentamiento-info'},{'name': 'CalentamientoPage', 'selector': 'app-calentamiento'},{'name': 'CambiarejercicioPage', 'selector': 'app-cambiarejercicio'},{'name': 'ComidaPage', 'selector': 'app-comida'},{'name': 'CorazonPage', 'selector': 'app-corazon'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DescargarPage', 'selector': 'app-descargar'},{'name': 'EdadComponent', 'selector': 'app-edad'},{'name': 'EntrenamientosPage', 'selector': 'app-entrenamientos'},{'name': 'Estatura2Component', 'selector': 'app-estatura2'},{'name': 'EstaturaComponent', 'selector': 'app-estatura'},{'name': 'EstiramientosPage', 'selector': 'app-estiramientos'},{'name': 'ExperienciaPage', 'selector': 'app-experiencia'},{'name': 'FormMedicoPage', 'selector': 'app-form-medico'},{'name': 'FotosComponent', 'selector': 'app-fotos'},{'name': 'HistorialComponent', 'selector': 'app-historial'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndicadorescomparacionComponent', 'selector': 'app-indicadorescomparacion'},{'name': 'IndicadoresComponent', 'selector': 'app-indicadores'},{'name': 'IndicadoresPage', 'selector': 'app-indicadores'},{'name': 'LineanutricionalPage', 'selector': 'app-lineanutricional'},{'name': 'ListadoalimentoPage', 'selector': 'app-listadoalimento'},{'name': 'ListaejercicioremplazarPage', 'selector': 'app-listaejercicioremplazar'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LugarEjerciciosPage', 'selector': 'app-lugar-ejercicios'},{'name': 'MedidasComponent', 'selector': 'app-medidas'},{'name': 'MedidasPage', 'selector': 'app-medidas'},{'name': 'MensajecapacidadPage', 'selector': 'app-mensajecapacidad'},{'name': 'MensajecorazonPage', 'selector': 'app-mensajecorazon'},{'name': 'ModalComparacionPage', 'selector': 'app-modal-comparacion'},{'name': 'ModalCorazonInfoPage', 'selector': 'app-modal-corazon-info'},{'name': 'ModalEmailPage', 'selector': 'app-modal-email'},{'name': 'ModalFotosPage', 'selector': 'app-modal-fotos'},{'name': 'ModalInfoPage', 'selector': 'app-modal-info'},{'name': 'ModalMedidasPage', 'selector': 'app-modal-medidas'},{'name': 'ObjetivoPage', 'selector': 'app-objetivo'},{'name': 'PasoinicialPage', 'selector': 'app-pasoinicial'},{'name': 'PaypalPage', 'selector': 'app-paypal'},{'name': 'PercepcionentrenamientoPage', 'selector': 'app-percepcionentrenamiento'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'PesoComponent', 'selector': 'app-peso'},{'name': 'PesoyestaturaPage', 'selector': 'app-pesoyestatura'},{'name': 'PlanesPagosPage', 'selector': 'app-planes-pagos'},{'name': 'PopinfoComponent', 'selector': 'app-popinfo'},{'name': 'PopmensajeComponent', 'selector': 'app-popmensaje'},{'name': 'PopremplazarComponent', 'selector': 'app-popremplazar'},{'name': 'PorcentajegrasaPage', 'selector': 'app-porcentajegrasa'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'ProgresoComponent', 'selector': 'app-progreso'},{'name': 'ProgresoPage', 'selector': 'app-progreso'},{'name': 'RangodeedadPage', 'selector': 'app-rangodeedad'},{'name': 'RegistrarInfoPage', 'selector': 'app-registrar-info'},{'name': 'RelacioncaderaPage', 'selector': 'app-relacioncadera'},{'name': 'RutinaEntrenamientoPage', 'selector': 'app-rutina-entrenamiento'},{'name': 'RutinaPage', 'selector': 'app-rutina'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TerminosPage', 'selector': 'app-terminos'},{'name': 'TestCapacidadInfoPage', 'selector': 'app-test-capacidad-info'},{'name': 'TestCapacidadManualPage', 'selector': 'app-test-capacidad-manual'},{'name': 'TestFuerzaCategoriaPage', 'selector': 'app-test-fuerza-categoria'},{'name': 'TestFuerzaInfoPage', 'selector': 'app-test-fuerza-info'},{'name': 'TestFuerzaManualPage', 'selector': 'app-test-fuerza-manual'},{'name': 'TestFuerzaManualPasosPage', 'selector': 'app-test-fuerza-manual-pasos'},{'name': 'TestFuerzaMenu2Page', 'selector': 'app-test-fuerza-menu2'},{'name': 'TestFuerzaMenu3Page', 'selector': 'app-test-fuerza-menu3'},{'name': 'TestFuerzaMenuPage', 'selector': 'app-test-fuerza-menu'},{'name': 'TestFuerzaPasos1Page', 'selector': 'app-test-fuerza-pasos1'},{'name': 'TestFuerzaPasos2Page', 'selector': 'app-test-fuerza-pasos2'},{'name': 'TestFuerzaPasos3Page', 'selector': 'app-test-fuerza-pasos3'},{'name': 'TestFuerzaPasos4Page', 'selector': 'app-test-fuerza-pasos4'},{'name': 'TestResistenciaPage', 'selector': 'app-test-resistencia'},{'name': 'TiendaPage', 'selector': 'app-tienda'},{'name': 'TiendaProductosPage', 'selector': 'app-tienda-productos'},{'name': 'TutorialAlimentacionPage', 'selector': 'app-tutorial-alimentacion'},{'name': 'TutorialAlimentoPaso1Component', 'selector': 'app-tutorial-alimento-paso1'},{'name': 'TutorialAlimentoPaso2Component', 'selector': 'app-tutorial-alimento-paso2'},{'name': 'TutorialAlimentoPaso3Component', 'selector': 'app-tutorial-alimento-paso3'},{'name': 'TutorialAlimentoPaso4Component', 'selector': 'app-tutorial-alimento-paso4'},{'name': 'TutorialPlanesPage', 'selector': 'app-tutorial-planes'},{'name': 'TutorialPlanesPaso1Component', 'selector': 'app-tutorial-planes-paso1'},{'name': 'TutorialPlanesPaso2Component', 'selector': 'app-tutorial-planes-paso2'},{'name': 'TutorialPlanesPaso3Component', 'selector': 'app-tutorial-planes-paso3'},{'name': 'TutorialPlanesPaso4Component', 'selector': 'app-tutorial-planes-paso4'}];
+    var DIRECTIVES = [{'name': 'TwoDigitDecimaNumberDirective', 'selector': '[appTwoDigitDecimaNumber]'}];
+    var ACTUAL_COMPONENT = {'name': 'LoginPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LoginPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

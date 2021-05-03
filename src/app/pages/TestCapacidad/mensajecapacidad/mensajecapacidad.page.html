@@ -1,0 +1,67 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <div class="cabezera">
+    <img src="assets/img/logo-app.png" class="logo">
+  </div>
+</ion-header>
+
+
+<ion-content fullscreen  scroll-y="false">
+  <ion-slides style="margin-top: -1rem;">
+    <ion-slide>
+      <div class="slide">
+        <img src="assets/img/testcapacidad2.jpg" style="margin-bottom: 0px; padding-bottom: 0px; max-width: 100%;"/>
+        <h2 class="titulo">
+         <b> ¡Felicidades!</b></h2>
+
+     <!--     <ion-card  style="
+         width: 286px; 
+         border-radius: 10px;
+         text-transform: uppercase;
+         font-family: 'Open Sans';
+         --background: red
+         ">
+       <h2 style="color:white; margin: 10px; text-align: center;">{{nivel}}</h2> 
+      </ion-card> -->
+      <h2 class="titulo" style="margin-top: 1rem;    margin-bottom: -10px;">
+        <b> Su nivel es <b style="color: red;"> {{nivel}}</b></b></h2>
+         
+        <!-- <ion-button expand="block" style="    --background: red;
+        font-size: 1rem;
+        margin: 0 auto;
+        width: 286px;
+        height: 59px;
+        --border-radius: 10px;">
+        <b>  {{nivel}}</b>
+        </ion-button> -->
+
+
+        <p class="mensajepersonalizado">{{mensaje}}</p>
+      </div>
+    
+      <ion-card  style="
+      width: 286px; 
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      "
+    color="danger"
+   (click)="finalizar()">
+    <h2 style="margin: 10px; text-align: center;">
+      <b>Finalizar</b>
+    </h2> 
+   </ion-card>
+
+      <!-- <ion-button  color="dark" expand="block"  (click)="finalizar()" style="
+      font-size: 1rem;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      width: 286px;
+      height: 59px;
+      --border-radius: 10px;">
+         <b> Finalizar</b>
+        </ion-button> -->
+
+    </ion-slide>
+  </ion-slides>
+</ion-content>  

@@ -1,0 +1,23 @@
+ion-slides {
+  --bullet-background: red;
+  --bullet-background-active: red;
+  height: auto;
+}
+
+:host ::ng-deep .swiper-pagination .swiper-pagination-bullet {
+  --bullet-background: white;
+}
+
+:host ::ng-deep .swiper-pagination .swiper-pagination-bullet-active {
+  background: #EF4044;
+}
+
+ion-content {
+  --ion-background-color: black;
+}
+
+.omitir {
+  text-align: right;
+  color: #EF4044;
+  margin-right: 2rem;
+}

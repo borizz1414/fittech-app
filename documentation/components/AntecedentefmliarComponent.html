@@ -1,0 +1,1127 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>googlelogin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">googlelogin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AntecedentefmliarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/antecedentefmliar/antecedentefmliar.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-antecedentefmliar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./antecedentefmliar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./antecedentefmliar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#condicionPersona">condicionPersona</a>
+                            </li>
+                            <li>
+                                <a href="#habilitar">habilitar</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loadingController">loadingController</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#atras">atras</a>
+                            </li>
+                            <li>
+                                <a href="#avanzar">avanzar</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#evaluar">evaluar</a>
+                            </li>
+                            <li>
+                                <a href="#historialcorazon">historialcorazon</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentLoading">presentLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cambiarPantalla">cambiarPantalla</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(ruta: NavController, cdRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, usuarioservicio: <a href="../injectables/UsuarioService.html">UsuarioService</a>, ApiService: <a href="../injectables/ApiFitechService.html">ApiFitechService</a>, loadingController: LoadingController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>ruta</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usuarioservicio</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsuarioService.html" target="_self" >UsuarioService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiFitechService.html" target="_self" >ApiFitechService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loadingController</td>
+                                                  
+                                                        <td>
+                                                                    <code>LoadingController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cambiarPantalla"></a>
+                        <b>cambiarPantalla</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:12</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="atras"></a>
+                    <span class="name">
+                        <b>
+                            atras
+                        </b>
+                        <a href="#atras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>atras()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="avanzar"></a>
+                    <span class="name">
+                        <b>
+                            avanzar
+                        </b>
+                        <a href="#avanzar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>avanzar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="evaluar"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            evaluar
+                        </b>
+                        <a href="#evaluar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>evaluar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="historialcorazon"></a>
+                    <span class="name">
+                        <b>
+                            historialcorazon
+                        </b>
+                        <a href="#historialcorazon"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>historialcorazon(datos)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>datos</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentLoading"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            presentLoading
+                        </b>
+                        <a href="#presentLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentLoading()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="condicionPersona"></a>
+                        <span class="name">
+                            <b>
+                            condicionPersona</b>
+                            <a href="#condicionPersona"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    arritmia_corazon:false,
+    ataque_corazon:false,
+    operacion_corazon:false,
+    enfermedad_corazon:false,
+    presion_corazon:false,
+    diabete_corazon:false,
+    muerte_prematura:false,
+    insuficiencia_renal:false,
+    ninguna:false
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="habilitar"></a>
+                        <span class="name">
+                            <b>
+                            habilitar</b>
+                            <a href="#habilitar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingController"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loadingController</b>
+                            <a href="#loadingController"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LoadingController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/antecedentefmliar/antecedentefmliar.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ChangeDetectorRef, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { NavController, LoadingController } from &#x27;@ionic/angular&#x27;;
+import { ApiFitechService } from &#x27;../services/api-fitech.service&#x27;;
+import { UsuarioService } from &#x27;../services/usuario.service&#x27;;
+
+@Component({
+  selector: &#x27;app-antecedentefmliar&#x27;,
+  templateUrl: &#x27;./antecedentefmliar.component.html&#x27;,
+  styleUrls: [&#x27;./antecedentefmliar.component.scss&#x27;],
+})
+export class AntecedentefmliarComponent implements OnInit {
+  @Output() cambiarPantalla &#x3D; new EventEmitter();
+  condicionPersona &#x3D; {
+    arritmia_corazon:false,
+    ataque_corazon:false,
+    operacion_corazon:false,
+    enfermedad_corazon:false,
+    presion_corazon:false,
+    diabete_corazon:false,
+    muerte_prematura:false,
+    insuficiencia_renal:false,
+    ninguna:false
+  }
+  habilitar:boolean&#x3D;true
+
+
+  constructor(private ruta:NavController,private cdRef:ChangeDetectorRef,private usuarioservicio:UsuarioService,
+              private ApiService:ApiFitechService,public loadingController: LoadingController) { }
+
+  ngOnInit() {
+  }
+
+  avanzar(){ 
+    if(!this.condicionPersona.arritmia_corazon &amp;&amp; !this.condicionPersona.ataque_corazon &amp;&amp; !this.condicionPersona.diabete_corazon &amp;&amp;
+      !this.condicionPersona.enfermedad_corazon &amp;&amp;!this.condicionPersona.muerte_prematura &amp;&amp; !this.condicionPersona.ninguna &amp;&amp;
+      !this.condicionPersona.operacion_corazon &amp;&amp;!this.condicionPersona.presion_corazon  &amp;&amp;!this.condicionPersona.insuficiencia_renal){
+        this.habilitar &#x3D; false
+      }else{
+       this.usuarioservicio.condicionCorazon(this.condicionPersona) 
+      //  localStorage.setItem(&#x27;condicionPersona&#x27;, JSON.stringify(this.condicionPersona))
+        this.evaluar()
+      }
+  }
+
+ historialcorazon(datos){
+    console.log(this.habilitar)
+
+    if(datos &#x3D;&#x3D; &#x27;option&#x27;){
+      this.condicionPersona.ninguna &#x3D; false;
+      this.habilitar &#x3D; false
+      this.cdRef.detectChanges();
+    }
+
+    if(datos &#x3D;&#x3D; &#x27;none&#x27;){
+      this.condicionPersona.arritmia_corazon&#x3D;false;
+      this.condicionPersona.ataque_corazon&#x3D;false;
+      this.condicionPersona.operacion_corazon&#x3D;false;
+      this.condicionPersona.enfermedad_corazon&#x3D;false;
+      this.condicionPersona.presion_corazon&#x3D;false;
+      this.condicionPersona.diabete_corazon&#x3D;false;
+      this.condicionPersona.muerte_prematura&#x3D;false;
+      this.condicionPersona.insuficiencia_renal&#x3D;false;
+        if(this.condicionPersona.ninguna){
+          this.habilitar &#x3D; false
+        }else{
+          this.habilitar &#x3D; true
+        }
+      this.cdRef.detectChanges();
+    }
+
+
+ }
+
+
+ async evaluar(){
+  //this.ruta.navigateRoot([&#x27;/relacioncadera&#x27;])
+ /*  this.presentLoading(); */
+  /* const valido &#x3D; await this.ApiService.Antecedentefamiliar(this.usuarioservicio.condicionPersona)
+  if(valido){ */
+   /*  this.loadingController.dismiss() */
+     this.ruta.navigateRoot(&#x27;corazon&#x27;)
+  /* }else{
+    return
+  } */
+  
+
+}
+
+async presentLoading() {
+  const loading &#x3D; await this.loadingController.create({
+    message: &#x27;Por favor espere...&#x27;,
+  });
+  await loading.present();
+}
+
+atras(){
+  this.cambiarPantalla.emit(2)
+}
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+
+  &lt;div class&#x3D;&quot;contenedor animated fadeIn delay-1s&quot;&gt;
+     
+      &lt;div class&#x3D;&quot;letra&quot;&gt;
+        ¿Alguno de tus familiares de primer grado (Padres, hermanos o hijos) ha sufrido las enfermedades o afecciones siguientes?
+      &lt;/div&gt;
+
+
+      &lt;ion-grid class&#x3D;&quot;my-grid animated fadeIn delay-2s&quot;&gt;
+      &lt;ion-row class&#x3D;&quot;parent-row&quot;&gt;
+        &lt;ion-col  size&#x3D;&quot;12&quot;&gt;   
+          &lt;ion-list&gt;
+            &lt;ion-list-header&gt;(Marcar en caso afirmativo)&lt;/ion-list-header&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;ninguna&quot; 
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;none&#x27;)&quot;  [(ngModel)]&#x3D;&quot;condicionPersona.ninguna&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Ninguna de las siguientes&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-label&gt;Arritmia cardiaca&lt;/ion-label&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;arritmia_corazon&quot; 
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.arritmia_corazon&quot;&gt;&lt;/ion-toggle&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;ataque_corazon&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.ataque_corazon&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Ataque al corazón&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;operacion_corazon&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.operacion_corazon&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Operación de corazón&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;enfermedad_corazon&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.enfermedad_corazon&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Enfermedad cardiaca congénita&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;presion_corazon&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.presion_corazon&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Presión arterial alta&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;diabete_corazon&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.diabete_corazon&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Diabetes&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot; slot&#x3D;&quot;start&quot; name&#x3D;&quot;muerte_prematura&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot; [(ngModel)]&#x3D;&quot;condicionPersona.muerte_prematura&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label style&#x3D;&quot;font-size: 14px;&quot;&gt;Muerte prematura antes de los 50 años&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+
+            &lt;ion-item&gt;
+              &lt;ion-toggle color&#x3D;&quot;dark&quot;  slot&#x3D;&quot;start&quot; name&#x3D;&quot;insuficiencia_renal&quot;
+              (ionChange)&#x3D;&quot;historialcorazon(&#x27;option&#x27;)&quot;
+              [(ngModel)]&#x3D;&quot;condicionPersona.insuficiencia_renal&quot;&gt;&lt;/ion-toggle&gt;
+              &lt;ion-label&gt;Insuficiencia renal&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+
+          &lt;/ion-list&gt;
+            
+          
+        &lt;/ion-col&gt;
+ 
+        &lt;ion-col size&#x3D;&quot;12&quot;&gt;      
+       &lt;!--    &lt;ion-card class&#x3D;&quot;color-tarjeta&quot; (click)&#x3D;&quot;avanzar()&quot; [disabled]&#x3D;&quot;habilitar&quot; style&#x3D;&quot;
+            width: 286px; 
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-family: &#x27;Open Sans&#x27;;
+          &quot;&gt;
+            &lt;h2 style&#x3D;&quot;position:relative;margin: 10px;&quot;&gt;Continuar&lt;/h2&gt;
+          &lt;/ion-card&gt; --&gt;
+
+        
+        &lt;/ion-col&gt;
+       
+      &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;
+     
+  &lt;/div&gt;
+  &lt;ion-fab vertical&#x3D;&quot;bottom&quot; horizontal&#x3D;&quot;start&quot; slot&#x3D;&quot;fixed&quot;    &gt;
+    &lt;ion-fab-button color&#x3D;&quot;danger&quot; (click)&#x3D;&quot;atras()&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;arrow-back-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+  &lt;/ion-fab&gt;
+
+  &lt;ion-fab vertical&#x3D;&quot;bottom&quot; horizontal&#x3D;&quot;end&quot; slot&#x3D;&quot;fixed&quot; &gt;
+    &lt;ion-fab-button color&#x3D;&quot;danger&quot; (click)&#x3D;&quot;avanzar()&quot; [disabled]&#x3D;&quot;habilitar&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;arrow-forward-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+  &lt;/ion-fab&gt;   
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./antecedentefmliar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+  }
+  
+  ion-content {
+    --background: #fcfcfc;
+    /*
+    background-image: url(&#x27;/assets/img/imagen-datos.jpg&#x27;);    
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 80%;*/
+  }
+  
+  ion-input{
+    text-align: start;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 3px 7px 10px -5px rgba(0,0,0,0.2);
+  }
+
+
+  .logo{
+    margin: 0 auto;
+    max-height: 150px;
+  }
+  
+  .cabezera{
+    max-height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  .contenedor{
+    padding-top: 20px !important;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+
+ 
+  .titulo{
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+ 
+
+.imagen{
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.tarjeta{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+  ion-col{
+      margin-bottom: 8px!important;
+  }
+
+  .my-grid {
+    height: 100% !important;
+ }
+.parent-row {
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+ }
+
+ .letra{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 18px;
+    text-align: justify;
+    opacity: 0.7;
+ }
+
+ ion-card{
+   margin: 0 auto;
+    width: 80%;
+}
+
+ ion-card:hover{
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+.mensaje{
+ font-size: 11px;
+ opacity: 0.5;
+ text-align: center;
+}
+
+.color-tarjeta{
+ color: white;
+ background-color: #000000;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>  <div class="contenedor animated fadeIn delay-1s">           <div class="letra">        ¿Alguno de tus familiares de primer grado (Padres, hermanos o hijos) ha sufrido las enfermedades o afecciones siguientes?      </div>      <ion-grid class="my-grid animated fadeIn delay-2s">      <ion-row class="parent-row">        <ion-col  size="12">             <ion-list>            <ion-list-header>(Marcar en caso afirmativo)</ion-list-header>            <ion-item>              <ion-toggle color="dark" slot="start" name="ninguna"               (ionChange)="historialcorazon(\'none\')"  [(ngModel)]="condicionPersona.ninguna"></ion-toggle>              <ion-label>Ninguna de las siguientes</ion-label>            </ion-item>            <ion-item>              <ion-label>Arritmia cardiaca</ion-label>              <ion-toggle color="dark"  slot="start" name="arritmia_corazon"               (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.arritmia_corazon"></ion-toggle>            </ion-item>            <ion-item>              <ion-toggle color="dark"  slot="start" name="ataque_corazon"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.ataque_corazon"></ion-toggle>              <ion-label>Ataque al corazón</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark" slot="start" name="operacion_corazon"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.operacion_corazon"></ion-toggle>              <ion-label>Operación de corazón</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark" slot="start" name="enfermedad_corazon"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.enfermedad_corazon"></ion-toggle>              <ion-label>Enfermedad cardiaca congénita</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark" slot="start" name="presion_corazon"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.presion_corazon"></ion-toggle>              <ion-label>Presión arterial alta</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark" slot="start" name="diabete_corazon"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.diabete_corazon"></ion-toggle>              <ion-label>Diabetes</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark" slot="start" name="muerte_prematura"              (ionChange)="historialcorazon(\'option\')" [(ngModel)]="condicionPersona.muerte_prematura"></ion-toggle>              <ion-label style="font-size: 14px;">Muerte prematura antes de los 50 años</ion-label>            </ion-item>            <ion-item>              <ion-toggle color="dark"  slot="start" name="insuficiencia_renal"              (ionChange)="historialcorazon(\'option\')"              [(ngModel)]="condicionPersona.insuficiencia_renal"></ion-toggle>              <ion-label>Insuficiencia renal</ion-label>            </ion-item>          </ion-list>                              </ion-col>         <ion-col size="12">             <!--    <ion-card class="color-tarjeta" (click)="avanzar()" [disabled]="habilitar" style="            width: 286px;             border-radius: 10px;            text-transform: uppercase;            font-family: \'Open Sans\';          ">            <h2 style="position:relative;margin: 10px;">Continuar</h2>          </ion-card> -->                </ion-col>             </ion-row>      </ion-grid>       </div>  <ion-fab vertical="bottom" horizontal="start" slot="fixed"    >    <ion-fab-button color="danger" (click)="atras()">      <ion-icon name="arrow-back-outline"></ion-icon>    </ion-fab-button>  </ion-fab>  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >    <ion-fab-button color="danger" (click)="avanzar()" [disabled]="habilitar">      <ion-icon name="arrow-forward-outline"></ion-icon>    </ion-fab-button>  </ion-fab>   </div>'
+    var COMPONENTS = [{'name': 'ActividadPage', 'selector': 'app-actividad'},{'name': 'AlimentosEditarPage', 'selector': 'app-alimentos-editar'},{'name': 'AlimentosNoLikePage', 'selector': 'app-alimentos-no-like'},{'name': 'AlimentosSeleccionPage', 'selector': 'app-alimentos-seleccion'},{'name': 'AntecedentefamiliarPage', 'selector': 'app-antecedentefamiliar'},{'name': 'AntecedentefmliarComponent', 'selector': 'app-antecedentefmliar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackBtnComponent', 'selector': 'app-back-btn'},{'name': 'BateriaAlimentoPage', 'selector': 'app-bateria-alimento'},{'name': 'BateriacalentamientoesperahomePage', 'selector': 'app-bateriacalentamientoesperahome'},{'name': 'BateriacalentamientofinalizarPage', 'selector': 'app-bateriacalentamientofinalizar'},{'name': 'BateriacalentamientohomePage', 'selector': 'app-bateriacalentamientohome'},{'name': 'BateriaesperahomePage', 'selector': 'app-bateriaesperahome'},{'name': 'BateriaEstiramientosPage', 'selector': 'app-bateria-estiramientos'},{'name': 'BateriahomePage', 'selector': 'app-bateriahome'},{'name': 'BateriaPage', 'selector': 'app-bateria'},{'name': 'BateriaRemplazoPage', 'selector': 'app-bateria-remplazo'},{'name': 'BateriarutinaesperahomePage', 'selector': 'app-bateriarutinaesperahome'},{'name': 'BateriarutinahomePage', 'selector': 'app-bateriarutinahome'},{'name': 'BateriarutinaPage', 'selector': 'app-bateriarutina'},{'name': 'CalendarioPage', 'selector': 'app-calendario'},{'name': 'CalentamientodosPage', 'selector': 'app-calentamientodos'},{'name': 'CalentamientoInfoPage', 'selector': 'app-calentamiento-info'},{'name': 'CalentamientoPage', 'selector': 'app-calentamiento'},{'name': 'CambiarejercicioPage', 'selector': 'app-cambiarejercicio'},{'name': 'ComidaPage', 'selector': 'app-comida'},{'name': 'CorazonPage', 'selector': 'app-corazon'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DescargarPage', 'selector': 'app-descargar'},{'name': 'EdadComponent', 'selector': 'app-edad'},{'name': 'EntrenamientosPage', 'selector': 'app-entrenamientos'},{'name': 'Estatura2Component', 'selector': 'app-estatura2'},{'name': 'EstaturaComponent', 'selector': 'app-estatura'},{'name': 'EstiramientosPage', 'selector': 'app-estiramientos'},{'name': 'ExperienciaPage', 'selector': 'app-experiencia'},{'name': 'FormMedicoPage', 'selector': 'app-form-medico'},{'name': 'FotosComponent', 'selector': 'app-fotos'},{'name': 'HistorialComponent', 'selector': 'app-historial'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndicadorescomparacionComponent', 'selector': 'app-indicadorescomparacion'},{'name': 'IndicadoresComponent', 'selector': 'app-indicadores'},{'name': 'IndicadoresPage', 'selector': 'app-indicadores'},{'name': 'LineanutricionalPage', 'selector': 'app-lineanutricional'},{'name': 'ListadoalimentoPage', 'selector': 'app-listadoalimento'},{'name': 'ListaejercicioremplazarPage', 'selector': 'app-listaejercicioremplazar'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LugarEjerciciosPage', 'selector': 'app-lugar-ejercicios'},{'name': 'MedidasComponent', 'selector': 'app-medidas'},{'name': 'MedidasPage', 'selector': 'app-medidas'},{'name': 'MensajecapacidadPage', 'selector': 'app-mensajecapacidad'},{'name': 'MensajecorazonPage', 'selector': 'app-mensajecorazon'},{'name': 'ModalComparacionPage', 'selector': 'app-modal-comparacion'},{'name': 'ModalCorazonInfoPage', 'selector': 'app-modal-corazon-info'},{'name': 'ModalEmailPage', 'selector': 'app-modal-email'},{'name': 'ModalFotosPage', 'selector': 'app-modal-fotos'},{'name': 'ModalInfoPage', 'selector': 'app-modal-info'},{'name': 'ModalMedidasPage', 'selector': 'app-modal-medidas'},{'name': 'ObjetivoPage', 'selector': 'app-objetivo'},{'name': 'PasoinicialPage', 'selector': 'app-pasoinicial'},{'name': 'PaypalPage', 'selector': 'app-paypal'},{'name': 'PercepcionentrenamientoPage', 'selector': 'app-percepcionentrenamiento'},{'name': 'PerfilPage', 'selector': 'app-perfil'},{'name': 'PesoComponent', 'selector': 'app-peso'},{'name': 'PesoyestaturaPage', 'selector': 'app-pesoyestatura'},{'name': 'PlanesPagosPage', 'selector': 'app-planes-pagos'},{'name': 'PopinfoComponent', 'selector': 'app-popinfo'},{'name': 'PopmensajeComponent', 'selector': 'app-popmensaje'},{'name': 'PopremplazarComponent', 'selector': 'app-popremplazar'},{'name': 'PorcentajegrasaPage', 'selector': 'app-porcentajegrasa'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'ProgresoComponent', 'selector': 'app-progreso'},{'name': 'ProgresoPage', 'selector': 'app-progreso'},{'name': 'RangodeedadPage', 'selector': 'app-rangodeedad'},{'name': 'RegistrarInfoPage', 'selector': 'app-registrar-info'},{'name': 'RelacioncaderaPage', 'selector': 'app-relacioncadera'},{'name': 'RutinaEntrenamientoPage', 'selector': 'app-rutina-entrenamiento'},{'name': 'RutinaPage', 'selector': 'app-rutina'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TerminosPage', 'selector': 'app-terminos'},{'name': 'TestCapacidadInfoPage', 'selector': 'app-test-capacidad-info'},{'name': 'TestCapacidadManualPage', 'selector': 'app-test-capacidad-manual'},{'name': 'TestFuerzaCategoriaPage', 'selector': 'app-test-fuerza-categoria'},{'name': 'TestFuerzaInfoPage', 'selector': 'app-test-fuerza-info'},{'name': 'TestFuerzaManualPage', 'selector': 'app-test-fuerza-manual'},{'name': 'TestFuerzaManualPasosPage', 'selector': 'app-test-fuerza-manual-pasos'},{'name': 'TestFuerzaMenu2Page', 'selector': 'app-test-fuerza-menu2'},{'name': 'TestFuerzaMenu3Page', 'selector': 'app-test-fuerza-menu3'},{'name': 'TestFuerzaMenuPage', 'selector': 'app-test-fuerza-menu'},{'name': 'TestFuerzaPasos1Page', 'selector': 'app-test-fuerza-pasos1'},{'name': 'TestFuerzaPasos2Page', 'selector': 'app-test-fuerza-pasos2'},{'name': 'TestFuerzaPasos3Page', 'selector': 'app-test-fuerza-pasos3'},{'name': 'TestFuerzaPasos4Page', 'selector': 'app-test-fuerza-pasos4'},{'name': 'TestResistenciaPage', 'selector': 'app-test-resistencia'},{'name': 'TiendaPage', 'selector': 'app-tienda'},{'name': 'TiendaProductosPage', 'selector': 'app-tienda-productos'},{'name': 'TutorialAlimentacionPage', 'selector': 'app-tutorial-alimentacion'},{'name': 'TutorialAlimentoPaso1Component', 'selector': 'app-tutorial-alimento-paso1'},{'name': 'TutorialAlimentoPaso2Component', 'selector': 'app-tutorial-alimento-paso2'},{'name': 'TutorialAlimentoPaso3Component', 'selector': 'app-tutorial-alimento-paso3'},{'name': 'TutorialAlimentoPaso4Component', 'selector': 'app-tutorial-alimento-paso4'},{'name': 'TutorialPlanesPage', 'selector': 'app-tutorial-planes'},{'name': 'TutorialPlanesPaso1Component', 'selector': 'app-tutorial-planes-paso1'},{'name': 'TutorialPlanesPaso2Component', 'selector': 'app-tutorial-planes-paso2'},{'name': 'TutorialPlanesPaso3Component', 'selector': 'app-tutorial-planes-paso3'},{'name': 'TutorialPlanesPaso4Component', 'selector': 'app-tutorial-planes-paso4'}];
+    var DIRECTIVES = [{'name': 'TwoDigitDecimaNumberDirective', 'selector': '[appTwoDigitDecimaNumber]'}];
+    var ACTUAL_COMPONENT = {'name': 'AntecedentefmliarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AntecedentefmliarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
