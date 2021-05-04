@@ -91,7 +91,7 @@ export class NutricionService {
       const data = {
         valor : "ignorar"
       }      
-      this.http.post(`http://fittech247.com/fittech/api/auth/foods`,data,{headers})
+      this.http.post(`${URL}/api/auth/foods`,data,{headers})
           .subscribe(resp=>{
             resolve(resp['Alimentos'])
           },err=>{
@@ -285,7 +285,7 @@ export class NutricionService {
       const data = {
         valor : "ignorar"
       }      
-      this.http.post(`http://fittech247.com/fittech/api/auth/progress`,data,{headers})
+      this.http.post(`${URL}/auth/progress`,data,{headers})
           .subscribe(resp=>{
             console.log(resp)
             if(resp['Progress'].length > 0){
@@ -311,7 +311,7 @@ export class NutricionService {
       const data = {
         valor : "ignorar"
       }      
-      this.http.post(`http://fittech247.com/fittech/api/auth/progress`,data,{headers})
+      this.http.post(`${URL}/auth/progress`,data,{headers})
           .subscribe(resp=>{
             console.log(resp)
             if(resp['Progress_food'].length > 0){

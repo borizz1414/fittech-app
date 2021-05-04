@@ -1,7 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ApiFitechService } from './api-fitech.service';
-
+import { environment } from '../../environments/environment';
+const URL = environment.url
 @Injectable({
   providedIn: 'root'
 })
@@ -21,7 +22,7 @@ export class TiendaService {
           valor : "ignorar"
         } 
 
-        this.http.post(`http://fittech247.com/fittech/api/auth/products`,data,{headers})
+        this.http.post(`${URL}/auth/products`,data,{headers})
             .subscribe(resp=>{
               resolve(resp['Productos'])
             },err=>{
@@ -42,7 +43,7 @@ export class TiendaService {
           product_id : id
         } 
   
-        this.http.post(`http://fittech247.com/fittech/api/auth/pay-products`,data,{headers})
+        this.http.post(`${URL}/auth/pay-products`,data,{headers})
             .subscribe(resp=>{
               resolve(resp)
             },err=>{

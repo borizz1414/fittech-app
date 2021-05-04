@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiFitechService } from '../services/api-fitech.service';
 import { NavController } from '@ionic/angular';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-bateriacalentamientoesperahome',
@@ -9,7 +10,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./bateriacalentamientoesperahome.page.scss'],
 })
 export class BateriacalentamientoesperahomePage implements OnInit {
-
+  URL = environment.url
   dataRecibida:any
   tiempo:any
   timeLeft: number;
@@ -41,7 +42,7 @@ export class BateriacalentamientoesperahomePage implements OnInit {
     this.nombre = this.ApiService.calentamiento[this.contador]
     // this.nombre = this.ejercipro.name
 
-    this.imagen = `http://fittech247.com/fittech/imagenes/${this.nombre.cod}/${this.nombre.id}.jpg`
+    this.imagen = `${this.URL}/imagenes/${this.nombre.cod}/${this.nombre.id}.jpg`
     // console.log(this.imagen)
 
 

@@ -67,9 +67,9 @@ export class FotosComponent implements OnInit {
       }else{
       
         console.log(valor['measurement_record'] , "datos traido")
-         this.perfil =  valor.measurement_record === null ? null  : 'http://fittech247.com/fittech/fotos/grasa/' + valor['measurement_record'].profile_photo
-         this.espalda = valor.measurement_record === null ? null  :'http://fittech247.com/fittech/fotos/grasa/' + valor['measurement_record'].back_photo
-         this.frente =  valor.measurement_record === null ? null  :'http://fittech247.com/fittech/fotos/grasa/' + valor['measurement_record'].front_photo
+         this.perfil =  valor.measurement_record === null ? null  : 'https://smartbunnypruebas.com/fotos/grasa/' + valor['measurement_record'].profile_photo
+         this.espalda = valor.measurement_record === null ? null  :'https://smartbunnypruebas.com/fotos/grasa/' + valor['measurement_record'].back_photo
+         this.frente =  valor.measurement_record === null ? null  :'https://smartbunnypruebas.com/fotos/grasa/' + valor['measurement_record'].front_photo
          
 
          this.form.controls.stature.setValue(valor.measurement_record === null ? null  : valor['measurement_record'].stature)

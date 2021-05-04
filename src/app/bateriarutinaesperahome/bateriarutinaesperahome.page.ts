@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 import { ApiFitechService } from '../services/api-fitech.service';
 import { NavController, Platform } from '@ionic/angular';
-
+import { environment } from 'src/environments/environment';
+const URL = environment.url
 @Component({
   selector: 'app-bateriarutinaesperahome',
   templateUrl: './bateriarutinaesperahome.page.html',
@@ -45,7 +46,7 @@ export class BateriarutinaesperahomePage implements OnInit {
     this.ejercipro =  this.ApiService.rutina[this.contador]
     this.nombre = this.ejercipro.name
 
-    this.imagen = `http://fittech247.com/fittech/imagenes/${this.ejercipro.cod}/${this.ejercipro.id}.jpg`
+    this.imagen = `${URL}/imagenes/${this.ejercipro.cod}/${this.ejercipro.id}.jpg`
     console.log(this.imagen)
     this.capturar.queryParams.subscribe(params => {
       let data = params["count"];

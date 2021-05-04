@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, LoadingController, AlertController, ModalController } from '@ionic/angular';
+import { environment } from 'src/environments/environment';
 import { ModalComparacionPage } from '../modal-comparacion/modal-comparacion.page';
 import { MensajesService } from '../services/mensajes.service';
 import { NutricionService } from '../services/nutricion.service';
@@ -10,7 +11,7 @@ import { NutricionService } from '../services/nutricion.service';
   styleUrls: ['./progreso.page.scss'],
 })
 export class ProgresoPage implements OnInit {
-
+  URL = environment.url
   comparar:any = 'perfil'
   clase:string = 'perfil'
   valor: any;
@@ -159,9 +160,9 @@ export class ProgresoPage implements OnInit {
       this.medidas_ante.right_calf = resultado.right_calf,
       this.medidas_ante.left_calf = resultado.left_calf,
       this.medidas_ante.torax = resultado.torax,
-      this.medidas_ante.profile_photo = 'http://fittech247.com/fittech/fotos/grasa/'+resultado.profile_photo,
-      this.medidas_ante.front_photo ='http://fittech247.com/fittech/fotos/grasa/'+resultado.front_photo,
-      this.medidas_ante.back_photo = 'http://fittech247.com/fittech/fotos/grasa/'+resultado.back_photo
+      this.medidas_ante.profile_photo = `${this.URL}/fotos/grasa/`+resultado.profile_photo,
+      this.medidas_ante.front_photo =`${this.URL}/fotos/grasa/`+resultado.front_photo,
+      this.medidas_ante.back_photo = `${this.URL}/fotos/grasa/`+resultado.back_photo
     }else{
       this.medidas_despues.imc = resultado.imc.toFixed(2),
       this.medidas_despues.ica = resultado.ica.toFixed(2),
@@ -179,9 +180,9 @@ export class ProgresoPage implements OnInit {
       this.medidas_despues.right_calf = resultado.right_calf,
       this.medidas_despues.left_calf = resultado.left_calf,
       this.medidas_despues.torax = resultado.torax,
-      this.medidas_despues.profile_photo = 'http://fittech247.com/fittech/fotos/grasa/'+resultado.profile_photo,
-      this.medidas_despues.front_photo = 'http://fittech247.com/fittech/fotos/grasa/'+resultado.front_photo,
-      this.medidas_despues.back_photo = 'http://fittech247.com/fittech/fotos/grasa/'+resultado.back_photo
+      this.medidas_despues.profile_photo = `${this.URL}/fotos/grasa/`+resultado.profile_photo,
+      this.medidas_despues.front_photo = `${this.URL}/fotos/grasa/`+resultado.front_photo,
+      this.medidas_despues.back_photo = `${this.URL}/fotos/grasa/`+resultado.back_photo
     }
 
   }
