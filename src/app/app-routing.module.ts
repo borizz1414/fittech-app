@@ -484,10 +484,14 @@ const routes: Routes = [
     path: 'tienda-productos',
     loadChildren: () => import('./tienda-productos/tienda-productos.module').then( m => m.TiendaProductosPageModule)
   },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./tutorial-planes/tutorial-planes.module').then( m => m.TutorialPlanesPageModule),
+  //   canActivate: [IntroGuard]
+  // },
   {
     path: '',
-    loadChildren: () => import('./tutorial-planes/tutorial-planes.module').then( m => m.TutorialPlanesPageModule),
-    canActivate: [IntroGuard]
+    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingModule),
   },
   {
     path: 'planes-pagos',
@@ -500,7 +504,8 @@ const routes: Routes = [
   {
     path: 'modal-comparacion',
     loadChildren: () => import('./modal-comparacion/modal-comparacion.module').then( m => m.ModalComparacionPageModule)
-  },  {
+  },
+  {
     path: 'paypal',
     loadChildren: () => import('./paypal/paypal.module').then( m => m.PaypalPageModule)
   },

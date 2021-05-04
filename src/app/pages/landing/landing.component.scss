@@ -1,0 +1,118 @@
+.container-landing{
+    // background-image: url('assets/img/PORTADA-HOME.webp');
+   
+    height: 100%;
+    display: flex;
+}
+.bg{
+   
+    width: 76%;
+    background-size: cover;
+}
+.header{
+    img{
+        margin-top: 30px;
+    }
+    padding-left: 10px;
+    margin-left:80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sidebar{
+    h1{
+        font-weight: bolder;
+        font-size: 32px;
+    }
+    color:white;
+    width: 24%;
+    background: #ed1f24;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+text-align: center;
+}
+button{
+        border-radius: 20px;
+        background: transparent;
+        border:2px solid white;
+        padding:14px 20px;
+        
+        color:white;
+        
+    
+}
+.follow-social{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    ion-icon{
+        font-size: 22px;
+        margin-top:16px;
+        color:white;
+        transform: rotate(
+            -90deg
+            );
+    }
+    p{
+        margin-top: 30px;
+        color:white;
+        transform: rotate(
+            -90deg
+            );
+    }
+}
+@media screen and (max-width:2000px){
+    .bg{
+        background-image: url('/assets/img/PORTADA-HOME.webp'); 
+        width: 76%;
+    }
+    .sidebar,.follow-social{
+        display: flex !important;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .text-movil{
+        display: none;
+    }
+    button{
+        background: #ed1f24  !important;
+    }
+    
+}
+@media screen and (max-width:850px){
+    .bg{
+        background-image: url('/assets/img/fondo-testimonis_movil.webp'); 
+        width: 100%;
+    }
+    .header{
+        margin:0px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .sidebar,.follow-social{
+        display: none !important;
+    }
+    .text-movil{
+    h1{
+        font-weight: bolder;
+    }
+    text-align: center;
+    color: white;
+    /* bottom: 0px; */
+    margin-top: 200px;
+
+        display: block;
+    }
+    button{
+        background: transparent  !important;
+    }
+}
