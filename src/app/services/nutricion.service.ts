@@ -91,7 +91,7 @@ export class NutricionService {
       const data = {
         valor : "ignorar"
       }      
-      this.http.post(`${URL}/api/auth/foods`,data,{headers})
+      this.http.post(`${URL}/auth/foods`,data,{headers})
           .subscribe(resp=>{
             resolve(resp['Alimentos'])
           },err=>{
