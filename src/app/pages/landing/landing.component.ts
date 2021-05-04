@@ -12,6 +12,6 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {}
 login(){
-  this.navCtrl.navigateRoot('/tabs/dashboard');
+  this.navCtrl.navigateRoot('/login');
 }
 }
