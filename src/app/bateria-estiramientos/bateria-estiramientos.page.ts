@@ -11,7 +11,8 @@ import {
   NavController, AlertController
 } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
-
+import { environment } from '../../environments/environment.prod';
+const URL = environment.url;
 @Component({
   selector: 'app-bateria-estiramientos',
   templateUrl: './bateria-estiramientos.page.html',
