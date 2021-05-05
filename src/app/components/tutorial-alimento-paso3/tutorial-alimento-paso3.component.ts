@@ -15,7 +15,7 @@ export class TutorialAlimentoPaso3Component implements OnInit {
   constructor(private apiService:ApiFitechService,private ruta:NavController) { }
 
   ngOnInit() {
-    this.video1 = `${this.URL}/videos/Tutoriales/t1.mp4`
+    this.video1 = `${this.URL}/videos/tutoriales/t1.mp4`
   }
 
 
