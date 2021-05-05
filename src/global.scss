@@ -148,7 +148,11 @@
    }
    }
 
-
+/* FONTS */
+@font-face {
+   font-family: "OpenSans-Light";
+   src: url("assets/fonts/OpenSans-Light.ttf");
+ }
 *{
    font-family: 'Oswald', sans-serif;
 }

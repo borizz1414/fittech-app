@@ -4,6 +4,11 @@
    
     display: flex;
 }
+.testimonios{
+    background-image: url('/assets/img/fondo-testimonios.webp');
+    background-size: cover;
+    height: 800px;
+}
 .container{
     height: 100%;
     overflow-y: scroll;
@@ -31,6 +36,9 @@
     h1{
         font-weight: bolder;
         font-size: 32px;
+    }
+    p{
+        font-weight: 100;
     }
     color:white;
     width: 24%;
@@ -96,10 +104,159 @@ button{
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
+.porque-title
+{
+    text-align: center;
+    h1{
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+    }
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+.porque-fittech{
+    background: #ED1F24;
+    margin-top: -21px;
+    padding: 20px;
+    .card-fittech{
+        color:white;
+        .text-card{
+            padding: 26px;
+            p{
+                font-family: 'OpenSans-Light';
+                text-align: justify;
+            }
+        }
+        text-align: center;
+        width: 520px;
+        background: black;
+        margin: 14px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .container-cards{
+        display: flex;
+        justify-content: center;
+    }
+}
+.text-testimonios{
+    width: max-content;
+    padding: 100px 0px 0px 100px;
+    h3{
+        letter-spacing: 2.5px;
+        color:white;
+        font-family: 'OpenSans-Light';
+    }
+}
+.btn{
+    background: #EF4044;
+    color:white;
+    width: 80%;
+}
+
+.planes{
+    margin-top: -21px;
+    background-color: black;
+    .img-planes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .card-planes{
+            background: white;
+            color:black;
+            h1{
+                color:black !important;
+            }
+            width: 260px;
+            height: 280px;
+            border-radius: 12px;
+        }
+        .card-planes:hover{
+            background: transparent linear-gradient(212deg, #EF4044 0%, #BD0005 100%) 0% 0% no-repeat padding-box;
+            color:white;
+            .btn{
+                background: black;
+                color:white;
+            }
+        }
+        height: 800px;
+        background-size: cover;
+        background-image: url('/assets/img/icono-fittech.svg');
+    }
+    .text{
+        h3{
+            padding-top: 40px;
+            font-family: 'OpenSans-Light';
+            color:black;
+        }
+    }
+}
+.icons{
+    ion-icon{
+        font-size: 24px;
+        color:white;
+        margin:16px;
+        cursor:pointer;
+    }
+}
+.empieza-ya{
+    background-image: url('/assets/img/personalizacion-unica.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        width: 500px;
+        color:white;
+        font-family: 'OpenSans-Light';
+    }
+    button{
+        border:0;
+    }
+
+}
+.container-empieza-ya{
+    height: 700px;
+}
+
+.text-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .nosotros{
+    margin-top: -21px;
  display: flex; 
  .text{
-    width: 50%;
+    width: 45%;
+    text-align: justify;
+    background: black;
+    color: white;
+    h1{
+        font-weight: bold;
+        font-size: 50px;
+    }
+    h3{
+        letter-spacing: 2.5px;
+    }
+    p,h3{
+        font-family: 'OpenSans-Light';
+    }
+    padding: 30px;
+ }
+
+ .model{
+     width: 55%;
+     img{
+        width: 100%;
+        height: 100%;
+     }
  }
 }
 .item-slide{
@@ -108,6 +265,7 @@ button{
     flex-direction: column;
     flex-shrink: 0;
     flex-grow: 0;
+    cursor:pointer;
     max-width: 100%;
 }
 
@@ -156,7 +314,9 @@ button{
     transform: scale(1);
 }
 
-
+.testimonios-text{
+    text-align: left;
+}
 input[id="1"]:checked ~ .slide{
     animation: none;
     transform: translate3d(0, 0, 0);
