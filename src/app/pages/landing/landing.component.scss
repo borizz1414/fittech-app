@@ -276,7 +276,7 @@ h1{
 
 .pagination{
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -462,6 +462,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
         // display: block;
     }
+    
+.pagination{
+    bottom: 12px;
+}
     button{
         background: transparent  !important;
     }
