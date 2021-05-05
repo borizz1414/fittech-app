@@ -11,7 +11,7 @@
 }
 .container{
     height: 100%;
-    overflow-y: scroll;
+
 }
 
 .bg{
@@ -105,7 +105,7 @@ button{
     animation-iteration-count: infinite;
 }
 .porque-title
-{
+{   
     text-align: center;
     h1{
         font-weight: bold;
@@ -191,7 +191,7 @@ h1{
         h3{
             padding-top: 40px;
             font-family: 'OpenSans-Light';
-            color:black;
+            color:white;
         }
     }
 }
@@ -224,7 +224,10 @@ h1{
 .container-empieza-ya{
     height: 700px;
 }
-
+.line-red{
+    border-top: 1px solid red;
+    width: 180px;
+}
 .text-team{
     display: flex;
     flex-direction: column;
@@ -239,6 +242,8 @@ h1{
     background: black;
     color: white;
     h1{
+        padding: 6px;
+        
         font-weight: bold;
         font-size: 50px;
     }
@@ -373,6 +378,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
 }
 @media screen and (max-width:2000px){
+    .container{
+        overflow-y: scroll;
+    }
     .bg{
         // background-image: url('/assets/img/PORTADA-HOME.webp'); 
         width: 76%;
@@ -392,12 +400,53 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     
 }
 @media screen and (max-width:850px){
+    .container-empieza-ya{
+        width:100%;
+        height: max-content;
+    }
+    .header{
+        width: 100%;
+        padding-left: 0px;
+        margin-left:0px;
+        justify-content: center !important;
+        img{
+            margin-top: 6px;
+            width: 100px;
+        }
+    }
+    .container{
+        overflow: none !important;
+        overflow-x: scroll !important;
+    }
+    .card-fittech{
+        width: 300px !important;
+    }
+    .img-planes{
+        height: max-content !important;
+        flex-direction: column;
+        .card-planes{
+            margin-top:10px;
+            margin-bottom: 10px;
+        }
+    }
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros{
+        flex-direction: column;
+        .text{
+            text-align: center;
+            width: 100%;
+         }
+        
+         .model{
+             width: 100%;
+         }
+    }
     .bg{
         // background-image: url('/assets/img/fondo-testimonis_movil.webp'); 
         width: 100%;
-    }
-    .header{
-        justify-content: center;
     }
     .sidebar,.follow-social{
         display: none !important;
@@ -411,7 +460,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     /* bottom: 0px; */
     margin-top: 200px;
 
-        display: block;
+        // display: block;
     }
     button{
         background: transparent  !important;
