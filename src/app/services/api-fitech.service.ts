@@ -36,125 +36,125 @@ export class ApiFitechService {
   rutinaTestCasaHombre = [
     {
       name: "jumping jacks",
-      url: `${URL}/videos/CR/510.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "sentadillas",
-      url: `${URL}/videos/TI/465.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Push up en rodillas",
-      url: `${URL}/videos/TS/421.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Superman",
-      url: `${URL}/videos/TS/437.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Skipping alto",
-      url: `${URL}/videos/CR/518.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Sentadillas con salto y brazos extendidos",
-      url: `${URL}/videos/TI/500.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Pushups cerrados",
-      url: `${URL}/videos/TS/443.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Plancha palanca larga",
-      url: `${URL}/videos/CO/568.mp4`,
+      url: `${URL}/videos/CO/000.mp4`,
     },
     {
       name: "Burpee mas Pushups y saltos",
-      url: `${URL}/videos/CR/504.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Zancada pliometrica alternada",
-      url: `${URL}/videos/TI/495.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Pushups mas flexion de cadera lateral",
-      url: `${URL}/videos/TS/441.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
-    { name: "Hollows", url: `${URL}/videos/CO/540.mp4` },
+    { name: "Hollows", url: `${URL}/videos/CO/000.mp4` },
     {
       name: "Burpees avanzados rodillas al pechos",
-      url: `${URL}/videos/CR/519.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Pistols alternados",
-      url: `${URL}/videos/TI/579.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Pushups explosivos",
-      url: `${URL}/videos/TS/439.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Plancha palanca larga en manos",
-      url: `${URL}/videos/CO/573.mp4`,
+      url: `${URL}/videos/CO/000.mp4`,
     },
   ];
 
   rutinaTestCasaMujer = [
     {
       name: "jumping jacks",
-      url: `${URL}/videos/CR/510.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "sentadillas",
-      url: `${URL}/videos/TI/465.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Push up en rodillas",
-      url: `${URL}/videos/TS/421.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Superman",
-      url: `${URL}/videos/TS/437.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Skipping alto",
-      url: `${URL}/videos/CR/518.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Sentadillas con salto y brazos extendidos",
-      url: `${URL}/videos/TI/500.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Pushups con apoyo en rodillas",
-      url: `${URL}/videos/TS/440.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Plancha palanca larga",
-      url: `${URL}/videos/CO/568.mp4`,
+      url: `${URL}/videos/CO/000.mp4`,
     },
     {
       name: "Burpee mas Pushups y salto",
-      url: `${URL}/videos/CR/504.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Zancada pliometrica alternada",
-      url: `${URL}/videos/TI/495.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
-    { name: "Pushups", url: `${URL}/videos/TS/423.mp4` },
-    { name: "Hollows", url: `${URL}/videos/CO/540.mp4` },
+    { name: "Pushups", url: `${URL}/videos/TS/000.mp4` },
+    { name: "Hollows", url: `${URL}/videos/CO/000.mp4` },
     {
       name: "Burpees avanzados rodillas al pechos",
-      url: `${URL}/videos/CR/519.mp4`,
+      url: `${URL}/videos/CR/000.mp4`,
     },
     {
       name: "Pistols alternado",
-      url: `${URL}/videos/TI/579.mp4`,
+      url: `${URL}/videos/TI/000.mp4`,
     },
     {
       name: "Pushups mas flexion de cadera lateral",
-      url: `${URL}/videos/TS/441.mp4`,
+      url: `${URL}/videos/TS/000.mp4`,
     },
     {
       name: "Plancha palanca larga en manos",
-      url: `${URL}/videos/CO/573.mp4`,
+      url: `${URL}/videos/CO/000.mp4`,
     },
   ];
 
