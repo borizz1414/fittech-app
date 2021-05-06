@@ -7,7 +7,7 @@
 .testimonios{
     background-image: url('/assets/img/fondo-testimonios.webp');
     background-size: cover;
-    height: 800px;
+    height: 400px;
 }
 .container{
     height: 100%;
@@ -128,7 +128,7 @@ h1{
             padding: 26px;
             p{
                 font-family: 'OpenSans-Light';
-                text-align: justify;
+                text-align: center;
             }
         }
         text-align: center;
@@ -172,7 +172,7 @@ h1{
                 color:black !important;
             }
             width: 260px;
-            height: 280px;
+            height: 320px;
             border-radius: 12px;
         }
         .card-planes:hover{
@@ -223,6 +223,7 @@ h1{
 }
 .container-empieza-ya{
     height: 700px;
+    margin-top: 0px !important;
 }
 .line-red{
     border-top: 1px solid red;
@@ -415,8 +416,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         }
     }
     .container{
-        overflow: none !important;
-        overflow-x: scroll !important;
+        // overflow: none !important;
+        // overflow-x: scroll !important;
     }
     .card-fittech{
         width: 300px !important;
@@ -468,5 +469,13 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
     button{
         background: transparent  !important;
+    }
+    .empieza-ya{
+        button{
+            border:2px solid white;
+        }
+        p{
+            width: 280px;
+        }
     }
 }
