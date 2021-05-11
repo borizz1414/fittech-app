@@ -85,7 +85,7 @@ export class ApiFitechService {
     },
     {
       name: "Pistols alternados",
-      url: `${URL}/videos/TI/000.mp4`,
+      url: `${URL}/videos/TI/579.mp4`,
     },
     {
       name: "Pushups explosivos",
@@ -146,7 +146,7 @@ export class ApiFitechService {
     },
     {
       name: "Pistols alternado",
-      url: `${URL}/videos/TI/000.mp4`,
+      url: `${URL}/videos/TI/579.mp4`,
     },
     {
       name: "Pushups mas flexion de cadera lateral",
