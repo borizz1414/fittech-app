@@ -125,7 +125,8 @@ h1{
     .card-fittech{
         color:white;
         .text-card{
-            padding: 26px;
+            padding: 0px 26px;
+            margin-top: -100px;
             p{
                 font-family: 'OpenSans-Light';
                 text-align: center;
@@ -420,7 +421,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         // overflow-x: scroll !important;
     }
     .card-fittech{
-        width: 300px !important;
+        width: 100%!important;
     }
     .img-planes{
         height: max-content !important;
