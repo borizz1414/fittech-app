@@ -88,7 +88,9 @@ export class BateriahomePage implements OnInit {
         console.log("activate")
         this.zero = 0
       }
-
+      if (this.timeLeft > 1 && this.timeLeft <= 5) {
+        this.playSonido(1)
+      }
       if (this.timeLeft === 1) {
         this.playSonido(2)
       }

@@ -75,7 +75,6 @@ export class BateriarutinaesperahomePage implements OnInit {
         console.log("activate")
         this.zero = 0
       } 
-      
       if(this.timeLeft >= 1 && this.timeLeft < 10) {
   
           this.playSonido()

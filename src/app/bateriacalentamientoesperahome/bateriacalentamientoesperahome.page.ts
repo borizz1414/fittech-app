@@ -57,36 +57,58 @@ export class BateriacalentamientoesperahomePage implements OnInit {
   atras(){
     this.ruta.pop();
   }
-
   startTimer() {
-
+    this.zero = null;
     this.tiemposegundo = setInterval(() => {
 
-      // if(this.timeLeft <= 10){
-      //   console.log("activate")
-      //   this.zero = 0
-      // } 
-
-      this.mostrartitulo = true
-      
-      if(this.timeLeft >= 1 && this.timeLeft < 5) {
-          this.playSonido()
+      if (this.timeLeft === 10) {
+        console.log("activate")
+        this.zero = 0
       }
 
-      // if(this.timeLeft === 1) {
-      //     this.playSonidoFinal()
-      // }
-
-
-      if(this.timeLeft > 0) {
+      if (this.timeLeft === 1) {
+        this.playSonido(2)
+      }
+      if (this.timeLeft > 1 && this.timeLeft <= 5) {
+        this.playSonido(1)
+      }
+      if (this.timeLeft > 0) {
         this.timeLeft--;
       } else {
         this.timeLeft = 0;
-        this.redirigir()
-      }
-    },1000)
 
+      }
+    }, 1000)
   }
+  // startTimer() {
+
+  //   this.tiemposegundo = setInterval(() => {
+
+  //     // if(this.timeLeft <= 10){
+  //     //   console.log("activate")
+  //     //   this.zero = 0
+  //     // } 
+
+  //     this.mostrartitulo = true
+      
+  //     if(this.timeLeft > 1 && this.timeLeft < 5) {
+  //         this.playSonido(1)
+  //     }
+
+  //     // if(this.timeLeft === 1) {
+  //     //     this.playSonidoFinal()
+  //     // }
+
+
+  //     if(this.timeLeft > 0) {
+  //       this.timeLeft--;
+  //     } else {
+  //       this.timeLeft = 0;
+  //       this.redirigir()
+  //     }
+  //   },1000)
+
+  // }
 
   redirigir(){
     clearInterval(this.tiemposegundo)
@@ -95,11 +117,15 @@ export class BateriacalentamientoesperahomePage implements OnInit {
   }
 
 
-   playSonido(){
-  this.audio = new Audio();
-  this.audio.src = this.sonido;
-  this.audio.load();
-  this.audio.play();
+  playSonido(valor) {
+    this.audio = new Audio();
+    if(valor == 1){   
+      this.audio.src = this.sonido;
+    }else{
+      this.audio.src = this.sonido2;
+    }
+    this.audio.load();
+    this.audio.play();
   }
 
   // playSonidoFinal(){

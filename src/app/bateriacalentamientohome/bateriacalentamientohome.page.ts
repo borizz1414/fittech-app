@@ -91,7 +91,9 @@ export class BateriacalentamientohomePage  {
       if (this.timeLeft === 1) {
         this.playSonido(2)
       }
-
+      if (this.timeLeft > 1 && this.timeLeft <= 5) {
+        this.playSonido(1)
+      }
       if (this.timeLeft > 0) {
         this.timeLeft--;
       } else {
@@ -190,6 +192,7 @@ export class BateriacalentamientohomePage  {
       if (this.timeLeft >= 1) {
         this.playSonido(1)
       }
+      
       if (this.timeLeft > 0) {
         this.timeLeft--;
       } else {
