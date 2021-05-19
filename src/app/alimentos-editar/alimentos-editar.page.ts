@@ -134,7 +134,7 @@ export class AlimentosEditarPage implements OnInit {
     this.carbo = 0;
     this.grasa = 0;
     this.protein = 0;
-
+    console.log(this.alimentos,'b')
     this.alimentos.forEach((element) => {
       if (element.cantidad > 0) {
         if (element.measurement === "casera" && element.eq != null) {

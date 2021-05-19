@@ -3,7 +3,9 @@
     margin: 0 auto;
     max-height: 4rem;
   }
-
+ion-card-title{
+  color: black;
+}
 .cabezera{
     max-height: 150px;
       display: flex;
@@ -133,7 +135,7 @@ ion-item{
 .card{
     width: 150px;
     height: 160px;
-    background: #232323;
+    background: #e6e6e6;
 }
 .center-img{
     display: block;
