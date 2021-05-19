@@ -35,20 +35,20 @@
 </div>
 </ion-content>
 
+
 <!-- contenedor rutina -->
 <ng-container *ngIf="status == 'rutina'">
-<!-- Video -->
-<video #myVideo  playsinline  class="videoReproductor"
-width="100%"
-loop
-muted="muted" 
-poster="assets/img/videogif.gif">
-  <source [src]= "video" *ngIf="video" />
-</video>
-
-
-<ion-content>
-
+  
+  <ion-content>
+    <!-- Video -->
+    <video #myVideo  playsinline  class="videoReproductor"
+    width="100%"
+    loop
+    muted="muted" 
+    poster="assets/img/videogif.gif">
+      <source [src]= "video" *ngIf="video" />
+    </video>
+    
   <div class="contenedor">
     <div class="contenedor-cabezera">
       <p>

@@ -5,14 +5,14 @@
 </ion-header>
 
 
-<video #myVideo playsinline width="100%" class="videoReproductor" (ended)="videoEnd()" autoplay
-  poster="assets/img/videogif.gif" (loadedmetadata)="onMetadata($event, video)" *ngIf="video">
-  <source [src]="video" />
-</video>
+
 
 
 <ion-content>
-
+  <video #myVideo playsinline width="100%" class="videoReproductor" (ended)="videoEnd()" autoplay
+  poster="assets/img/videogif.gif" (loadedmetadata)="onMetadata($event, video)" *ngIf="video">
+  <source [src]="video" />
+</video>
   <div class="contenedor-cabezera">
     <p class="titulo" style="color: white;">{{ucFirst(name)}}</p>
     <p style="color: white;">Demostración del ejercicio</p>

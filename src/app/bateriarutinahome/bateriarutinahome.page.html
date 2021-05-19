@@ -6,17 +6,17 @@
 
 <!-- Logo incluido ante no estaba -->
 
-<video #myVideo  playsinline 
-(loadedmetadata)="onMetadata($event, video)"
-width="100%"
-loop
-poster="assets/img/videogif.gif">
-  <source [src]= "video" *ngIf="video" />
-</video>
 
 <!-- #F4F3F1 -->
 
 <ion-content>
+  <video #myVideo  playsinline 
+  (loadedmetadata)="onMetadata($event, video)"
+  width="100%"
+  loop
+  poster="assets/img/videogif.gif">
+    <source [src]= "video" *ngIf="video" />
+  </video>
 
   <div class="contenedor">
 
