@@ -160,6 +160,7 @@ export class FotosComponent implements OnInit {
         this.form.controls.front_photo.setValue(imageData)
         console.log("imagen" , imageData)
         console.log("image frente",this.form.controls.front_photo.value)
+        this.form.controls['fotoPerfil'].setValue(imageData);
 
       }
       if(index == 2){//perfil
@@ -168,6 +169,7 @@ export class FotosComponent implements OnInit {
         this.form.controls.profile_photo.setValue(imageData)
         console.log("imagen" , imageData)
         console.log("image perfil",this.form.controls.profile_photo.value)
+        this.form.controls['fotoPerfil'].setValue(imageData);
       }
 
       if(index == 3){//espalda
@@ -177,7 +179,7 @@ export class FotosComponent implements OnInit {
         console.log("imagen" , imageData)
         console.log("image espalda",this.form.controls.back_photo.value)
       }
-      // this.form.controls['fotoPerfil'].setValue(imageData);
+      this.form.controls['fotoPerfil'].setValue(imageData);
      }, (err) => {
       // Handle error
       console.log("cameraE", err);

@@ -29,8 +29,8 @@ export class ModalEmailPage implements OnInit {
       console.log("es igual")
     }else{
       this.mensajeservice.alertaInformatica('Por favor introduzca un password mayor a 2 digitos')
-      this.registrar.contra = null
-      this.registrar.recontra = null
+      // this.registrar.contra = null
+      // this.registrar.recontra = null
       // break rompes la continuacion 
       return
     }
@@ -44,8 +44,8 @@ export class ModalEmailPage implements OnInit {
             });
         }else{
           this.mensajeservice.alertaInformatica('El password no coincide')
-          this.registrar.contra = null
-          this.registrar.recontra = null
+          // this.registrar.contra = null
+          // this.registrar.recontra = null
           return
         }
       }else{
@@ -65,7 +65,7 @@ export class ModalEmailPage implements OnInit {
     const valido = await this.apiService.validarEmail(valor.target.value)
     if(valido){
       this.mensajeservice.alertaInformatica('el correo ya existe en nuestra base de datos')
-      this.registrar.email = null
+      // this.registrar.email = null
     }else{
       console.log("aprobado email")
     }
@@ -80,13 +80,13 @@ export class ModalEmailPage implements OnInit {
            console.log("todo bien")
          }else{
           this.mensajeservice.alertaInformatica('El email no tiene un formato valido ')
-          this.registrar.email = null
-          this.registrar.reemail = null
+          // this.registrar.email = null
+          // this.registrar.reemail = null
          }
     }else{
       this.mensajeservice.alertaInformatica('El email no coincide ')
-      this.registrar.email = null
-      this.registrar.reemail = null
+      // this.registrar.email = null
+      // this.registrar.reemail = null
     }
 
   }

@@ -484,15 +484,15 @@ const routes: Routes = [
     path: 'tienda-productos',
     loadChildren: () => import('./tienda-productos/tienda-productos.module').then( m => m.TiendaProductosPageModule)
   },
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tutorial-planes/tutorial-planes.module').then( m => m.TutorialPlanesPageModule),
-  //   canActivate: [IntroGuard]
-  // },
   {
     path: '',
-    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingModule),
+    loadChildren: () => import('./tutorial-planes/tutorial-planes.module').then( m => m.TutorialPlanesPageModule),
+    canActivate: [IntroGuard]
   },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingModule),
+  // },
   {
     path: 'planes-pagos',
     loadChildren: () => import('./planes-pagos/planes-pagos.module').then( m => m.PlanesPagosPageModule)
