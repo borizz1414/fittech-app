@@ -1,7 +1,9 @@
 .omitir{
     position: absolute;
-    color: #EF4044;
+    color: black;
     right: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .imagen{
@@ -26,3 +28,4 @@ h2{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+@import '../../pages/landing/landing.component.scss';

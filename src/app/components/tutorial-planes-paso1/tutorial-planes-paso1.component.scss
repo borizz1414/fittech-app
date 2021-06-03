@@ -2,8 +2,12 @@
     position: absolute;
     color: #EF4044;
     right: 2rem;
+    z-index: 2;
+    font-weight: bold;
 }
-
+.ion-slides{
+    z-index: 0;
+}
 .imagen{
     width: 100%;
 }
@@ -22,3 +26,10 @@ h2{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.header{
+    img{
+        width: 100px !important;
+        z-index:2;
+    }
+}
+@import '../../pages/landing/landing.component.scss';

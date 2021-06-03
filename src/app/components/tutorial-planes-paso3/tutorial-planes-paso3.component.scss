@@ -2,6 +2,7 @@
     position: absolute;
     color: #EF4044;
     right: 2rem;
+    font-weight: bold;
 }
 
 .imagen{
@@ -23,3 +24,4 @@ h2{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+@import '../../pages/landing/landing.component.scss';

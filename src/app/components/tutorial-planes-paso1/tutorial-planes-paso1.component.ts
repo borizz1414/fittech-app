@@ -10,7 +10,11 @@ import { ApiFitechService } from 'src/app/services/api-fitech.service';
 export class TutorialPlanesPaso1Component implements OnInit {
 
   constructor(private ruta:NavController,private service: ApiFitechService) { }
-
+  slideOpts = {
+    initialSlide: 0,
+    speed: 2000,
+    autoplay:true
+  };
   ngOnInit() {}
 
   omitir(){
