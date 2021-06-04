@@ -65,7 +65,7 @@
     "card.io.cordova.mobilesdk": "^2.1.0",
     "codelyzer": "^5.0.0",
     "com.paypal.cordova.mobilesdk": "^3.5.0",
-    "cordova-android": "9.1.0",
+    "cordova-android": "^9.1.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
@@ -122,8 +122,8 @@
       "com.paypal.cordova.mobilesdk": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
