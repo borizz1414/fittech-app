@@ -27,6 +27,9 @@ import { TutorialPlanesPaso1Component } from './tutorial-planes-paso1/tutorial-p
 import { TutorialPlanesPaso2Component } from './tutorial-planes-paso2/tutorial-planes-paso2.component';
 import { TutorialPlanesPaso3Component } from './tutorial-planes-paso3/tutorial-planes-paso3.component';
 import { TutorialPlanesPaso4Component } from './tutorial-planes-paso4/tutorial-planes-paso4.component';
+import { TutorialPlanesPaso5Component } from './tutorial-planes-paso5/tutorial-planes-paso5.component';
+import { TutorialPlanesPaso6Component } from './tutorial-planes-paso6/tutorial-planes-paso6.component';
+import { TutorialPlanesPaso7Component } from './tutorial-planes-paso7/tutorial-planes-paso7.component';
 import { ModalInfoPage } from '../modal-info/modal-info.page';
 import { ModalInfoPageModule } from '../modal-info/modal-info.module';
 import { ModalFotosPage } from '../modal-fotos/modal-fotos.page';
@@ -57,10 +60,14 @@ import { ModalFotosPageModule } from '../modal-fotos/modal-fotos.module';
     TutorialAlimentoPaso2Component,
     TutorialAlimentoPaso3Component,
     TutorialAlimentoPaso4Component,
+    TutorialAlimentoPaso4Component,
     TutorialPlanesPaso1Component,
     TutorialPlanesPaso2Component,
     TutorialPlanesPaso3Component,
-    TutorialPlanesPaso4Component
+    TutorialPlanesPaso4Component,
+    TutorialPlanesPaso5Component,
+    TutorialPlanesPaso6Component,
+    TutorialPlanesPaso7Component
   ],
   exports:[
     EdadComponent,
@@ -86,7 +93,10 @@ import { ModalFotosPageModule } from '../modal-fotos/modal-fotos.module';
     TutorialPlanesPaso1Component,
     TutorialPlanesPaso2Component,
     TutorialPlanesPaso3Component,
-    TutorialPlanesPaso4Component
+    TutorialPlanesPaso4Component,
+    TutorialPlanesPaso5Component,
+    TutorialPlanesPaso6Component,
+    TutorialPlanesPaso7Component
   ],
   imports: [
     FormsModule,
