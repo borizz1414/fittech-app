@@ -23,7 +23,7 @@
 
 @media (max-width: 375px) {
   .videoReproductor {
-    height: 11em;
+    /* height: 11em; */
   }
 }
 
