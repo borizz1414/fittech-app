@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-ionic-webview.ios-wkwebview-exec", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -35,8 +36,8 @@ function massageArgsJsToNative (args) {
     args.forEach(function (arg, i) {
         if (utils.typeName(arg) === 'ArrayBuffer') {
             ret.push({
-                CDVType: 'ArrayBuffer',
-                data: base64.fromArrayBuffer(arg)
+                'CDVType': 'ArrayBuffer',
+                'data': base64.fromArrayBuffer(arg)
             });
         } else {
             ret.push(arg);
@@ -64,7 +65,7 @@ function massageMessageNativeToJs (message) {
 
 function convertMessageToArgsNativeToJs (message) {
     var args = [];
-    if (!message || !Object.prototype.hasOwnProperty.call(message, 'CDVType')) {
+    if (!message || !message.hasOwnProperty('CDVType')) {
         args.push(message);
     } else if (message.CDVType === 'MultiPart') {
         message.messages.forEach(function (e) {
@@ -77,6 +78,12 @@ function convertMessageToArgsNativeToJs (message) {
 }
 
 var iOSExec = function () {
+    // detect change in bridge, if there is a change, we forward to new bridge
+
+    // if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.cordova && window.webkit.messageHandlers.cordova.postMessage) {
+    //     bridgeMode = jsToNativeModes.WK_WEBVIEW_BINDING;
+    // }
+
     var successCallback, failCallback, service, action, actionArgs;
     var callbackId = null;
     if (typeof arguments[0] !== 'string') {
@@ -105,7 +112,7 @@ var iOSExec = function () {
     if (successCallback || failCallback) {
         callbackId = service + cordova.callbackId++;
         cordova.callbacks[callbackId] =
-            { success: successCallback, fail: failCallback };
+            {success: successCallback, fail: failCallback};
     }
 
     actionArgs = massageArgsJsToNative(actionArgs);
@@ -157,3 +164,14 @@ execProxy.nativeCallback = function () {
 };
 
 module.exports = execProxy;
+
+if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.cordova && window.webkit.messageHandlers.cordova.postMessage) {
+    // unregister the old bridge
+    cordova.define.remove('cordova/exec');
+    // redefine bridge to our new bridge
+    cordova.define('cordova/exec', function (require, exports, module) {
+        module.exports = execProxy;
+    });
+}
+
+});

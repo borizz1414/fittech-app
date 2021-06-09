@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-file.iosFileSystem", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -18,22 +19,14 @@
  * under the License.
  *
 */
+/* eslint no-undef : 0 */
+FILESYSTEM_PROTOCOL = 'cdvfile';
 
 module.exports = {
-    id: 'ios',
-    bootstrap: function () {
-        // Attach the console polyfill that is iOS-only to window.console
-        // see the file under plugin/ios/console.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/console', 'window.console');
-
-        // Attach the wkwebkit utility to window.WkWebView
-        // see the file under plugin/ios/wkwebkit.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/wkwebkit', 'window.WkWebView');
-
-        // Attach the splashscreen utility to window.navigator.splashscreen
-        // see the file under plugin/ios/launchscreen.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/launchscreen', 'navigator.splashscreen');
-
-        require('cordova/channel').onNativeReady.fire();
+    __format__: function (fullPath) {
+        var path = ('/' + this.name + (fullPath[0] === '/' ? '' : '/') + FileSystem.encodeURIPath(fullPath)).replace('//', '/');
+        return FILESYSTEM_PROTOCOL + '://localhost' + path;
     }
 };
+
+});

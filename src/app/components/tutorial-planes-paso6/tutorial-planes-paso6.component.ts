@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { ApiFitechService } from 'src/app/services/api-fitech.service';
 
 @Component({
   selector: 'app-tutorial-planes-paso6',
@@ -7,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialPlanesPaso6Component implements OnInit {
 
-  constructor() { }
+  constructor(private ruta:NavController,private service: ApiFitechService) { }
 
   ngOnInit() {}
+  omitir(){
+    this.service.ActualizarFittechApp()
+    this.ruta.navigateRoot(['/login'])
+  }
 
 }
