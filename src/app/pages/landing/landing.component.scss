@@ -117,11 +117,11 @@ h1 {
   background: #ed1f24;
   margin-top: -21px;
   padding: 20px;
-//   height: 104vh;
+  //   height: 104vh;
   .card-fittech {
     color: white;
     .text-card {
-        height: 220px;
+      height: 220px;
       padding: 0px 26px;
       margin-top: -100px;
       p {
@@ -132,7 +132,7 @@ h1 {
     }
     text-align: center;
     width: 680px;
-    background: black;
+    background: #0a0a0a;
     border-radius: 12px;
     overflow: hidden;
   }
@@ -236,8 +236,8 @@ h1 {
   margin-top: -21px;
   display: flex;
   .text {
-    width: 45%;
-    text-align: justify;
+    width: 80%;
+    text-align: center;
     background: black;
     color: white;
     h1 {
@@ -394,9 +394,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   }
 }
 @media screen and (max-width: 850px) {
-    .model-paso1{
-        display: none;
-    }
+  .model-paso1 {
+    display: none;
+  }
   .container-empieza-ya {
     width: 100%;
     height: max-content;
@@ -446,8 +446,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
       width: 100%;
       p {
         font-size: 20px;
-        margin:0;
-        text-align: justify;
+        margin: 0;
+        text-align: center;
         margin-top: 4px;
       }
     }
@@ -491,30 +491,38 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     }
   }
 }
-@media screen and (max-width: 600px) {
-    .nosotros {
-        .text {
-          h1 {
-            font-size: 32px;
-          }
-          width: 100%;
-          p {
-            font-size: 14px;
-          }
-        }
+@media screen and (max-width: 768px) {
+  .nosotros {
+    .text {
+      width: 100%;
     }
+  }
 }
 
-@media screen and (max-width: 350px) {
-    .nosotros {
-        .text {
-          h1 {
-            font-size: 32px;
-          }
-          width: 100%;
-          p {
-            font-size: 12px;
-          }
-        }
+@media screen and (max-width: 600px) {
+  .nosotros {
+    .text {
+      h1 {
+        font-size: 32px;
+      }
+      width: 100%;
+      p {
+        font-size: 14px;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nosotros {
+    .text {
+      h1 {
+        font-size: 32px;
+      }
+      width: 100%;
+      p {
+        font-size: 13px;
+      }
+    }
+  }
 }
