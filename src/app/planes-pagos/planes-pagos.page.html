@@ -20,6 +20,9 @@
                 <ion-card class="card-custom" *ngIf="item.duration !== 12">
                   <div class="card-title">{{item.name}}</div>
                   <div>
+                    <div class="usd-text" *ngIf="item.price !== 0" >
+                      {{item.usd_title}}
+                    </div>
                     <span class="card-body" *ngIf="item.price === 0">
                       Gratis
                     </span>
@@ -60,6 +63,9 @@
     
                 <ion-card class="card-custom2" *ngIf="item.duration === 12">
                   <div class="card-title2" >{{item.name}}</div>
+                  <div class="usd-text-custom__white" *ngIf="item.price !== 0" >
+                    {{item.usd_title}}
+                  </div>
                   <div>
                   <span class="card-body2" *ngIf="item.price === 0">
                     Lighting Deal

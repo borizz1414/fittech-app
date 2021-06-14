@@ -1,19 +1,22 @@
+<ion-content>
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Método de pago paypal</ion-title>
+    <ion-title>Pagar con Paypal </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Cerrar</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  
-<div #paypal class="paypal">
-  <div class="title-paypal">
-    <h1>Pagar con Paypal</h1>
-    <img src="assets/img/logo-paypal.png" alt="">
+
+
+  <div #paypal class="paypal">
+    <div class="title-paypal">
+      <img src="assets/img/logo-paypal.png" width="180px" alt="">
+    </div>
   </div>
-</div>
 
 </ion-content>

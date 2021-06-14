@@ -35,7 +35,14 @@ ion-slides{
     display: block;
     margin: 0 auto;
 }
-
+.usd-text,.usd-text-custom__white{
+    font-size: 18px;
+    font-family: "OpenSans-Light";
+    font-weight: bold;
+}
+.usd-text-custom__white{
+    color:white;
+}
 .fondo{
     --background: url(../../assets/img/fondo-planes.png) no-repeat center center / cover;
   }

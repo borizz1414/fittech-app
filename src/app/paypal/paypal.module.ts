@@ -15,6 +15,7 @@ import { PaypalPage } from './paypal.page';
     IonicModule,
     PaypalPageRoutingModule
   ],
+  exports:[PaypalPage],
   declarations: [PaypalPage]
 })
 export class PaypalPageModule {}

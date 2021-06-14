@@ -487,7 +487,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tutorial-planes/tutorial-planes.module').then( m => m.TutorialPlanesPageModule),
-    // canActivate: [IntroGuard]
+    canActivate: [IntroGuard]
   },
   // {
   //   path: '',
