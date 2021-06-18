@@ -8,6 +8,7 @@
 
 <ion-content class="animated fadeIn delay-1s">
   <!-- BIENVENIDO ARRIBA / ALINEADO -->
+    <a routerLink="/planes-pagos">Planes test</a>
     <h1 style="padding-left: 1.5rem;"><b>Hola,  {{Bienvenido}} </b></h1>
     <h4 style="padding-left: 1.5rem;" *ngIf="week.routine_ready_week == 1">Has realizado  <b style="color: red;">{{week['routine_ready_week'] || 0}}</b> sesión de entrenamiento esta semana </h4>
     <h4 style="padding-left: 1.5rem;" *ngIf="week.routine_ready_week > 1 || week.routine_ready_week == 0">Has realizado  <b style="color: red;">{{week['routine_ready_week'] }}</b> sesiones de entrenamiento esta semana </h4>

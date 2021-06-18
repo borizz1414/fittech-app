@@ -16,6 +16,7 @@ interface configPrice {
   usd: number;
   cop: number;
   description: string;
+  payu_link: string;
 }
 @Component({
   selector: "app-planes-pagos",
@@ -28,7 +29,8 @@ export class PlanesPagosPage implements OnInit {
   configPrice: configPrice = {
     usd: 0,
     cop: 0,
-    description:''
+    description:'',
+    payu_link:''
   };
   constructor(
     private service: NutricionService,
@@ -78,7 +80,8 @@ export class PlanesPagosPage implements OnInit {
         this.configPrice = {
           usd: 8.99,
           cop: 32000,
-          description:'Plan Mensual'
+          description:'Plan Mensual',
+          payu_link: 'https://biz.payulatam.com/L0dd07cB2F9B836'
         };
         this.planespagos();
         break;
@@ -88,7 +91,8 @@ export class PlanesPagosPage implements OnInit {
         this.configPrice = {
           usd: 20.99,
           cop: 75000,
-          description:'Plan Trimestral'
+          description:'Plan Trimestral',
+          payu_link: 'https://biz.payulatam.com/L0dd07cEB873EDA'
         };
         this.planespagos();
         break;
@@ -98,7 +102,8 @@ export class PlanesPagosPage implements OnInit {
         this.configPrice = {
           usd: 36.99,
           cop: 132000,
-          description:'Plan Semestral'
+          description:'Plan Semestral',
+          payu_link: 'https://biz.payulatam.com/L0dd07cEF3E69E8'
         };
         this.planespagos();
         break;
@@ -108,7 +113,8 @@ export class PlanesPagosPage implements OnInit {
         this.configPrice = {
           usd: 63.99,
           cop: 228000,
-          description:'Plan Anual'
+          description:'Plan Anual',
+          payu_link: 'https://biz.payulatam.com/L0dd07cD1161D13'
         };
         this.planespagos();
         break;
@@ -124,7 +130,7 @@ export class PlanesPagosPage implements OnInit {
       cssClass: "my-custom-class",
       buttons: [
         {
-          text: "Paypal",
+          text: "Paypal - USD",
           icon: "card-outline",
           handler: () => {
             // this.ruta.navigateForward('/paypal');
@@ -132,10 +138,10 @@ export class PlanesPagosPage implements OnInit {
           },
         },
         {
-          text: "PayU",
+          text: "PayU - COP",
           icon: "card-outline",
           handler: () => {
-            const page = "https://biz.payulatam.com/L0e126b6D5DFA1A/";
+            const page = this.configPrice.payu_link;
             this.iab.create(page, "_blank");
           },
         },
